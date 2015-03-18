@@ -3,7 +3,7 @@
 $( document ).ready( function ( $ ) {
 	var selectCar;
 	var currentCar;
-
+	$( '#carousel' ).carousel( { interval : 1500 } );
 	function carousel () {
 		$( '#carousel' ).carousel( { interval : 1500 } );
 		$( '#carousel' ).bind( 'slid.bs.carousel', function ( e ) {

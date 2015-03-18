@@ -11,10 +11,12 @@ html, body {
     text-align     : center;
 }
 
+
 .logo > img {
     height : 90%;
     margin : 5px 30px;
 }
+
 
 .logo > .center {
     padding-top : 20px;
@@ -32,9 +34,10 @@ html, body {
 }
 
 .car-info {
-    width       : 300px;
     margin-left : 150px;
     margin-top  : 50px;
+    text-align  : left;
+    max-width   : 400px;
 }
 
 .car-info > .car-stats {
@@ -78,4 +81,37 @@ html, body {
 
 .select-car:hover, .done:hover {
     color : white;
+}
+
+.car-info-model {
+    list-style : none;
+    padding    : 0px;
+}
+
+.carousel-item-con {
+    margin-top : 58px;
+}
+.well {
+    height     : 177px;
+    margin-top : 30px;
+}
+
+.carousel-control {
+    z-index          : 5;
+    height           : 28px;
+    padding-top      : 1px;
+    margin-top       : 304px;
+    width            : 28px;
+    border           : 1px solid black;
+    background-image : none !important;
+}
+
+.left {
+    margin-left : 86px;
+    color       : black;
+}
+
+.right {
+    margin-right : 86px;
+    color        : black;
 }
