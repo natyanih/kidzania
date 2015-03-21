@@ -59,7 +59,7 @@
     height : -webkit-calc( 100% - 201px );
     height : calc( 100% - 201px );
 	background-color : #ffcc00;
-	background       : url( '../images/backgrounds/garage-bg-lg.jpg' );
+	background       : url( '../images/backgrounds/carousel-bg.jpg' );
 	background-size  : 100% auto;
 }
 
@@ -82,7 +82,7 @@
 
 .carousel-img {
 	position : relative;
-	top      : 220px;
+	top      : 200px;
 	right    : 250px;
 	width    : 500px;
 	height   : 300px;
