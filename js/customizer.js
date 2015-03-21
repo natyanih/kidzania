@@ -22,6 +22,19 @@ $( document ).ready( function ( $ ) {
 
 	carousel();
 
+	var progress = setInterval(function() {
+	    var $bar = $( '.progress-bar' );
+
+	    if ( $bar.width() >= 400 ) {
+	        clearInterval( progress );
+	        $( '.progress-bar' ).removeClass( 'active' );
+	        $( '#loading' ).addClass( 'hidden' );
+	        $( '#carousel' ).removeClass( 'hidden' );
+	    } else {
+	        $bar.width( $bar.width() + Math.floor( Math.random() * ( 40 ) ) + 1 );
+	    }
+	}, 300);
+
 } );
 
 

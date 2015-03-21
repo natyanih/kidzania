@@ -1,0 +1,45 @@
+#loading {
+	width           : 100%;
+	height          : 100%;
+	position        : fixed;
+	background      : url( '../images/loading/loading-bg.png' );
+}
+
+.my-dream-car{
+    position : absolute;
+    top      : 50px;
+    left     : 387px;
+}
+.my-dream-car img{
+    width : 668px;
+}
+
+.honda-logo-loading {
+    position : absolute;
+    top      : 50px;
+    left     : 59px;
+}
+.honda-logo-loading img {
+    width : 150px;
+}
+
+.kidzania-logo-loading {
+    position : absolute;
+    top      : 50px;
+    left     : 1176px;
+}
+.kidzania-logo-loading img {
+    width : 200px;
+}
+
+.loading-progress {
+	position : absolute;
+	top      : 690px;
+	left     : 519px;
+	width    : 400px;
+}
+
+.loading-center {
+	text-align : center;
+	color      : #FFF;
+}
