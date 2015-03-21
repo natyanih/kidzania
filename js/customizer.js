@@ -3,10 +3,10 @@
 $( document ).ready( function ( $ ) {
 	var selectCar;
 	var currentCar;
-	$( '#carousel' ).carousel( { interval : 1500 } );
+
 	function carousel () {
-		$( '#carousel' ).carousel( { interval : 1500 } );
-		$( '#carousel' ).bind( 'slid.bs.carousel', function ( e ) {
+		$( '#carousel-main' ).carousel( { interval : 3000 } );
+		$( '#carousel-main' ).bind( 'slid.bs.carousel', function ( e ) {
 		   var carouselData = $( this ).data( 'bs.carousel' );
 
 			selectCar = carouselData.$element.find( '.item.active' ).attr( 'id' );
@@ -20,7 +20,7 @@ $( document ).ready( function ( $ ) {
 		} );
 	}
 
-carousel();
+	carousel();
 
 } );
 
