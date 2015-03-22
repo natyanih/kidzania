@@ -1,0 +1,577 @@
+.race-prestart-overlay{
+    position   : fixed;
+    width      : 100%;
+    height     : 100%;
+    background : rgba(0,0,0,.5);
+    z-index    : 9999;
+}
+.race-meter-container{
+    position : absolute;
+    right    : 50px;
+    top      : 30px;
+}
+.race-meter-container img{
+    width : 100px;
+}
+.race-meter-container .race-speedometer{
+    width       : 150px;
+    margin-left : 10px;
+    opacity     : .5;
+}
+.race-speedometer-container{
+    position : relative;
+}
+.race-speedometer-indicator{
+    width                    : 24px !important;
+    position                 : absolute;
+    top                      : 50%;
+    left                     : 56%;
+    transition               : 5s all;
+    -webkit-transition       : 5s all;
+    -moz-transition          : 5s all;
+    transform                : rotate(175deg);
+    -webkit-transform        : rotate(175deg);
+    -moz-transform           : rotate(175deg);
+    transform-origin         : 0% 10%;
+    -webkit-transform-origin : 0% 10%;
+    -moz-transform-origin    : 0% 10%;
+}
+.race-speedometer-indicator.race-start-engine{
+    -webkit-animation : rotatingindicator 2s linear infinite;
+    -moz-animation    : rotatingindicator 2s linear infinite;
+    animation         : rotatingindicator 2s linear infinite;
+}
+.race-speedometer-indicator.race-speedup-engine{
+    -webkit-animation : rotatingindicatorspeedup 5s linear infinite !important;
+    -moz-animation    : rotatingindicatorspeedup 5s linear infinite !important;
+    animation         : rotatingindicatorspeedup 5s linear infinite !important;
+}
+.race-speedometer-indicator.race-maintain-engine{
+    -webkit-animation : rotatingindicatorspeedupmaintain 2s linear infinite !important;
+    -moz-animation    : rotatingindicatorspeedupmaintain 2s linear infinite !important;
+    animation         : rotatingindicatorspeedupmaintain 2s linear infinite !important;
+}
+.race-start-btn{
+    padding          : 20px 50px;
+    font-size        : 24px;
+    border-radius    : 15px;
+    border           : 0px;
+    background-image : -o-linear-gradient(bottom, #baf059 50%, #96d22c 50%);
+    background-image : -moz-linear-gradient(bottom, #baf059 50%, #96d22c 50%);
+    background-image : -webkit-linear-gradient(bottom, #baf059 50%, #96d22c 50%);
+    background-image : -ms-linear-gradient(bottom, #baf059 50%, #96d22c 50%);
+    background-image : linear-gradient(to bottom, #baf059 50%, #96d22c 50%);
+    color            : white;
+    font-weight      : bold;
+    text-shadow      : 2px 2px rgba(136,136,136,.5);
+}
+.race-start-btn:focus{
+    outline : none;
+}
+.race-prestart-overlay button, .race-game-precounter,
+.race-game-precounter-go, .race-winner-container, .race-winner-fallingpapers-container{
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    transform         : translate(-50%,-50%);
+    -webkit-transform : translate(-50%,-50%);
+    -moz-transform    : translate(-50%,-50%);
+    z-index           : 999999;
+}
+.race-winner-fallingpapers-container{
+    display : none;
+    width   : 80%;
+}
+.race-winner-fallingpapers-container img{
+    width : 300px;
+}
+.race-winner-container{
+    display     : none;
+    font-size   : 76px;
+    font-weight : bold;
+}
+.race-game-precounter, .race-game-precounter-go{
+    display : none;
+}
+.race-game-precounter span, .race-game-precounter-go span{
+    font-size : 76px;
+}
+.race-game-precounter span.race-start-game, .race-game-precounter-go span.race-start-game{
+    animation         : startcounter 2s;
+    -webkit-animation : startcounter 2s;
+    -moz-animation    : startcounter 2s;
+    -o-animation      : startcounter 2s;
+}
+
+.race-background.race-city-background {
+    width           : 100%;
+    height          : 500px;
+    background      : url( ../images/race/city-background.png ) 0 100% repeat-x;
+    background-size : 100%;
+    position        : relative;
+    overflow        : hidden;
+}
+.race-background.race-forest-background {
+    width           : 100%;
+    height          : 500px;
+    background      : url( ../images/race/forest-background.png ) 0 100% repeat-x;
+    background-size : 100%;
+    position        : relative;
+    overflow        : hidden;
+}
+.race-background.race-beach-background {
+    width           : 100%;
+    height          : 500px;
+    background      : url( ../images/race/beach-background.png ) 0 100% repeat-x;
+    background-size : 100%;
+    position        : relative;
+    overflow        : hidden;
+}
+/*.beach-mountain-layer{
+    width: 100%;
+    background: url(../images/race/beach-mountain-layer.png) 0 100% repeat-x;
+    background-size:100%;
+    position:absolute;
+    height: 75px;
+    bottom:49%;
+    overflow: hidden;
+}
+.beach-mountain-layer.start-game{
+    animation: movebackground 100s linear infinite;
+    -webkit-animation: movebackground 100s linear infinite;
+    -moz-animation: movebackground 100s linear infinite;
+    -o-animation: movebackground 100s linear infinite;
+}*/
+.race-beach-sun{
+    position           : absolute;
+    top                : 25px;
+    left               : 60%;
+    transition         : 12s all;
+    -webkit-transition : 12s all;
+    -moz-transition    : 12s all;
+}
+.race-beach-sun.race-start-game{
+    transform         : translate3d(-200px, 0px, 0px);
+    -webkit-transform : translate3d(-200px, 0px, 0px);
+    -moz-transform    : translate3d(-200px, 0px, 0px);
+}
+
+.race-beach-tower{
+    position           : absolute;
+    bottom             : 190px;
+    left               : 30px;
+    transition         : 1s all;
+    -webkit-transition : 1s all;
+    -moz-transition    : 1s all;
+}
+.race-beach-tower.race-start-game{
+    transform         : translate3d(-500px, 0px, 0px);
+    -webkit-transform : translate3d(-500px, 0px, 0px);
+    -moz-transform    : translate3d(-500px, 0px, 0px);
+}
+.race-background.race-start-game{
+    animation         : movebackground 25s linear infinite;
+    -webkit-animation : movebackground 25s linear infinite;
+    -moz-animation    : movebackground 25s linear infinite;
+    -o-animation      : movebackground 25s linear infinite;
+}
+.race-honda-logo{
+    position : absolute;
+    top      : 30px;
+    left     : 50px;
+}
+.race-honda-logo img{
+    width : 150px;
+}
+.race-background.race-accelerate-car{
+    animation         : movebackground 15s linear infinite;
+    -webkit-animation : movebackground 15s linear infinite;
+    -moz-animation    : movebackground 15s linear infinite;
+    -o-animation      : movebackground 15s linear infinite;
+}
+.race-car1{
+    width   : 250px;
+    z-index : 9;
+}
+.race-car2-container{
+    position           : absolute;
+    bottom             : 90px;
+    left               : 100px;
+    transition         : 5s all;
+    -webkit-transition : 5s all;
+    -moz-transition    : 5s all;
+}
+.race-car2-container .race-car2{
+    width             : 200px;
+    transform         : translate3d(50px, 0px, 0px);
+    -webkit-transform : translate3d(50px, 0px, 0px);
+    -moz-transform    : translate3d(50px, 0px, 0px);
+}
+.race-car1-container{
+    position           : absolute;
+    bottom             : 30px;
+    left               : 100px;
+    transition         : 5s all;
+    -webkit-transition : 5s all;
+    -moz-transition    : 5s all;
+    z-index            : 999;
+}
+.race-car2-container.race-accelerate-car{
+    transform         : translate3d(-50px, 0px, 0px);
+    -webkit-transform : translate3d(-50px, 0px, 0px);
+    -moz-transform    : translate3d(-50px, 0px, 0px);
+}
+.race-car1-container.race-accelerate-car{
+    transform         : translate3d(50px, 0px, 0px);
+    -webkit-transform : translate3d(50px, 0px, 0px);
+    -moz-transform    : translate3d(50px, 0px, 0px);
+}
+.race-car1-container.race-finish-game{
+    transform         : translate3d(5000px, 0px, 0px) !important;
+    -webkit-transform : translate3d(5000px, 0px, 0px) !important;
+    -moz-transform    : translate3d(5000px, 0px, 0px) !important;
+}
+.race-car2-container.race-finish-game{
+    transform         : translate3d(2000px, 0px, 0px) !important;
+    -webkit-transform : translate3d(2000px, 0px, 0px) !important;
+    -moz-transform    : translate3d(2000px, 0px, 0px) !important;
+}
+.race-car1-inner, .race-car2-inner{
+    position : relative;
+}
+.race-mini-map-container{
+    position    : absolute;
+    width       : 600px;
+    left        : 50%;
+    margin-left : -300px;
+    top         : 50px;
+    z-index     : 99;
+}
+.race-mini-map-container .race-mini-road{
+    width      : 100%;
+    height     : 2px;
+    background : #cccccc;
+}
+.race-mini-map-container .race-car1-mini{
+    width             : 40px;
+    transform         : translate3d(0px, 0px, 0px);
+    -webkit-transform : translate3d(0px, 0px, 0px);
+    -moz-transform    : translate3d(0px, 0px, 0px);
+    opacity           : .5;
+
+}
+.race-mini-map-container .race-car1-mini.race-start-game{
+    animation         : moveminicar 8.5s linear;
+    -webkit-animation : moveminicar 8.5s linear;
+    -moz-animation    : moveminicar 8.5s linear;
+    -o-animation      : moveminicar 8.5s linear;
+}
+.race-buttons-container{
+    position   : absolute;
+    bottom     : 0px;
+    bottom     : 0px;
+    width      : 100%;
+    text-align : right;
+    padding    : 0px 40px;
+}
+.race-accelerate-overlay{
+    width    : 165px;
+    position : absolute;
+    right    : 70px;
+    bottom   : 0px;
+    height   : 93px;
+    z-index  : 999;
+}
+.race-accelerate-btn-container img{
+    width              : 80px;
+    transition         : .2s all;
+    -webkit-transition : .2s all;
+    -moz-transition    : .2s all;
+    position           : absolute;
+    right              : 70px;
+    bottom             : 0px;
+}
+.race-beach-other-items-container{
+    display : none;
+}
+.race-beach-background .race-beach-other-items-container{
+    display : block;
+}
+.race-accelerate-btn-container img.race-flip{
+    transform         : rotateX(35deg);
+    -webkit-transform : rotateX(35deg);
+    -moz-transform    : rotateX(35deg);
+    bottom            : -9px;
+}
+.race-brake-btn img:hover{
+    transform         : rotateX(35deg);
+    -webkit-transform : rotateX(35deg);
+    -moz-transform    : rotateX(35deg);
+    bottom            : -9px !important;
+}
+.race-buttons-container .race-brake-btn img{
+    width              : 65px;
+    transition         : .1s all;
+    -webkit-transition : .1s all;
+    -moz-transition    : .1s all;
+    position           : absolute;
+    right              : 170px;
+    bottom             : 0px;
+}
+.race-buttons-container .race-abrake-btn img:hover{
+    transform         : rotateX(35deg);
+    -webkit-transform : rotateX(35deg);
+    -moz-transform    : rotateX(35deg);
+    bottom            : -9px;
+}
+.race-finish-line-container{
+    position : absolute;
+    bottom   : 17px;
+    right    : -101px;
+}
+.race-finish-line-container.race-finish-game{
+    transition         : 3s all;
+    -webkit-transition : 3s all;
+    -moz-transition    : 3s all;
+    transform          : translate3d(-5000px, 0px, 0px) !important;
+    -webkit-transform  : translate3d(-5000px, 0px, 0px) !important;
+    -moz-transform     : translate3d(-5000px, 0px, 0px) !important;
+}
+.race-finishline-flag{
+    float        : right;
+    margin-top   : -28px;
+    width        : 20px;
+    margin-right : -18px;
+}
+.race-finish-line-container img{
+    width : 101px;
+}
+
+.race-tire, .race-tireback {
+    width              : 36px;
+    height             : 36px;
+    position           : absolute;
+    bottom             : 35px;
+    z-index            : 99;
+    -webkit-animation  : rotating .1s linear infinite;
+    -moz-animation     : rotating .1s linear infinite;
+    animation          : rotating .1s linear infinite;
+    transition         : 5s all;
+    -webkit-transition : 5s all;
+    -moz-transition    : 5s all;
+    display            : none;
+
+}
+.race-tire{
+    bottom : 5px;
+    left   : 188px;
+}
+.race-tireback{
+    left   : 35px;
+    bottom : 5px;
+}
+.race-enemy-tire, .race-enemy-tireback{
+    width              : 28px;
+    height             : 28px;
+    position           : absolute;
+    bottom             : 3px;
+    z-index            : 99;
+    -webkit-animation  : rotating .1s linear infinite;
+    -moz-animation     : rotating .1s linear infinite;
+    animation          : rotating .1s linear infinite;
+    left               : 201px;
+    transition         : 5s all;
+    -webkit-transition : 5s all;
+    -moz-transition    : 5s all;
+    display            : none;
+}
+.race-enemy-tireback{
+    left : 79px;
+}
+.race-buttons-container a:hover{
+    cursor : pointer;
+}
+.race-mini-map-container .race-car1-mini.race-finish-game{
+    transform         : translate3d(560px, 0px, 0px);
+    -webkit-transform : translate3d(560px, 0px, 0px);
+    -moz-transform    : translate3d(560px, 0px, 0px);
+}
+.race-carsmoke{
+    position : absolute;
+    bottom   : 20px;
+    left     : -35px;
+    display  : none;
+}
+.race-carsmoke ul li{
+    width         : 5px;
+    height        : 5px;
+    position      : absolute;
+    background    : rgba(255,255,255,.5);
+    list-style    : none;
+    border-radius : 50%;
+}
+.race-carsmoke ul li:nth-child(1) {
+    -webkit-animation : smoke 1s linear infinite;
+    -moz-animation    : smoke 1s linear infinite;
+    animation         : smoke 1s linear infinite;
+}
+.race-carsmoke ul li:nth-child(2) {
+    -webkit-animation : smokelower .9s linear infinite;
+    -moz-animation    : smokelower .9s linear infinite;
+    animation         : smokelower .9s linear infinite;
+}
+.race-carsmoke ul li:nth-child(3) {
+    -webkit-animation : smokelowersecond .8s linear infinite;
+    -moz-animation    : smokelowersecond .8s linear infinite;
+    animation         : smokelowersecond .8s linear infinite;
+}
+.race-carsmoke ul li:nth-child(4) {
+    -webkit-animation : smokelowersecond 1s linear infinite;
+    -moz-animation    : smokelowersecond 1s linear infinite;
+    animation         : smokelowersecond 1s linear infinite;
+}
+.race-carsmoke ul li:nth-child(5) {
+    -webkit-animation : smokelower 2s linear infinite;
+    -moz-animation    : smokelower 2s linear infinite;
+    animation         : smokelower 2s linear infinite;
+}
+.race-carsmoke ul li:nth-child(5) {
+    -webkit-animation : smoke 3s linear infinite;
+    -moz-animation    : smoke 3s linear infinite;
+    animation         : smoke 3s linear infinite;
+}
+@-webkit-keyframes smoke {
+    0% {
+        transform         : translate3d(0px, 0px, 0px);
+        -webkit-transform : translate3d(0px, 0px, 0px);
+        -moz-transform    : translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform         : translate3d(-70px, -10px, 0px);
+        -webkit-transform : translate3d(-70px, -10px, 0px);
+        -moz-transform    : translate3d(-70px, -10px, 0px);
+        width             : 20px;
+        height            : 20px;
+    }
+}
+@-webkit-keyframes smokelower {
+    0% {
+        transform         : translate3d(0px, 0px, 0px);
+        -webkit-transform : translate3d(0px, 0px, 0px);
+        -moz-transform    : translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform         : translate3d(-70px, -10px, 0px);
+        -webkit-transform : translate3d(-70px, -10px, 0px);
+        -moz-transform    : translate3d(-70px, -10px, 0px);
+        width             : 20px;
+        height            : 20px;
+    }
+}
+@-webkit-keyframes smokelowersecond {
+    0% {
+        transform         : translate3d(0px, 0px, 0px);
+        -webkit-transform : translate3d(0px, 0px, 0px);
+        -moz-transform    : translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform         : translate3d(-50px, 0px, 0px);
+        -webkit-transform : translate3d(-50px, 0px, 0px);
+        -moz-transform    : translate3d(-50px, 0px, 0px);
+        width             : 20px;
+        height            : 20px;
+    }
+}
+@-webkit-keyframes rotatingindicator {
+    0% {
+        transform         : rotate(175deg);
+        -webkit-transform : rotate(175deg);
+        -moz-transform    : rotate(175deg);
+    }
+    50% {
+        top               : 51%;
+        transform         : rotate(185deg);
+        -webkit-transform : rotate(185deg);
+        -moz-transform    : rotate(185deg);
+    }
+    100% {
+        transform         : rotate(175deg);
+        -webkit-transform : rotate(175deg);
+        -moz-transform    : rotate(175deg);
+    }
+}
+@-webkit-keyframes rotatingindicatorspeedupmaintain {
+    0% {
+        left              : 51%;
+        transform         : rotate(285deg);
+        -webkit-transform : rotate(285deg);
+        -moz-transform    : rotate(285deg);
+    }
+    100%{
+        left              : 51%;
+        transform         : rotate(280deg);
+        -webkit-transform : rotate(280deg);
+        -moz-transform    : rotate(280deg);
+    }
+}
+@-webkit-keyframes rotatingindicatorspeedup {
+    0% {
+        top               : 52%;
+        transform         : rotate(185deg);
+        -webkit-transform : rotate(185deg);
+        -moz-transform    : rotate(185deg);
+    }
+    100%{
+        left              : 51%;
+        transform         : rotate(285deg);
+        -webkit-transform : rotate(285deg);
+        -moz-transform    : rotate(285deg);
+    }
+}
+@-webkit-keyframes rotating {
+    from{
+        transform         : rotate(0deg);
+        -webkit-transform : rotate(0deg);
+        -moz-transform    : rotate(0deg);
+    }
+    to{
+
+        transform         : rotate(720deg);
+        -webkit-transform : rotate(720deg);
+        -moz-transform    : rotate(720deg);
+    }
+}
+@-webkit-keyframes startcounter {
+    from{
+        font-size:76px;
+        opacity:1;
+    }
+    to{
+        font-size:9px;
+        opacity:0;
+    }
+}
+@-webkit-keyframes moveminicar {
+    0% {
+        transform         : translate3d(0px, 0px, 0px);
+        -webkit-transform : translate3d(0px, 0px, 0px);
+        -moz-transform    : translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform         : translate3d(560px, 0px, 0px);
+        -webkit-transform : translate3d(560px, 0px, 0px);
+        -moz-transform    : translate3d(560px, 0px, 0px);
+    }
+}
+@-webkit-keyframes movebackground {
+    0% {background-position: 34700px 100%}
+    100% {background-position: 0 100%}
+}
+@-moz-keyframes movebackground {
+    0% {background-position: 34700px 100%}
+    100% {background-position: 0 100%}
+}
+@-o-keyframes movebackground {
+    0% {background-position: 34700px 100%}
+    100% {background-position: 0 100%}
+}

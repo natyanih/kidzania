@@ -63,6 +63,7 @@ function hideDiv ( id ) {
 			$( '#carousel-main' ).hide();
 			$( '#carousel' ).hide();
 			$( '.race-main' ).show();
+			$( '.race-main' ).removeClass( 'hidden' );
 			break;
 
 		// if no id

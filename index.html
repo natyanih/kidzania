@@ -14,6 +14,7 @@
     <link href="css/loading.css" rel="stylesheet">
     <link href="css/customizer.css" rel="stylesheet">
     <link href="css/preview.css" rel="stylesheet">
+    <link href="css/race.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -124,13 +125,86 @@
         </div>
     </div>
 
-    <div class="race-main">RACE HERE</div>
+    <div class="race-main hidden">
+        <div class="race-prestart-overlay">
+            <button class="race-start-btn">START</button>
+        </div>
+        <div class="race-game-precounter">
+            <span>READY</span>
+        </div>
+        <div class="race-game-precounter-go">
+            <span>GO!</span>
+        </div>
+        <div class="race-background race-city-background race-height-follower">
+            <div class="race-honda-logo">
+                <img src="images/race/honda-logo.png" alt="">
+            </div>
+            <div class="race-mini-map-container">
+                <img class="race-car1-mini" src="images/race/car.png" alt="">
+                <div class="race-mini-road"></div>
+                <img class="race-finishline-flag" src="images/race/finishline-flag.png" alt="">
+            </div>
+            <div class="race-beach-other-items-container">
+                <img class="race-beach-sun" src="images/race/sun-icon.png" alt="">
+                <img class="race-beach-tower" src="images/race/tower-icon.png" alt="">
+            </div>
+            <div class="race-meter-container">
+                <img class="race-fuel" src="images/race/fuelmeter.png" alt="">
+                <div class="race-speedometer-container pull-right">
+                    <img class="race-speedometer" src="images/race/speedometer.png" alt="">
+                    <img class="race-speedometer-indicator" src="images/race/meter-indicator.png" alt="">
+                </div>
+            </div>
+            <div class="race-car1-container">
+                <div class="race-car1-inner">
+                    <img class="race-car1" src="images/race/car.png" alt="">
+                    <img class="race-tireback" src="images/race/tire.png" alt="">
+                    <img class="race-tire" src="images/race/tire.png" alt="">
+                    <div class="race-carsmoke">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="race-car2-container">
+                <div class="race-car2-inner">
+                    <img class="race-car2" src="images/race/car-enemy.png" alt="">
+                    <img class="race-enemy-tireback" src="images/race/tire.png" alt="">
+                    <img class="race-enemy-tire" src="images/race/tire.png" alt="">
+                </div>
+            </div>
+
+            <div class="race-finish-line-container">
+                <img src="images/race/finish-line.png" alt="">
+            </div>
+            <div class="race-winner-container">
+                <span>YOU WIN!</span>
+            </div>
+            <div class="race-buttons-container">
+                <a class="race-brake-btn">
+                    <img src="images/race/brake-icon.png" alt="">
+                </a>
+                <a class="race-accelerate-btn race-accelerate-btn-container">
+                    <img src="images/race/accelerate-icon.png" alt="">
+
+                </a>
+                <span class="race-accelerate-overlay"></span>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="lib/jquery-2.1.3.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/customizer.js"></script>
+    <script src="js/race.js"></script>
 </body>
 
 </html>
