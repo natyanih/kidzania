@@ -11,13 +11,6 @@ $( document ).ready( function ( $ ) {
 
 			selectCar = carouselData.$element.find( '.item.active' ).attr( 'id' );
 		} );
-
-		$( '.car-select' ).on( 'click', function () {
-			$( '#customizer-div' ).removeClass( 'hidden' );
-			$( '#main-div' ) .addClass( 'hidden' );
-			$( '#carName' ).text( selectCar );
-			currentCar.name = selectCar;
-		} );
 	}
 
 	carousel();
@@ -28,13 +21,71 @@ $( document ).ready( function ( $ ) {
 	    if ( $bar.width() >= 400 ) {
 	        clearInterval( progress );
 	        $( '.progress-bar' ).removeClass( 'active' );
-	        $( '#loading' ).addClass( 'hidden' );
-	        $( '#carousel' ).removeClass( 'hidden' );
+	        $( '#loading' ).fadeOut( 'fast' );
+	        $( '#carousel' ).fadeIn( 'fast' );
+	        $( '.customizer-main' ).hide();
+	        $( '.preview-main' ).hide();
+	        $( '.btn-view-car' ).hide();
+	        $( '.btn-race-car' ).hide();
+	        $( '.race-main' ).hide();
+			carousel();
 	    } else {
 	        $bar.width( $bar.width() + Math.floor( Math.random() * ( 40 ) ) + 1 );
 	    }
 	}, 300);
 
+
+function hideDiv ( id ) {
+
+	switch ( id ) {
+		// from carousel to customizer
+		case 'carousel' :
+			$( '#loading' ).hide();
+			$( '#carousel-main' ).hide();
+			$( '.customizer-main' ).show();
+			$( '.btn-view-car' ).show();
+			$( '.btn-select-car' ).hide();
+			break;
+
+		// customizer to car preview
+		case 'customizer' :
+			$( '#loading' ).hide();
+			$( '#carousel-main' ).hide();
+			$( '.customizer-main' ).hide();
+			$( '.preview-main' ).show();
+			$( '.btn-race-car' ).show();
+			$( '.btn-view-car' ).hide();
+			break;
+
+		// car preview to race
+		case 'preview' :
+			$( '#loading' ).hide();
+			$( '#carousel-main' ).hide();
+			$( '#carousel' ).hide();
+			$( '.race-main' ).show();
+			break;
+
+		// if no id
+		default :
+			$( '#carousel' ).hide();
+			break;
+		}
+	}
+
+    hideDiv();
+
+    // EVENT LISTENERS
+    $( '.btn-select-car' ).on( 'click', function () {
+    	hideDiv( 'carousel' );
+    } );
+
+    $( '.btn-view-car' ).on( 'click', function () {
+		hideDiv( 'customizer' );
+    } );
+
+    $( '.btn-race-car' ).on( 'click', function () {
+    	hideDiv( 'preview' );
+    } );
 } );
 
 
@@ -75,7 +126,7 @@ $( document ).ready( function ( $ ) {
 // 		if ( currentIndex === 5 ) {
 // 			currentCar.side = sides[ 0 ];
 // 		} else {
-// 			currentCar.side = sides[ currentIndex +  1 ];
+// 			currentCar.side = sides[ currentIndex    1 ];
 // 		}
 
 // 		changeImage();

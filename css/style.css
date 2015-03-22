@@ -4,5 +4,57 @@ html, body {
     min-width  : 1440px;
 }
 
+#carousel, .carousel, #customizer, .customizer {
+    height : 100%;
+}
 
+/* CAROUSEL HEADER */
+.carousel > .header, .customizer > .header {
+    height          : 114px;
+    background      : url( '../images/header-bg.png' );
+    background-size : auto 100%;
+    text-align      : center;
+}
 
+.header > .honda-logo, .header > .kidzania-logo {
+    height  : 90%;
+    padding : 22px 60px;
+}
+
+.honda-logo > img {
+    height : 60px;
+}
+
+.header > .header-title {
+    font-size   : 40px;
+    color       : #ffffff;
+    padding-top : 16px;
+}
+
+/* FOOTER */
+.carousel > .footer, .customizer > .footer {
+    height           : 87px;
+    background       : url( '../images/footer-bg.png' );
+    background-size  : auto 100%;
+}
+
+.footer > .btn-green {
+	width           : 320px;
+	height          : 100%;
+	background      : url( '../images/button-bg.png' );
+	background-size : auto 100%;
+	z-index         : 10;
+	border-left     : 2px solid #006400;
+	text-align      : center;
+	cursor          : pointer;
+}
+
+.btn-green > p {
+	padding-top : 20px;
+	font-size   : 32px;
+	color       : #404040;
+}
+
+.btn-green > p:hover {
+	color : #800000;
+}
