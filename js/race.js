@@ -48,7 +48,8 @@ $( document ).ready( function ( $ ) {
         }, 12500 );
         setTimeout( function () {
             $( '.race-main' ).addClass( 'hidden' );
-            $( '#congrats-screen' ).show();
+            $( '#congrats-screen' ).removeClass( 'hidden' );
+
         }, 15500);
     } );
 
