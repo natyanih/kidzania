@@ -1,0 +1,71 @@
+#congrats-screen {
+	width           : 100%;
+	height          : 100%;
+	position        : fixed;
+	background      : url( '../images/backgrounds/garage-bg.jpg' );
+}
+
+.my-dream-car-congrats{
+    position : absolute;
+    top      : 50px;
+    left     : 480px;
+}
+.my-dream-car-congrats img{
+    width : 500px;
+}
+
+.video {
+	top      : 200px;
+	position : absolute;
+	z-index  : 1000;
+	left     : 150px;
+}
+
+.form-info-congrats {
+	width : 300px;
+}
+
+#take-picture {
+	width : 300px;
+}
+
+.print-congrats {
+	width : 300px;
+}
+
+.canvas-container {
+	top  : 238px;
+	left : 150px;
+
+    z-index  : 1000000000000;
+    position : absolute;
+}
+
+.car-congrats {
+	margin-left : 629px;
+	margin-top  : 300px;
+}
+
+.car-congrats img {
+	width  : 492px;
+	height : 300px;
+}
+
+.car-details-congrats {
+    position      : absolute;
+    left          : 950px;
+    top           : 200px;
+    text-align    : right;
+    color         : white;
+    padding-right : 33px;
+
+}
+
+.honda-logo-congrats {
+    position : absolute;
+    left     : 1070px;
+    top      : 16px;
+}
+.form-info-dis-contrats {
+	margin-bottom: 10px;
+}

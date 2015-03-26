@@ -5,12 +5,12 @@
 	background      : url( '../images/loading/loading-bg.png' );
 }
 
-.my-dream-car{
+.my-dream-car-loading{
     position : absolute;
     top      : 50px;
     left     : 387px;
 }
-.my-dream-car img{
+.my-dream-car-loading img{
     width : 668px;
 }
 

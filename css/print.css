@@ -1,0 +1,26 @@
+@page {
+	size: landscape;
+}
+
+.printing-congrats {
+	display: list-item;
+    list-style-image: url('../images/backgrounds/garage-bg.jpg');
+    list-style-position: inside;
+}
+
+.canvas-print {
+    /*margin-left : 155px;
+    z-index     : 1000000000000;
+    position    : absolute;
+    display     : list-item;
+    top         : 70px;*/
+}
+
+.form-info-congrats {
+	display: none;
+}
+
+.user-info-print {
+	color: red;
+	display: list-item;
+}

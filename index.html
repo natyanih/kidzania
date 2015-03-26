@@ -15,6 +15,8 @@
     <link href="css/customizer.css" rel="stylesheet">
     <link href="css/preview.css" rel="stylesheet">
     <link href="css/race.css" rel="stylesheet">
+    <link href="css/congratulatory.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,11 +28,11 @@
 
 <body>
 
-    <div id="loading">
+    <div id="loading" class="hidden">
         <div class="honda-logo-loading">
             <img src="images/loading/Honda-logo_loading.png" alt="">
         </div>
-        <div class="my-dream-car">
+        <div class="my-dream-car-loading">
             <img src="images/loading/my_dream_car_logo.png">
         </div>
         <div class="kidzania-logo-loading">
@@ -45,7 +47,7 @@
         </div>
     </div>
 
-    <div id="carousel" class="carousel">
+    <div id="carousel" class="carousel hidden">
         <div class="header">
             <div class="honda-logo pull-left"><img src="images/honda-header-logo.png" alt="Honda: My Dream Car!">
             </div>
@@ -196,6 +198,34 @@
                 </a>
                 <span class="race-accelerate-overlay"></span>
             </div>
+        </div>
+    </div>
+
+    <div id="congrats-screen" class="printing-congrats">
+        <div class="my-dream-car-congrats">
+            <img src="images/loading/my_dream_car_logo.png">
+        </div>
+        <canvas id="canvas" width="300" height="300" class="canvas-container canvas-print"></canvas>
+        <div class="video">
+             <video id="video" width="300" height="300" autoplay></video>
+             <div class="form-info-congrats">
+                <input type="text" class="form-control form-info-dis-contrats input-print" placeholder="Designer's Name">
+                <input type="text" class="form-control form-info-dis-contrats input-print" placeholder="Cars Name">
+                <button id="take-picture" class="btn form-info-dis-contrats">Take Picture</button>
+                <button class="btn hidden print-congrats form-info-dis-contrats">Print</button>
+            </div>
+
+        </div>
+        <div class="car-congrats">
+            <img src="images/carousel/city.png" alt="Honda City" class="img-responsive">
+                    </div>
+
+        <div class="honda-logo-congrats">
+            <img src="images/loading/Honda-logo_loading.png" alt="">
+        </div>
+        <div class="car-details-congrats">
+             <h2>HONDA CITY</h2>
+            <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>
         </div>
     </div>
 

@@ -46,6 +46,10 @@ $( document ).ready( function ( $ ) {
             $( '.race-car1-container, .race-background, .race-car2-container' ).removeClass( 'race-accelerate-car' );
             $( '.race-accelerate-overlay' ).show();
         }, 12500 );
+        setTimeout( function () {
+            $( '.race-main' ).addClass( 'hidden' );
+            $( '#congrats-screen' ).show();
+        }, 15500);
     } );
 
     $( 'body') .keydown( function ( e ) {
