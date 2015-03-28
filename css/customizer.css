@@ -6,3 +6,70 @@
 	background       : url( '../images/backgrounds/garage-bg-lg.jpg' );
 	background-size  : 100% auto;
 }
+
+.btn-customizer {
+	padding-left  : 22px;
+	padding-right : 22px;
+	cursor        : pointer;
+}
+
+.btn-customizer > img {
+	height     : 60px;
+	margin-top : 15px;
+}
+
+.btn-customizer > p {
+	margin-top : 30px;
+	color      : white;
+	font-size  : 18px;
+}
+
+.customizer-start-over {
+	text-align : center;
+	width      : 230px;
+}
+
+.btn-with-divider {
+	background          : url( '../images/assets/divider.png' );
+	background-position : left 8px;
+	background-repeat   : no-repeat;
+	background-size     : auto 100%;
+}
+
+.customizer-car-color > p.active, .customizer-car-color > p:hover {
+	color : orange !important;
+}
+
+.customizer-car-tint > p.active, .customizer-car-tint > p:hover {
+	color : #87CEEB !important;
+}
+
+.customizer-car-decal > p.active, .customizer-car-decal > p:hover {
+	color : violet !important;
+}
+
+.customizer-car-rims > p.active, .customizer-car-rims > p:hover {
+	color : green !important;
+}
+
+.customizer-car-body > p.active, .customizer-car-body > p:hover {
+	color : yellow !important;
+}
+
+.customizer-container {
+	background-color : white;
+	width            : 360px;
+	height           : 400px;
+	position         : relative;
+	top              : 60px;
+	left             : 150px;
+}
+
+.customizer-car-container {
+	background-color : white;
+	width            : 600px;
+	height           : 400px;
+	position         : relative;
+	top              : 60px;
+	right            : 150px;
+}

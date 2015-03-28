@@ -2,7 +2,9 @@
 
 $( document ).ready( function ( $ ) {
 	var selectCar;
-	var currentCar;
+	var currentCar = {
+		'name' : ''
+	};
 
 	function carousel () {
 		$( '#carousel-main' ).carousel( { interval : 3000 } );
@@ -16,22 +18,23 @@ $( document ).ready( function ( $ ) {
 	carousel();
 
 	var progress = setInterval(function() {
-	    var $bar = $( '.progress-bar' );
+		var $bar = $( '.progress-bar' );
 
-	    if ( $bar.width() >= 400 ) {
-	        clearInterval( progress );
-	        $( '.progress-bar' ).removeClass( 'active' );
-	        $( '#loading' ).fadeOut( 'fast' );
-	        $( '#carousel' ).fadeIn( 'fast' );
-	        $( '.customizer-main' ).hide();
-	        $( '.preview-main' ).hide();
-	        $( '.btn-view-car' ).hide();
-	        $( '.btn-race-car' ).hide();
-	        $( '.race-main' ).hide();
+		if ( $bar.width() >= 400 ) {
+			clearInterval( progress );
+			$( '.progress-bar' ).removeClass( 'active' );
+			$( '#loading' ).fadeOut( 'fast' );
+			$( '#carousel' ).fadeIn( 'fast' );
+			$( '.customizer-main' ).hide();
+			$( '.preview-main' ).hide();
+			$( '.btn-customizer-group' ).hide();
+			$( '.btn-view-car' ).hide();
+			$( '.btn-race-car' ).hide();
+			$( '.race-main' ).hide();
 			carousel();
-	    } else {
-	        $bar.width( $bar.width() + Math.floor( Math.random() * ( 40 ) ) + 1 );
-	    }
+		} else {
+			$bar.width( $bar.width() + Math.floor( Math.random() * ( 40 ) ) + 1 );
+		}
 	}, 300);
 
 
@@ -44,7 +47,17 @@ function hideDiv ( id ) {
 			$( '#carousel-main' ).hide();
 			$( '.customizer-main' ).show();
 			$( '.btn-view-car' ).show();
+			$( '.btn-customizer-group' ).show();
 			$( '.btn-select-car' ).hide();
+
+			// hide other customizer divs
+			$( '.div-car-tint' ).hide();
+			$( '.div-car-decal' ).hide();
+			$( '.div-car-rims' ).hide();
+			$( '.div-car-body' ).hide();
+
+			// add color to car color button
+			$( '.customizer-car-color > p' ).addClass( 'active' );
 			break;
 
 		// customizer to car preview
@@ -55,6 +68,7 @@ function hideDiv ( id ) {
 			$( '.preview-main' ).show();
 			$( '.btn-race-car' ).show();
 			$( '.btn-view-car' ).hide();
+			$( '.btn-customizer-group' ).hide();
 			break;
 
 		// car preview to race
@@ -73,20 +87,52 @@ function hideDiv ( id ) {
 		}
 	}
 
-    hideDiv();
+	hideDiv();
 
-    // EVENT LISTENERS
-    $( '.btn-select-car' ).on( 'click', function () {
-    	hideDiv( 'carousel' );
-    } );
+	function showCustomizer ( customizer ) {
+		var divClass = '.div-car-' + customizer;
+		var btnClass = '.customizer-car-' + customizer;
+		$( '.customizer-container' ).hide();
+		$( divClass ).show();
+		$( '.btn-customizer > p.active' ).removeClass( 'active' );
+		$( btnClass).find( 'p' ).addClass( 'active' );
+	}
 
-    $( '.btn-view-car' ).on( 'click', function () {
+	// EVENT LISTENERS
+	$( '.btn-select-car' ).on( 'click', function () {
+		currentCar.name = selectCar;
+		hideDiv( 'carousel' );
+	} );
+
+	$( '.btn-view-car' ).on( 'click', function () {
 		hideDiv( 'customizer' );
-    } );
+	} );
 
-    $( '.btn-race-car' ).on( 'click', function () {
-    	hideDiv( 'preview' );
-    } );
+	$( '.btn-race-car' ).on( 'click', function () {
+		hideDiv( 'preview' );
+	} );
+
+	// EVENT LISTENERS FOR CUSTOMIZER BUTTONS
+	$( '.customizer-car-color' ).on( 'click', function () {
+		showCustomizer( 'color' );
+	} );
+
+	$( '.customizer-car-tint' ).on( 'click', function () {
+		showCustomizer( 'tint' );
+	} );
+
+	$( '.customizer-car-decal' ).on( 'click', function () {
+		showCustomizer( 'decal' );
+	} );
+
+	$( '.customizer-car-rims' ).on( 'click', function () {
+		showCustomizer( 'rims' );
+	} );
+
+	$( '.customizer-car-body' ).on( 'click', function () {
+		showCustomizer( 'body' );
+	} );
+
     window.addEventListener( 'DOMContentLoaded', function () {
 
         if( navigator.getUserMedia ) {
