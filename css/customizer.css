@@ -66,11 +66,8 @@
 }
 
 .customizer-car-container {
-	background-color : white;
-	width            : 600px;
-	height           : 400px;
 	position         : relative;
-	top              : 60px;
+	top              : 120px;
 	right            : 150px;
 }
 

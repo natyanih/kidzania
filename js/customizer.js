@@ -14,6 +14,10 @@ $( document ).ready( function ( $ ) {
 		'currentSide' : null
 	};
 
+	var defaultCars = {
+		'jazz' : '../images/assets/jazz/color/1.png'
+	};
+
 	function carousel () {
 		$( '#carousel-main' ).carousel( { interval : 3000 } );
 		$( '#carousel-main' ).bind( 'slid.bs.carousel', function ( e ) {
@@ -66,6 +70,8 @@ $( document ).ready( function ( $ ) {
 
 				// add color to car color button
 				$( '.customizer-car-color > p' ).addClass( 'active' );
+
+				// display default car - yellow
 				break;
 
 			// customizer to car preview
@@ -116,10 +122,24 @@ $( document ).ready( function ( $ ) {
 		console.log( 'type: ' + type + ' - id: ' + id );
 	}
 
+	function initCanvas() {
+		var canvas  = document.getElementById( 'customizer-car-container' );
+		var context = canvas.getContext( '2d' );
+		var img     = new Image();
+		img.src     = defaultCars[ currentCar.name ];
+		console.log( context.webkitBackingStorePixelRatio );
+		img.onload  = function () {
+			context.drawImage( img, 0, 120, 500, 500 * img.height / img.width );
+		};
+	}
 	// EVENT LISTENERS
 	$( '.btn-select-car' ).on( 'click', function () {
 		currentCar.name = selectCar;
 		hideDiv( 'carousel' );
+
+		// display default car
+		// jazz = yellow
+		initCanvas();
 	} );
 
 	$( '.btn-view-car' ).on( 'click', function () {
