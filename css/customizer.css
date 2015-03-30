@@ -66,9 +66,10 @@
 }
 
 .customizer-car-container {
-	position         : relative;
-	top              : 120px;
-	right            : 150px;
+	position        : relative;
+	top             : 120px;
+	right           : 150px;
+	image-rendering : -o-crisp-edges;
 }
 
 .customizer-title {

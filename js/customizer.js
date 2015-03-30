@@ -127,9 +127,9 @@ $( document ).ready( function ( $ ) {
 		var context = canvas.getContext( '2d' );
 		var img     = new Image();
 		img.src     = defaultCars[ currentCar.name ];
-		console.log( context.webkitBackingStorePixelRatio );
-		img.onload  = function () {
-			context.drawImage( img, 0, 120, 500, 500 * img.height / img.width );
+
+		img.onload = function () {
+			context.drawImage( img, 0, 120 );
 		};
 	}
 	// EVENT LISTENERS
