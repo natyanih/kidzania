@@ -56,8 +56,15 @@
 	color : yellow !important;
 }
 
+.customizer-holder {
+	width    : 550px;
+	height   : 500px;
+	position : relative;
+	top      : 0;
+	left     : 0;
+}
+
 .customizer-container {
-	background-color : white;
 	width            : 380px;
 	height           : 430px;
 	position         : relative;
@@ -79,28 +86,35 @@
 }
 
 .customizer-item-3 {
-	width         : 110px;
-	height        : 130px;
-	background    : black;
-	margin-right  : 15px;
-	margin-bottom : 30px;
-	cursor        : pointer;
+	width          : 110px;
+	height         : 130px;
+	margin-right   : 15px;
+	margin-bottom  : 30px;
+	vertical-align : bottom;
+	cursor         : pointer;
 }
 
-.customizer-item-2 {
-	width         : 165px;
-	height        : 260px;
-	background    : black;
+.customizer-item-auto {
+	height         : 130px;
+	margin-right   : 15px;
+	margin-bottom  : 30px;
+	vertical-align : bottom;
+	cursor         : pointer;
+}
+
+.customizer-item-1 {
+	width         : 350px;
+	height        : 100px;
+	margin-bottom : 30px;
 	margin-right  : 15px;
 	cursor        : pointer;
 }
 
 .customizer-item-3-1 {
 	width         : 110px;
-	height        : 90px;
-	background    : black;
+	height        : 110px;
 	margin-right  : 15px;
-	margin-bottom : 20px;
+	margin-bottom : 15px;
 	cursor        : pointer;
 }
 
@@ -113,6 +127,12 @@
 	cursor        : pointer;
 }
 
-.customizer-item-3 > p, .customizer-item-2 > p {
+.customizer-item-3 > p, .customizer-item-3-1 > p, .customizer-item-1 > p, .customizer-item-auto > p {
 	text-align : center;
+}
+
+.customizer-item-3 > img {
+	display      : block;
+	margin-left  : auto;
+	margin-right : auto;
 }
