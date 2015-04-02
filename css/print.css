@@ -8,19 +8,55 @@
     list-style-position: inside;
 }
 
-.canvas-print {
-    /*margin-left : 155px;
-    z-index     : 1000000000000;
-    position    : absolute;
-    display     : list-item;
-    top         : 70px;*/
+.my-dream-car-congrats {
+	display : block;
+	width   : 500px;
+	top     : 100px;
 }
 
-.form-info-congrats {
+.car-congrats {
+	display: block;
+	top: 100px;
+	width: 500px;
+}
+
+.form-info-congrats button {
 	display: none;
+
 }
 
-.user-info-print {
-	color: red;
-	display: list-item;
+.sep-congrats {
+	display : block;
+	border-top-color: black;
+	margin-top: 1px;
+	text-align : center;
+
+}
+
+.sep-congrats span {
+	color: #908888 !important;
+	margin-top: -20px;
+}
+.sep-congrats hr {
+	border-top-color: #908888;
+	margin-bottom: 0;
+}
+
+.input-print {
+	border     : none;
+	background : transparent;
+	text-align : center;
+	margin-bottom: -18px;
+}
+
+.car {
+	margin-top: 20px;
+}
+
+.car-details-congrats {
+	width: 500px;
+}
+
+.car-details-congrats p, h2 {
+	color: #FFF !important;
 }

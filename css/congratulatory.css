@@ -44,6 +44,7 @@
 .car-congrats {
 	margin-left : 629px;
 	margin-top  : 300px;
+	position: absolute;
 }
 
 .car-congrats img {
@@ -56,7 +57,7 @@
     left          : 950px;
     top           : 200px;
     text-align    : right;
-    color         : white;
+    color         : #FFF !important;
     padding-right : 33px;
 
 }
@@ -66,6 +67,10 @@
     left     : 1070px;
     top      : 16px;
 }
-.form-info-dis-contrats {
+.form-info-dis-congrats {
 	margin-bottom: 10px;
+}
+
+.sep-congrats {
+	display : none;
 }
