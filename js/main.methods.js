@@ -14,15 +14,41 @@ var methods = (function() {
                     $('.btn-customizer-group').show();
                     $('.btn-select-car').hide();
 
+                    console.log( currentCar )
+
+					$('.jazz-customizer-holder').hide();
+					$('.city-customizer-holder').hide();
+					$('.crv-customizer-holder').hide();
+
                     // load html
                     if (currentCar.name === 'jazz') {
                         $('.jazz-customizer-holder').show();
 
-						// hide other customizer divs
-						$('.jazz-div-car-tint').hide();
-						$('.jazz-div-car-decal').hide();
-						$('.jazz-div-car-rims').hide();
-						$('.jazz-div-car-body').hide();
+                        // hide other customizer divs
+                        $('.jazz-div-car-tint').hide();
+                        $('.jazz-div-car-decal').hide();
+                        $('.jazz-div-car-rims').hide();
+                        $('.jazz-div-car-body').hide();
+                    }
+
+                    if (currentCar.name === 'crv') {
+                        $('.crv-customizer-holder').show();
+
+                        // hide other customizer divs
+                        $('.crv-div-car-tint').hide();
+                        $('.crv-div-car-decal').hide();
+                        $('.crv-div-car-rims').hide();
+                        $('.crv-div-car-body').hide();
+                    }
+
+                     if (currentCar.name === 'city') {
+                        $('.city-customizer-holder').show();
+
+                        // hide other customizer divs
+                        $('.city-div-car-tint').hide();
+                        $('.city-div-car-decal').hide();
+                        $('.city-div-car-rims').hide();
+                        $('.city-div-car-body').hide();
                     }
 
                     // add color to car color button

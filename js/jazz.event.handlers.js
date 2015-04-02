@@ -1,6 +1,5 @@
 // COLORS EVENT HANDLERS
 $('.jazz-customizer-color-1').on('click', function() {
-    console.log( 'color' )
     methods.applyAsset({
         'type': 'color',
         'id': 1
@@ -103,42 +102,42 @@ $('.jazz-customizer-decal-6').on('click', function() {
 // RIMS EVENT HANDLERS
 $('.jazz-customizer-rim-1').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 1
     });
 });
 
 $('.jazz-customizer-rim-2').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 2
     });
 });
 
 $('.jazz-customizer-rim-3').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 3
     });
 });
 
 $('.jazz-customizer-rim-4').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 4
     });
 });
 
 $('.jazz-customizer-rim-5').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 5
     });
 });
 
 $('.jazz-customizer-rim-6').on('click', function() {
     methods.applyAsset({
-        'type': 'rim',
+        'type': 'rims',
         'id': 6
     });
 });

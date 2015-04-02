@@ -4,7 +4,7 @@ var currentCar = {
     'color'       : null,
     'tint'        : null,
     'decal'       : null,
-    'rim'         : null,
+    'rims'        : null,
     'grill'       : null,
     'skirt'       : null,
     'spoiler'     : null,

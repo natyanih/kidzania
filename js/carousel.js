@@ -9,7 +9,8 @@ function carousel () {
 
 // EVENT LISTENERS
 $( '.btn-select-car' ).on( 'click', function () {
-	currentCar.name = selectCar;
+	console.log( 'Selected Car: ' + selectCar );
+	currentCar.name = selectCar || 'crv';
 	methods.hideDiv( 'carousel' );
 
 	// display default car
