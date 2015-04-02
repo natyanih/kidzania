@@ -108,10 +108,10 @@ var methods = (function() {
             var canvas = document.getElementById('customizer-car-container');
             var context = canvas.getContext('2d');
             var img = new Image();
-            img.src = defaultCars[currentCar.name];
+            img.src = 'images/assets/' + currentCar.name + '/slices/color/1/1.png';
 
             img.onload = function() {
-                context.drawImage(img, 0, 120);
+                context.drawImage( img, 0, 120, 500, img.height * 500 / img.width );
             };
         }
     };
