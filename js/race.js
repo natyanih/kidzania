@@ -1,21 +1,40 @@
 $( '.btn-race-car' ).on( 'click', function () {
     methods.hideDiv( 'preview' );
 
+    currentCar.color = currentCar.color || 1;
+    currentCar.rims  = currentCar.rims || 1;
+
     // ADDING CUSTOMIZE STYLE IN RACE CAR
-    if ( currentCar.skirt !== 1 ) {
+    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
         $( '.race-car1-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'race-skirt-' + currentCar.name );
     }
-    if ( ( currentCar.name !== 'crv' && !currentCar.spoiler === 3 ) || currentCar.name === 'crv' && currentCar.spoiler !== 1 ) {
+    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
         $( '.race-car1-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'race-spoiler-' + currentCar.name );
+    }
+    if ( currentCar.tint ) {
+        $( '.race-car1-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'race-tint-' + currentCar.name );
+    }
+
+    if ( currentCar.decal ) {
+        $( '.race-car1-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'race-decal-' + currentCar.name + '-' + currentCar.decal );
     }
 
     $( '.race-car1' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
-    $( '.race-car1-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'race-tint-' + currentCar.name );
     $( '.race-car1-rim-back, .race-car1-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
     $( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
     $( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
-    $( '.race-car1-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'race-decal-' + currentCar.name );
-    // END
+
+    // DEFAULT RACE BG
+    $( '.race-background' ).addClass( 'race-city-background' );
+
+    if ( currentCar.raceBG === 1 ) {
+        $( '.race-background' ).addClass( 'race-forest-background' );
+    }
+
+    if ( currentCar.raceBG === 2 ) {
+        $( '.race-background' ).addClass( 'race-beach-background' );
+    }
+
 } );
 
 $( document ).ready( function ( $ ) {
@@ -68,46 +87,46 @@ $( document ).ready( function ( $ ) {
             $( '.race-accelerate-overlay' ).show();
         }, 12500 );
         setTimeout( function () {
-            $( '.race-main' ).addClass( 'hidden' );
-            $( '#congrats-screen' ).removeClass( 'hidden' );
+                $( '.race-main' ).addClass( 'hidden' );
+                $( '#congrats-screen' ).removeClass( 'hidden' );
 
-	    // ADDING CUSTOMIZE STYLE IN RACE CAR
-	    if ( currentCar.name === 'crv' ) {
-		$( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
-		    + '<br /> Your favorite SUV now includes more available technology than ever before, like Lane Keeping Assist System, Adaptive Cruise Control and our Collision Mitigation Braking System.</p>' );
-	    }
+    	    // ADDING CUSTOMIZE STYLE IN RACE CAR
+    	    if ( currentCar.name === 'crv' ) {
+    		$( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
+    		    + '<br /> Your favorite SUV now includes more available technology than ever before, like Lane Keeping Assist System, Adaptive Cruise Control and our Collision Mitigation Braking System.</p>' );
+    	    }
 
-	    if ( currentCar.name === 'city' ) {
-		$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
-		    + ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
-		    + ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
-	    }
+    	    if ( currentCar.name === 'city' ) {
+    		$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
+    		    + ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
+    		    + ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
+    	    }
 
-	    if ( currentCar.name === 'jazz' ) {
-		$( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road.'
-		    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
-	    }
+    	    if ( currentCar.name === 'jazz' ) {
+    		$( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road.'
+    		    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
+    	    }
 
-	    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
-		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
-	    }
-	    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
-		$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
-	    }
+    	    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
+    		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
+    	    }
+    	    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
+    		$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
+    	    }
 
-	    if ( currentCar.tint ) {
-		$( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
-	    }
+    	    if ( currentCar.tint ) {
+    		$( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
+    	    }
 
-	    if ( currentCar.decal ) {
-		$( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
-	    }
+    	    if ( currentCar.decal ) {
+    		$( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
+    	    }
 
-	    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
-	    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
-	    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
-	    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
-	    // END
+    	    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
+    	    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
+    	    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
+    	    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
+    	    // END
 
         }, 15500);
     } );
