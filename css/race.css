@@ -1,3 +1,61 @@
+.race-car-img img[ src="" ] {
+   display: none;
+}
+.race-car1-custom {
+    position : absolute;
+}
+
+.race-tint-crv {
+    width    : 268px;
+    top      : -15px;
+    left     : -8px;
+}
+
+.race-skirt-crv {
+    width : 249px;
+    top   : -10px;
+}
+
+.race-spoiler-crv {
+    width : 379px;
+    top   : -6px;
+    left  : -6px;
+}
+
+.race-rim-back-crv {
+    width : 32px;
+    top   : 64px;
+    left  : 36px;
+}
+.race-rim-front-crv {
+    width : 32px;
+    top   : 62px;
+    left  : 190px;
+}
+
+.race-decal-crv {
+    width : 229px;
+    top   : -5px;
+    left  : 10px;
+}
+
+.race-tint-city {
+    width    : 118px;
+    top      : 3px;
+    left     : 52px;
+}
+
+.race-rim-animate {
+    -webkit-animation  : rotating .1s linear infinite;
+    -moz-animation     : rotating .1s linear infinite;
+    animation          : rotating .1s linear infinite;
+    transition         : 5s all;
+    -webkit-transition : 5s all;
+    -moz-transition    : 5s all;
+
+}
+/* END RACE CAR CUSTOMIZE ::: TODO: SEPARATE ANOTHER CSS*/
+
 .race-prestart-overlay{
     position   : fixed;
     width      : 100%;

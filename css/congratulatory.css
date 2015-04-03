@@ -1,8 +1,21 @@
-#congrats-screen {
+/*#congrats-screen {
 	width           : 100%;
 	height          : 100%;
 	position        : fixed;
-	background      : url( '../images/backgrounds/garage-bg.jpg' );
+	background      : url( '../images/backgrounds/preview.png' );
+}
+*/
+
+.congrats-background {
+	width    : 100%;
+	height   : 100%;
+	overflow : hidden;
+}
+
+.congrats-background img {
+	width  : 1992px;
+	height : 805px;
+	margin : 0px 0 0 -550px;
 }
 
 .my-dream-car-congrats{
@@ -42,23 +55,62 @@
 }
 
 .car-congrats {
-	margin-left : 629px;
-	margin-top  : 300px;
-	position: absolute;
+	position : absolute;
+	top      : 323px;
+	left     : 530px;
 }
 
-.car-congrats img {
-	width  : 492px;
-	height : 300px;
+.car-congrats-custom {
+	position : absolute;
+}
+
+.car-congrats-body {
+	width : 500px
+}
+
+.car-congrats-tint-crv {
+	width : 524px;
+	top   : -26px;
+	left  : -11px;
+}
+
+.car-congrats-skirt-crv {
+	width : 500px;
+	top   : -24px;
+}
+
+.car-congrats-spoiler-crv {
+	width : 500px;
+	top   : -4px;
+	left  : 13px;
+}
+
+.car-congrats-rim-back-crv {
+	width : 60px;
+	top   : 129px;
+	left  : 73px;
+}
+
+.car-congrats-rim-front-crv {
+	width : 60px;
+	top   : 127px;
+	left  : 382px;
+}
+
+.car-congrats-decal-crv {
+	width : 524px;
+	top   : -31px;
+	left  : -11px;
 }
 
 .car-details-congrats {
-    position      : absolute;
-    left          : 950px;
-    top           : 200px;
-    text-align    : right;
-    color         : #FFF !important;
-    padding-right : 33px;
+    position   : absolute;
+    left       : 950px;
+    top        : 200px;
+    text-align : right;
+    color      : #000;
+    width      : 400px;
+    left       : 1007px;
 
 }
 

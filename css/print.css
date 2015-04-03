@@ -2,12 +2,25 @@
 	size: landscape;
 }
 
-.printing-congrats {
+/*.printing-congrats {
 	display: list-item;
-    list-style-image: url('../images/backgrounds/garage-bg.jpg');
+    list-style-image: url( '../images/backgrounds/preview.png' );
     list-style-position: inside;
+}*/
+
+.congrats-background img {
+	max-width: 1992px !important;
+	height : 1005px;
+	margin : 0px 0 0 -550px;
 }
 
+.video {
+	top: 295px;
+}
+
+.canvas-container {
+	top: 333px;
+}
 .my-dream-car-congrats {
 	display : block;
 	width   : 500px;
