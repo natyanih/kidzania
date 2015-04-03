@@ -52,7 +52,7 @@ var methods = (function() {
 
                     if (currentCar.name === 'city') {
                         $('.city-customizer-holder').show();
-                        $('.city-div-car-show').show();
+                        $('.city-div-car-color').show();
 
                         // hide other customizer divs
                         $('.city-div-car-tint').hide();
