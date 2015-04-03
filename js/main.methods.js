@@ -16,6 +16,8 @@ var methods = (function() {
                     $('.btn-race-car').hide();
                     $('.btn-start-over').hide();
                     $('.btn-preview-group').hide();
+                    $('.btn-rotate-clockwise').hide();
+                    $('.btn-rotate-counter').hide();
 
                     console.log(currentCar);
 
@@ -97,13 +99,15 @@ var methods = (function() {
         'showPreview': function() {
             $('.btn-race-car').show();
             $('.btn-start-over').show();
+            $('.btn-rotate-clockwise').show();
+            $('.btn-rotate-counter').show();
 
             // hide customizer footer buttons, .btn-view-car
             $('.btn-view-car').hide();
             $('.btn-customizer-group').hide();
 
             // change background to preview background
-            $( '.customizer-main' ).addClass( 'preview-main' );
+            $('.customizer-main').addClass('preview-main');
         },
 
         'showCustomizer': function(customizer) {
@@ -137,14 +141,14 @@ var methods = (function() {
         'resetCar': function() {
             currentCar = {
                 'name': currentCar.name,
-                'color': null,
+                'color': 1,
                 'tint': null,
                 'decal': null,
                 'rims': null,
                 'grill': null,
                 'skirt': null,
                 'spoiler': null,
-                'currentSide': null
+                'currentSide': 1
             };
             customizer.renderCar();
         },
