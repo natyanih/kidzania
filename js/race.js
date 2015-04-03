@@ -72,14 +72,6 @@ $( document ).ready( function ( $ ) {
             $( '#congrats-screen' ).removeClass( 'hidden' );
 
 	    // ADDING CUSTOMIZE STYLE IN RACE CAR
-	    if ( currentCar.skirt !== 1 ) {
-		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
-	    }
-
-	    if ( ( currentCar.name !== 'crv' && !currentCar.spoiler === 3 ) || currentCar.name === 'crv' && currentCar.spoiler !== 1 ) {
-		$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
-	    }
-
 	    if ( currentCar.name === 'crv' ) {
 		$( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
 		    + '<br /> Your favorite SUV now includes more available technology than ever before, like Lane Keeping Assist System, Adaptive Cruise Control and our Collision Mitigation Braking System.</p>' );
@@ -96,12 +88,25 @@ $( document ).ready( function ( $ ) {
 		    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 	    }
 
+	    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
+		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
+	    }
+	    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
+		$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
+	    }
+
+	    if ( currentCar.tint ) {
+		$( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
+	    }
+
+	    if ( currentCar.decal ) {
+		$( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
+	    }
+
 	    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
-	    $( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
 	    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
 	    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
 	    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
-	    $( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name );
 	    // END
 
         }, 15500);

@@ -9,9 +9,9 @@
 }*/
 
 .congrats-background img {
-	max-width: 1992px !important;
-	height : 1005px;
-	margin : 0px 0 0 -550px;
+	max-width : 1992px !important;
+	height    : 1005px;
+	margin    : 0px 0 0 -550px;
 }
 
 .video {
@@ -21,16 +21,21 @@
 .canvas-container {
 	top: 333px;
 }
+
 .my-dream-car-congrats {
 	display : block;
-	width   : 500px;
-	top     : 100px;
+	width   : 800px;
+	top     : 124px;
+}
+
+.my-dream-car-congrats img {
+	width : 800px;
 }
 
 .car-congrats {
-	display: block;
-	top: 100px;
-	width: 500px;
+	display : block;
+	top     : 476px;
+	width   : 702px;
 }
 
 .form-info-congrats button {
@@ -41,35 +46,48 @@
 .sep-congrats {
 	display : block;
 	border-top-color: black;
-	margin-top: 1px;
+	margin-top: -10px;
+	margin-bottom : 24px;
 	text-align : center;
 
 }
 
 .sep-congrats span {
-	color: #908888 !important;
-	margin-top: -20px;
+	color      : #908888 !important;
+	margin-top : -20px;
 }
 .sep-congrats hr {
-	border-top-color: #908888;
-	margin-bottom: 0;
+	border-top-color : #908888;
+	margin-bottom    : 0;
 }
 
 .input-print {
-	border     : none;
-	background : transparent;
+	display       : none;
+	border        : none;
+	background    : transparent;
+	text-align    : center;
+	margin-bottom : -18px;
+}
+
+#desinger-name-congrats-cont {
+	display    : block;
 	text-align : center;
-	margin-bottom: -18px;
+}
+
+#car-name-congrats-cont {
+	display    : block;
+	text-align : center;
 }
 
 .car {
-	margin-top: 20px;
+	margin-top : 20px;
 }
 
 .car-details-congrats {
-	width: 500px;
+	top  : 319px;
+	left : 1003px;
 }
 
-.car-details-congrats p, h2 {
-	color: #FFF !important;
+.kidzania-logo-congrats {
+	top : 851px;
 }

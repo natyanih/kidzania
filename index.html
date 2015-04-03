@@ -15,6 +15,7 @@
     <link href="css/preview.css" rel="stylesheet">
     <link href="css/race.css" rel="stylesheet">
     <link href="css/congratulatory.css" rel="stylesheet">
+    <link href="css/carStyle.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -614,18 +615,20 @@
         <div class="video">
             <video id="video" width="300" height="300" autoplay></video>
             <div class="form-info-congrats">
-		<input type="text" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name">
-		<div class="sep-congrats">
-		    <hr>
-		    <span>Designer</span>
-		</div>
-		<input type="text" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name">
-		<div class="sep-congrats">
-		    <hr>
-		    <span>Car</span>
-		</div>
-		<button id="take-picture" class="btn form-info-dis-congrats">Take Picture</button>
-		<button class="btn hidden print-congrats form-info-dis-congrats">Print</button>
+			<input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name">
+		<span id="desinger-name-congrats-cont"></span>
+			<div class="sep-congrats">
+			    <hr>
+			    <span>Designer</span>
+			</div>
+			<input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name">
+		<span id="car-name-congrats-cont"></span>
+			<div class="sep-congrats">
+			    <hr>
+			    <span>Car</span>
+			</div>
+			<button id="take-picture" class="btn form-info-dis-congrats">Take Picture</button>
+			<button class="btn hidden print-congrats form-info-dis-congrats">Print</button>
             </div>
         </div>
         <div class="car-congrats">
@@ -640,6 +643,9 @@
         <div class="honda-logo-congrats">
             <img src="images/loading/Honda-logo_loading.png" alt="">
         </div>
+	<div class="kidzania-logo-congrats">
+	    <img src="images/loading/loading_kidzania.png" alt="">
+	</div>
 	<div class="car-details-congrats"></div>
     </div>
     <!-- jQuery -->

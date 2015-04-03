@@ -38,3 +38,16 @@ document.getElementById('take-picture').addEventListener('click', function(e) {
 $('.print-congrats').on('click', function() {
     window.print();
 });
+
+$( '.desinger-name-congrats' ).keydown( function ( e ) {
+    console.log( this.value + String.fromCharCode(e.keyCode) )
+} );
+
+function getValue ( id, target ) {
+
+    var input = document.getElementById( id );
+    var value = input.value;
+
+    var span = document.getElementById( target );
+    span.innerText = value;
+}
