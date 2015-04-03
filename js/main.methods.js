@@ -1,144 +1,170 @@
 var methods = (function() {
-	'use strict';
+    'use strict';
 
-	return {
-		'hideDiv': function(id) {
+    return {
+        'hideDiv': function(id) {
 
-			switch (id) {
-				// from carousel to customizer
-				case 'carousel':
-					$('#loading').hide();
-					$('#carousel-main').hide();
-					$('.customizer-main').show();
-					$('.btn-view-car').show();
-					$('.btn-customizer-group').show();
-					$('.btn-select-car').hide();
+            switch (id) {
+                // from carousel to customizer
+                case 'carousel':
+                    $('#loading').hide();
+                    $('#carousel-main').hide();
+                    $('.customizer-main').show();
+                    $('.btn-view-car').show();
+                    $('.btn-customizer-group').show();
+                    $('.btn-select-car').hide();
+                    $('.btn-race-car').hide();
+                    $('.btn-start-over').hide();
+                    $('.btn-preview-group').hide();
 
-					console.log( currentCar );
+                    console.log(currentCar);
 
-					$('.jazz-customizer-holder').hide();
-					$('.city-customizer-holder').hide();
-					$('.crv-customizer-holder').hide();
+                    $('.jazz-customizer-holder').hide();
+                    $('.city-customizer-holder').hide();
+                    $('.crv-customizer-holder').hide();
 
-					// load html
-					if (currentCar.name === 'jazz') {
-						$('.jazz-customizer-holder').show();
+                    // load html
+                    if (currentCar.name === 'jazz') {
+                        $('.jazz-customizer-holder').show();
+                        $('.jazz-div-car-color').show();
 
-						// hide other customizer divs
-						$('.jazz-div-car-tint').hide();
-						$('.jazz-div-car-decal').hide();
-						$('.jazz-div-car-rims').hide();
-						$('.jazz-div-car-body').hide();
-					}
+                        // hide other customizer divs
+                        $('.jazz-div-car-tint').hide();
+                        $('.jazz-div-car-decal').hide();
+                        $('.jazz-div-car-rims').hide();
+                        $('.jazz-div-car-body').hide();
+                        $('.jazz-div-car-background').hide();
+                    }
 
-					if (currentCar.name === 'crv') {
-						$('.crv-customizer-holder').show();
+                    if (currentCar.name === 'crv') {
+                        $('.crv-customizer-holder').show();
+                        $('.crv-div-car-color').show();
 
-						// hide other customizer divs
-						$('.crv-div-car-tint').hide();
-						$('.crv-div-car-decal').hide();
-						$('.crv-div-car-rims').hide();
-						$('.crv-div-car-body').hide();
-					}
+                        // hide other customizer divs
+                        $('.crv-div-car-tint').hide();
+                        $('.crv-div-car-decal').hide();
+                        $('.crv-div-car-rims').hide();
+                        $('.crv-div-car-body').hide();
+                        $('.crv-div-car-background').hide();
+                    }
 
-					 if (currentCar.name === 'city') {
-						$('.city-customizer-holder').show();
+                    if (currentCar.name === 'city') {
+                        $('.city-customizer-holder').show();
+                        $('.city-div-car-show').show();
 
-						// hide other customizer divs
-						$('.city-div-car-tint').hide();
-						$('.city-div-car-decal').hide();
-						$('.city-div-car-rims').hide();
-						$('.city-div-car-body').hide();
-					}
+                        // hide other customizer divs
+                        $('.city-div-car-tint').hide();
+                        $('.city-div-car-decal').hide();
+                        $('.city-div-car-rims').hide();
+                        $('.city-div-car-body').hide();
+                        $('.city-div-car-background').hide();
+                    }
 
-					// add color to car color button
-					$('.customizer-car-color > p').addClass('active');
+                    // add color to car color button
+                    $('.customizer-car-color > p').addClass('active');
 
-					// display default car - yellow
-					break;
+                    // display default car - yellow
+                    break;
 
-					// customizer to car preview
-				case 'customizer':
-					$('#loading').hide();
-					$('#carousel-main').hide();
-					$('.customizer-main').hide();
-					$('.preview-main').show();
-					$('.btn-race-car').show();
-					$('.btn-view-car').hide();
-					$('.btn-customizer-group').hide();
-					break;
+                    // customizer to car preview
+                case 'customizer':
+                    $('#loading').hide();
+                    $('#carousel-main').hide();
+                    $('.customizer-main').hide();
+                    $('.preview-main').show();
+                    $('.btn-race-car').show();
+                    $('.btn-preview-group').show();
+                    $('.btn-view-car').hide();
+                    $('.btn-customizer-group').hide();
+                    break;
 
-					// car preview to race
-				case 'preview':
-					$('#loading').hide();
-					$('#carousel-main').hide();
-					$('#carousel').hide();
-					$('.race-main').show();
-					$('.race-main').removeClass('hidden');
-					break;
+                    // car preview to race
+                case 'preview':
+                    $('#loading').hide();
+                    $('#carousel-main').hide();
+                    $('#carousel').hide();
+                    $('.race-main').show();
+                    $('.race-main').removeClass('hidden');
+                    break;
 
-					// if no id
-				default:
-					$('#carousel').hide();
-					break;
-			}
-		},
+                    // if no id
+                default:
+                    $('#carousel').hide();
+                    break;
+            }
+        },
 
-		'showCustomizer': function(customizer) {
-			var divClass = '.' + currentCar.name + '-div-car-' + customizer;
-			console.log(divClass);
-			var btnClass = '.customizer-car-' + customizer;
-			$('.customizer-container').hide();
-			$(divClass).show();
-			$('.btn-customizer > p.active').removeClass('active');
-			$(btnClass).find('p').addClass('active');
-		},
+        'showPreview': function() {
+            $('.btn-race-car').show();
+            $('.btn-start-over').show();
 
-		'applyAsset': function(args) {
-			console.log( args );
-			var type = args.type;
-			var id   = args.id;
+            // hide customizer footer buttons, .btn-view-car
+            $('.btn-view-car').hide();
+            $('.btn-customizer-group').hide();
 
-			currentCar[type] = id;
+            // change background to preview background
+            $( '.customizer-main' ).addClass( 'preview-main' );
+        },
 
-			console.log(currentCar);
-			console.log('type: ' + type + ' - id: ' + id);
+        'showCustomizer': function(customizer) {
+            var divClass = '.' + currentCar.name + '-div-car-' + customizer;
+            console.log(divClass);
+            var btnClass = '.customizer-car-' + customizer;
+            $('.customizer-container').hide();
+            $(divClass).show();
+            $('.btn-customizer > p.active').removeClass('active');
+            $(btnClass).find('p').addClass('active');
 
-			// re-render whole car if asset is color
-			customizer.renderCar();
-		},
+            if (customizer === 'background') {
+                this.showPreview();
+            }
+        },
 
-		'resetCar' : function () {
-			currentCar = {
-				'name'        : currentCar.name,
-				'color'       : null,
-				'tint'        : null,
-				'decal'       : null,
-				'rims'        : null,
-				'grill'       : null,
-				'skirt'       : null,
-				'spoiler'     : null,
-				'currentSide' : null
-			};
-			customizer.renderCar();
-		},
+        'applyAsset': function(args) {
+            console.log(args);
+            var type = args.type;
+            var id = args.id;
 
-		'initCanvas': function() {
-			var canvas  = document.getElementById('customizer-car-container');
-			var context = canvas.getContext('2d');
-			var img     = new Image();
+            currentCar[type] = id;
 
-			var side    = currentCar.currentSide || 1;
-			var width   = adjustment[ currentCar.name ].dimension.color[ side ].width;
-			var offsetX = adjustment[ currentCar.name ].offset.color[ side ].x;
-			var offsetY = adjustment[ currentCar.name ].offset.color[ side ].y;
+            console.log(currentCar);
+            console.log('type: ' + type + ' - id: ' + id);
 
-			img.src = 'images/assets/' + currentCar.name + '/slices/color/1/' + side + '.png';
+            // re-render whole car if asset is color
+            customizer.renderCar();
+        },
 
-			img.onload = function() {
-				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
-			};
-		}
-	};
+        'resetCar': function() {
+            currentCar = {
+                'name': currentCar.name,
+                'color': null,
+                'tint': null,
+                'decal': null,
+                'rims': null,
+                'grill': null,
+                'skirt': null,
+                'spoiler': null,
+                'currentSide': null
+            };
+            customizer.renderCar();
+        },
+
+        'initCanvas': function() {
+            var canvas = document.getElementById('customizer-car-container');
+            var context = canvas.getContext('2d');
+            var img = new Image();
+
+            var side = currentCar.currentSide || 1;
+            var width = adjustment[currentCar.name].dimension.color[side].width;
+            var offsetX = adjustment[currentCar.name].offset.color[side].x;
+            var offsetY = adjustment[currentCar.name].offset.color[side].y;
+
+            img.src = 'images/assets/' + currentCar.name + '/slices/color/1/' + side + '.png';
+
+            img.onload = function() {
+                context.drawImage(img, offsetX, offsetY, width, img.height * width / img.width);
+            };
+        }
+    };
 
 })();

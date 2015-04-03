@@ -1,7 +1,7 @@
 'use strict';
 
 $( '.btn-view-car' ).on( 'click', function () {
-	methods.hideDiv( 'customizer' );
+	methods.showCustomizer( 'background' );
 } );
 
 $( '.btn-race-car' ).on( 'click', function () {
@@ -47,4 +47,33 @@ $( '.customizer-car-body' ).on( 'click', function () {
 
 $( '.customizer-start-over' ).on( 'click', function () {
 	methods.resetCar();
+} );
+
+$( '.btn-start-over' ).on( 'click', function () {
+	methods.resetCar();
+	methods.hideDiv( 'carousel' );
+
+	// change back background to garage
+	$( '.customizer-main' ).removeClass( 'preview-main' );
+} );
+
+$( '.preview-background-1' ).on( 'click', function () {
+	methods.applyAsset({
+        'type' : 'raceBG',
+        'id'   : 1
+    });
+} );
+
+$( '.preview-background-2' ).on( 'click', function () {
+	methods.applyAsset({
+        'type' : 'raceBG',
+        'id'   : 2
+    });
+} );
+
+$( '.preview-background-3' ).on( 'click', function () {
+	methods.applyAsset({
+        'type' : 'raceBG',
+        'id'   : 3
+    });
 } );

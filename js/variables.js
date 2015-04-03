@@ -18,50 +18,50 @@ var adjustment = {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'decal' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'skirt' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'spoiler' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			}
 		},
@@ -116,47 +116,47 @@ var adjustment = {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'decal' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'skirt' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'spoiler' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			}
 		},
@@ -211,44 +211,44 @@ var adjustment = {
 		'offset' : {
 			'color' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'tint' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'decal' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'rims' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'grill' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'skirt' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			},
 			'spoiler' : {
 				'1' : {
-					'x' : 0,
-					'y' : 120
+					'x' : 20,
+					'y' : 110
 				}
 			}
 		},

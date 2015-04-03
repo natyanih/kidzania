@@ -3,6 +3,6 @@
     height : -webkit-calc( 100% - 201px );
     height : calc( 100% - 201px );
 	background-color : #ffcc00;
-	background       : url( '../images/backgrounds/carousel-bg.jpg' );
+	background       : url( '../images/backgrounds/preview.png' );
 	background-size  : 100% auto;
 }
