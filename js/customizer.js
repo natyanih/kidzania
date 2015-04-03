@@ -28,3 +28,7 @@ $( '.customizer-car-rims' ).on( 'click', function () {
 $( '.customizer-car-body' ).on( 'click', function () {
 	methods.showCustomizer( 'body' );
 } );
+
+$( '.customizer-start-over' ).on( 'click', function () {
+	methods.resetCar();
+} );

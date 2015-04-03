@@ -441,7 +441,16 @@
             </div>
             <canvas id="customizer-car-container" width="600" height="400" class="customizer-car-container pull-right">Customizer Car Container</canvas>
         </div>
-        <div class="preview-main">Select background Page / preview car page</div>
+        <div class="preview-main">
+            <div class="select-background-holder">
+                <p class="preview-title">BACKGROUND</p>
+                <p class="preview-info">Select a background for test driving.</p>
+                <div class="preview-background-2 preview-forest"><p>Sunset Forest</p></div>
+                <div class="preview-background-2 preview-beach"><p>Summer Beach</p></div>
+                <div class="preview-background-1 preview-city"><p>City Street</p></div>
+            </div>
+            <canvas id="preview-car-container" width="600" height="400" class="preview-car-container pull-right">Preview Car Container</canvas>
+        </div>
         <div class="footer">
             <div class="btn-select-car pull-right btn-green">
                 <p>SELECT CAR</p>
@@ -575,6 +584,7 @@
     <!-- Bootstrap JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/variables.js"></script>
+    <script src="js/customizer.methods.js"></script>
     <script src="js/main.methods.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/jazz.event.handlers.js"></script>

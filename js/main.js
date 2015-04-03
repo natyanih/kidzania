@@ -21,5 +21,5 @@ $( document ).ready( function ( $ ) {
 		} else {
 			$bar.width( $bar.width() + Math.floor( Math.random() * ( 40 ) ) + 1 );
 		}
-	}, 300);
+	}, 200);
 } );
