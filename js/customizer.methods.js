@@ -53,7 +53,7 @@ var customizer = ( function (){
 
 		'renderDecal' : function () {
 			var img = new Image();
-			if ( currentCar.decal ) {
+			if ( currentCar.decal && currentCar.currentSide !== 2 && currentCar.currentSide !== 3 ) {
 				var side    = currentCar.currentSide || 1;
 				var width   = adjustment[ currentCar.name ].dimension.decal[ side ].width;
 				var offsetX = adjustment[ currentCar.name ].offset.decal[ side ].x;
@@ -69,7 +69,7 @@ var customizer = ( function (){
 
 		'renderRims' : function () {
 			var img = new Image();
-			if ( currentCar.rims ) {
+			if ( currentCar.rims && currentCar.currentSide !== 2 && currentCar.currentSide !== 3 ) {
 				var side    = currentCar.currentSide || 1;
 				var width   = adjustment[ currentCar.name ].dimension.rims[ side ].width;
 				var offsetX = adjustment[ currentCar.name ].offset.rims[ side ].x;
@@ -103,7 +103,7 @@ var customizer = ( function (){
 
 		'renderSkirt' : function () {
 			var img = new Image();
-			if ( currentCar.skirt && currentCar.skirt !== 1 ) {
+			if ( currentCar.skirt && currentCar.skirt !== 1 && currentCar.currentSide !== 2 && currentCar.currentSide !== 3 ) {
 				var side    = currentCar.currentSide || 1;
 				var width   = adjustment[ currentCar.name ].dimension.skirt[ side ].width;
 				var offsetX = adjustment[ currentCar.name ].offset.skirt[ side ].x;
@@ -119,7 +119,7 @@ var customizer = ( function (){
 
 		'renderSpoiler' : function () {
 			var img = new Image();
-			if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
+			if ( currentCar.spoiler && currentCar.spoiler !== 1 && currentCar.currentSide !== 3  ) {
 				var side    = currentCar.currentSide || 1;
 				var width   = adjustment[ currentCar.name ].dimension.spoiler[ side ].width;
 				var offsetX = adjustment[ currentCar.name ].offset.spoiler[ side ].x;

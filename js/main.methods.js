@@ -129,13 +129,15 @@ var methods = (function() {
             var type = args.type;
             var id = args.id;
 
-            currentCar[type] = id;
+            if ( currentCar[ type ] !== id ) {
+				currentCar[type] = id;
 
-            console.log(currentCar);
-            console.log('type: ' + type + ' - id: ' + id);
+				console.log(currentCar);
+				console.log('type: ' + type + ' - id: ' + id);
 
-            // re-render whole car if asset is color
-            customizer.renderCar();
+				// re-render whole car if asset is color
+				customizer.renderCar();
+            }
         },
 
         'resetCar': function() {
