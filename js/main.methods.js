@@ -98,7 +98,7 @@ var methods = (function() {
 
                     // add color to car color button
                     $('.customizer-car-color > p').addClass('active');
-                    $('#customizer-car-container').removeClass('preview-car-container');
+                    $('.customizer-car-container').removeClass('preview-car-container');
 
                     // display default car - yellow
                     break;
@@ -114,7 +114,7 @@ var methods = (function() {
                     $('.btn-view-car').hide();
                     $('.btn-customizer-group').hide();
                     console.log( $('#customizer-car-container') )
-                    $('#customizer-car-container').addClass('hello preview-car-container');
+                    $('.customizer-car-container').addClass('preview-car-container');
                     break;
 
                     // car preview to race
@@ -147,7 +147,7 @@ var methods = (function() {
 
             // change background to preview background
             $('.customizer-main').addClass('preview-main');
-            $('#customizer-car-container').addClass( 'preview-car-container' );
+            $('.customizer-car-container').addClass( 'preview-car-container' );
         },
 
         'showCustomizer': function(customizer) {

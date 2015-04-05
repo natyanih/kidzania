@@ -9,6 +9,7 @@ var customizer = ( function (){
 		},
 
 		'renderCar' : function () {
+			$( '#customizer-car-container' ).hide();
 			this.clearCanvas();
 		},
 
@@ -131,7 +132,7 @@ var customizer = ( function (){
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
-
+			$( '#customizer-car-container' ).fadeIn();
 		}
 
 	};

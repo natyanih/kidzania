@@ -17,9 +17,9 @@
 }
 
 .btn-rotate-clockwise {
-	position : relative;
+	position : absolute;
     top    : -webkit-calc(100%/ 2);
     top    : calc(100% / 2);
-    right  : 150px;
+    right  : 795px;
     cursor : pointer;
 }
