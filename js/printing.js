@@ -51,3 +51,24 @@ function getValue ( id, target ) {
     var span = document.getElementById( target );
     span.innerText = value;
 }
+var newCar1 = $( '.race-car1-container' ).clone();
+var newCar2 = $( '.race-car2-container' ).clone();
+
+$( '.congrats-back-home' ).on( 'click', function () {
+    $( '#congrats-screen' ).addClass( 'hidden' );
+    $('#carousel').show();
+    $( '.race-prestart-overlay' ).show();
+    $( '.race-game-precounter' ).hide();
+    $( '.race-game-precounter span' ).show();
+    $( '.race-game-precounter span' ).remove( 'race-start-game' );
+    $( '.race-car1-rim-back, .race-car1-rim-front' ).removeClass( 'race-rim-animate' );
+    $( '.race-car1-container, .race-background, .race-car2-container' ).removeClass( 'race-accelerate-car' );
+    $( '.race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
+    $( '.race-car1-container' ).remove();
+    $( '.race-car2-container' ).remove();
+    $( '.race-background' ).append( [ newCar1, newCar2 ] );
+    addCarStyle();
+    $( '.race-restart-overlay' ).addClass( 'hidden' );
+    $( '.car-details-congrats' ).html( '' );
+    methods.hideDiv( 'loading' );
+} );

@@ -1,11 +1,3 @@
-/*#congrats-screen {
-	width           : 100%;
-	height          : 100%;
-	position        : fixed;
-	background      : url( '../images/backgrounds/preview.png' );
-}
-*/
-
 .congrats-background {
 	width    : 100%;
 	height   : 100%;
@@ -13,9 +5,8 @@
 }
 
 .congrats-background img {
-	width  : 1992px;
-	height : 799px;
-	margin : 0 0 0 -550px;
+	width  : 100%;
+	height : 805px;
 }
 
 .my-dream-car-congrats{
@@ -24,14 +15,14 @@
     left     : 383px;
 }
 .my-dream-car-congrats img{
-    width : 500px;
+    width : 700px;
 }
 
 .video {
 	top      : 200px;
 	position : absolute;
 	z-index  : 1000;
-	left     : 55px;
+	left     : 100px;
 }
 
 .form-info-congrats {
@@ -39,16 +30,19 @@
 }
 
 #take-picture {
-	width : 300px;
+	width            : 300px;
+	color            : #fff;
+	background-color : #3F3B3B;
 }
 
 .print-congrats {
-	width : 300px;
+	width      : 300px;
+	background : url('../images/button-bg.png');
 }
 
 .canvas-container {
 	top  : 238px;
-	left : 55px;
+	left : 100px;
 
     z-index  : 1000000000000;
     position : absolute;
@@ -56,13 +50,13 @@
 
 .car-congrats {
 	position : absolute;
-	top      : 306px;
-	left     : 439px;
+	top      : 298px;
+	left     : 644px;
 }
 
 .car-details-congrats {
     position   : absolute;
-    top        : 200px;
+    top        : 169px;
     text-align : right;
     color      : #000;
     width      : 400px;
@@ -99,4 +93,26 @@
 
 #car-name-congrats-cont {
 	display : none;
+}
+
+.congrats-back-home {
+	padding-left  : 22px;
+	padding-right : 22px;
+	cursor        : pointer;
+	position      : absolute;
+	top           : 727px;
+}
+
+.congrats-back-home p {
+	margin-top : 30px;
+	color      : white;
+	font-size  : 18px;
+	cursor     : pointer;
+}
+
+.congrats-back-home i {
+	margin-top : 28px;
+	color      : white;
+	font-size  : 32px;
+	cursor     : pointer;
 }

@@ -32,8 +32,9 @@
 }
 
 .race-skirt-crv {
-    width : 249px;
-    top   : -10px;
+    width   : 249px;
+    top     : -10px;
+    z-index : 10;
 }
 
 .race-spoiler-crv {
@@ -53,10 +54,11 @@
     left  : 192px;
 }
 
-.race-decal-crv-1 {
-    width : 229px;
-    top   : -5px;
-    left  : 10px;
+.race-decal-crv {
+    width : 250px;
+    top   : 0;
+    left  : -1px;
+    z-index : 1;
 }
 
 .race-decal-crv-2 {
@@ -78,8 +80,9 @@
 }
 
 .car-congrats-skirt-crv {
-    width : 700px;
-    top   : -34px;
+    width   : 700px;
+    top     : -34px;
+    z-index : 10;
 }
 
 .car-congrats-spoiler-crv {
@@ -100,9 +103,10 @@
     left  : 530px;
 }
 
-.car-congrats-decal-crv-1 {
-    width : 700px;
-    top   : -32px;
+.car-congrats-decal-crv {
+    width   : 700px;
+    top     : -32px;
+    z-index : 1;
 }
 
 .car-congrats-decal-crv-2 {
@@ -147,24 +151,24 @@
     left  : 189px;
 }
 
-.race-decal-city-1 {
-    width   : 238px;
-    top     : 4px;
-    left    : 5px;
+.race-decal-city {
+    width   : 250px;
+    top     : 0;
+    left    : -1px;
     z-index : 1;
 }
 
 .race-decal-city-2 {
-    width   : 231px;
-    top     : 4px;
-    left    : 6px;
+    width   : 250px;
+    top     : 0;
+    left    : -1px;
     z-index : 1;
 }
 
 .race-decal-city-3 {
-    width   : 234px;
-    top     : 3px;
-    left    : 8px;
+    width   : 250px;
+    top     : 0;
+    left    : -1px;
     z-index : 1;
 }
 
@@ -198,7 +202,7 @@
     left  : 530px;
 }
 
-.car-congrats-decal-city-1 {
+.car-congrats-decal-city {
     width   : 700px;
     top     : 0;
     left    : 0;
@@ -214,8 +218,8 @@
 
 .car-congrats-decal-city-3 {
     width   : 700px;
-    top     : 1px;
-    left    : 1px;
+    top     : -1px;
+    left    : 0;
     z-index : 1;
 }
 
@@ -230,6 +234,7 @@
 .race-skirt-jazz {
     width : 249px;
     top   : 4px;
+    z-index : 10;
 }
 
 .race-spoiler-jazz {
@@ -249,22 +254,25 @@
     left  : 189px;
 }
 
-.race-decal-jazz-1 {
-    width : 68px;
-    top   : 54px;
-    left  : 82px;
+.race-decal-jazz {
+    width   : 250px;
+    top     : 1px;
+    left    : 0;
+    z-index : 1;
 }
 
 .race-decal-jazz-2 {
-    width : 85px;
-    top   : 45px;
-    left  : 80px;
+    width   : 250px;
+    top     : 1px;
+    left    : 0;
+    z-index : 1;
 }
 
 .race-decal-jazz-3 {
-    width : 248px;
-    top   : 0;
-    left  : 1px;
+    width   : 250px;
+    top     : 1px;
+    left    : 0;
+    z-index : 1;
 }
 
 .car-congrats-tint-jazz {
@@ -274,9 +282,10 @@
 }
 
 .car-congrats-skirt-jazz {
-    width : 701px;
-    top   : 0;
-    left  : -1px;
+    width   : 701px;
+    top     : 0;
+    left    : -1px;
+    z-index : 10;
 }
 
 .car-congrats-spoiler-jazz {
@@ -297,20 +306,23 @@
     left  : 529px;
 }
 
-.car-congrats-decal-jazz-1 {
-    width : 524px;
-    top   : -31px;
-    left  : -11px;
+.car-congrats-decal-jazz {
+    width   : 700px;
+    top     : 0;
+    left    : -1px;
+    z-index : 1;
 }
 
 .car-congrats-decal-jazz-2 {
-    width : 242px;
-    top   : 124px;
-    left  : 225px;
+    width   : 700px;
+    top     : 0;
+    left    : -1px;
+    z-index : 1;
 }
 
 .car-congrats-decal-jazz-3 {
-    width : 524px;
-    top   : -31px;
-    left  : -11px;
+    width   : 700px;
+    top     : 0;
+    left    : -1px;
+    z-index : 1;
 }

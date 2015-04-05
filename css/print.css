@@ -2,24 +2,18 @@
 	size: landscape;
 }
 
-/*.printing-congrats {
-	display: list-item;
-    list-style-image: url( '../images/backgrounds/preview.png' );
-    list-style-position: inside;
-}*/
-
 .congrats-background img {
 	max-width : 1992px !important;
 	height    : 1005px;
-	margin    : 0px 0 0 -550px;
+	margin    : 0;
 }
 
 .video {
-	top: 295px;
+	top: 360px;
 }
 
 .canvas-container {
-	top: 333px;
+	top: 360px;
 }
 
 .my-dream-car-congrats {
@@ -34,13 +28,17 @@
 
 .car-congrats {
 	display : block;
-	top     : 476px;
+	top     : 459px !important;
 	width   : 702px;
 }
 
 .form-info-congrats button {
 	display: none;
 
+}
+
+.congrats-back-home {
+	display : none;
 }
 
 .sep-congrats {

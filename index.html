@@ -547,6 +547,9 @@
         <div class="race-prestart-overlay">
             <button class="race-start-btn">START</button>
         </div>
+	<div class="race-restart-overlay hidden">
+	    <button class="race-restart-btn">RACE AGAIN</button>
+	</div>
         <div class="race-game-precounter">
             <span>READY</span>
         </div>
@@ -629,22 +632,27 @@
         <div class="video">
             <video id="video" width="300" height="300" autoplay></video>
             <div class="form-info-congrats">
-                <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name">
-                <span id="desinger-name-congrats-cont"></span>
-                <div class="sep-congrats">
-                    <hr>
-                    <span>Designer</span>
-                </div>
-                <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name">
-                <span id="car-name-congrats-cont"></span>
-                <div class="sep-congrats">
-                    <hr>
-                    <span>Car</span>
-                </div>
-                <button id="take-picture" class="btn form-info-dis-congrats">Take Picture</button>
-                <button class="btn hidden print-congrats form-info-dis-congrats">Print</button>
+			<input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name">
+		<span id="desinger-name-congrats-cont"></span>
+			<div class="sep-congrats">
+			    <hr>
+			    <span>Designer</span>
+			</div>
+			<input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name">
+		<span id="car-name-congrats-cont"></span>
+			<div class="sep-congrats">
+			    <hr>
+			    <span>Car</span>
+			</div>
+			<button id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</button>
+			<button class="btn hidden print-congrats form-info-dis-congrats">PRINT</button>
             </div>
         </div>
+	<div class="congrats-back-home pull-left">
+	    <i class="fa fa-home fa-3x pull-left"></i>
+	    <p class="pull-left"> HOME</p>
+	</div>
+	<div class="clearfix"></div>
         <div class="car-congrats">
             <img class="car-congrats-body race-car-img" src="" alt="">
             <img class="car-congrats-tint car-congrats-custom race-car-img" src="" alt="">
