@@ -17,6 +17,8 @@ $(document).ready(function($) {
             $('.btn-start-over').hide();
             $('.btn-race-car').hide();
             $('.race-main').hide();
+            $('.btn-back-carousel').hide();
+            $('.btn-back-preview').hide();
             carousel();
 
         } else {

@@ -58,3 +58,15 @@ html, body {
 .btn-green > p:hover {
 	color : #800000;
 }
+
+.customizer-selector {
+    position : relative;
+}
+
+.selection-indicator {
+    color    : green;
+    position : absolute;
+    top      : 5px;
+    left     : 5px;
+    z-index  : 10;
+}

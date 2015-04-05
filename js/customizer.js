@@ -1,6 +1,7 @@
 'use strict';
 
 $( '.btn-view-car' ).on( 'click', function () {
+	$( '.header-title' ).text( 'SELECT BACKGROUND' );
 	methods.showCustomizer( 'background' );
 } );
 
@@ -89,5 +90,27 @@ $( '.btn-rotate-clockwise' ).on( 'click', function () {
 			'type' : 'currentSide',
 			'id'   : sequence[ currentIndex + 1 ]
 		} );
+	}
+} );
+
+$( '.btn-back-carousel' ).on( 'click', function () {
+	methods.hideDiv( 'loading' );
+} );
+
+$( '.btn-back-preview' ).on( 'click', function () {
+	customizer.renderCar();
+	methods.hideDiv( 'carousel' );
+
+	// change back background to garage
+	$( '.customizer-main' ).removeClass( 'preview-main' );
+} );
+
+$( '.customizer-selector' ).on( 'click', function () {
+	if ( $( this ).find( '.selection-indicator' ).length > 0 ) {
+		$( this ).find( '.selection-indicator' ).remove();
+	} else {
+		// find other selection indicators and remove
+		$( this ).siblings().find( '.selection-indicator' ).remove();
+		$( this ).prepend( '<i class="fa fa-check-circle fa-2 selection-indicator"></i>' );
 	}
 } );

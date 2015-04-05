@@ -5,12 +5,44 @@ var methods = (function() {
         'hideDiv': function(id) {
 
             switch (id) {
-                // from carousel to customizer
+            	// loading to carousel
+                case 'loading' :
+					$('#carousel-main').show();
+					$('#loading').hide();
+                    $('.customizer-main').hide();
+                    $('.btn-view-car').hide();
+                    $('.btn-back-carousel').hide();
+                    $('.btn-back-preview').hide();
+                    $('.btn-customizer-group').hide();
+                    $('.btn-select-car').show();
+                    $('.btn-race-car').hide();
+                    $('.btn-start-over').hide();
+                    $('.btn-preview-group').hide();
+                    $('.btn-rotate-clockwise').hide();
+                    $('.btn-rotate-counter').hide();
+					// reset car
+					currentCar = {
+						'name'        : null,
+						'color'       : 1,
+						'tint'        : null,
+						'decal'       : null,
+						'rims'        : null,
+						'grill'       : null,
+						'skirt'       : null,
+						'spoiler'     : null,
+						'currentSide' : 1,
+						'raceBG'      : null
+					};
+					carousel();
+                	break;
+				// from carousel to customizer
                 case 'carousel':
                     $('#loading').hide();
                     $('#carousel-main').hide();
                     $('.customizer-main').show();
                     $('.btn-view-car').show();
+                    $('.btn-back-carousel').show();
+                    $('.btn-back-preview').hide();
                     $('.btn-customizer-group').show();
                     $('.btn-select-car').hide();
                     $('.btn-race-car').hide();
@@ -18,6 +50,8 @@ var methods = (function() {
                     $('.btn-preview-group').hide();
                     $('.btn-rotate-clockwise').hide();
                     $('.btn-rotate-counter').hide();
+
+                    $( '.header-title' ).text( 'GARAGE' );
 
                     console.log(currentCar);
 
@@ -64,6 +98,7 @@ var methods = (function() {
 
                     // add color to car color button
                     $('.customizer-car-color > p').addClass('active');
+                    $('#customizer-car-container').removeClass('preview-car-container');
 
                     // display default car - yellow
                     break;
@@ -78,6 +113,8 @@ var methods = (function() {
                     $('.btn-preview-group').show();
                     $('.btn-view-car').hide();
                     $('.btn-customizer-group').hide();
+                    console.log( $('#customizer-car-container') )
+                    $('#customizer-car-container').addClass('hello preview-car-container');
                     break;
 
                     // car preview to race
@@ -101,13 +138,16 @@ var methods = (function() {
             $('.btn-start-over').show();
             $('.btn-rotate-clockwise').show();
             $('.btn-rotate-counter').show();
+            $('.btn-back-preview').show();
 
             // hide customizer footer buttons, .btn-view-car
             $('.btn-view-car').hide();
             $('.btn-customizer-group').hide();
+            $('.btn-back-carousel').hide();
 
             // change background to preview background
             $('.customizer-main').addClass('preview-main');
+            $('#customizer-car-container').addClass( 'preview-car-container' );
         },
 
         'showCustomizer': function(customizer) {
@@ -129,28 +169,28 @@ var methods = (function() {
             var type = args.type;
             var id = args.id;
 
-            if ( currentCar[ type ] !== id ) {
-				currentCar[type] = id;
+            if (currentCar[type] !== id) {
+                currentCar[type] = id;
 
-				console.log(currentCar);
-				console.log('type: ' + type + ' - id: ' + id);
+                console.log(currentCar);
+                console.log('type: ' + type + ' - id: ' + id);
 
-				// re-render whole car if asset is color
-				customizer.renderCar();
+                customizer.renderCar();
             }
         },
 
         'resetCar': function() {
             currentCar = {
-                'name': currentCar.name,
-                'color': 1,
-                'tint': null,
-                'decal': null,
-                'rims': null,
-                'grill': null,
-                'skirt': null,
-                'spoiler': null,
-                'currentSide': 1
+                'name'        : currentCar.name,
+                'color'       : 1,
+                'tint'        : null,
+                'decal'       : null,
+                'rims'        : null,
+                'grill'       : null,
+                'skirt'       : null,
+                'spoiler'     : null,
+                'currentSide' : 1,
+                'raceBG'      : 3
             };
             customizer.renderCar();
         },
@@ -158,6 +198,7 @@ var methods = (function() {
         'initCanvas': function() {
             var canvas = document.getElementById('customizer-car-container');
             var context = canvas.getContext('2d');
+            context.clearRect ( 0 , 0 , canvas.width, canvas.height );
             var img = new Image();
 
             var side = currentCar.currentSide || 1;

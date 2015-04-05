@@ -8,15 +8,15 @@
 	background-size  : 100% auto;
 }
 
-.btn-customizer {
+.btn-customizer, .btn-back-carousel, .btn-back-preview{
 	padding-left  : 22px;
 	padding-right : 22px;
 	cursor        : pointer;
 }
 
 .btn-customizer > img {
-	height     : 60px;
-	margin-top : 15px;
+	height     : 40px;
+	margin-top : 25px;
 }
 
 .btn-customizer > p {
@@ -25,9 +25,30 @@
 	font-size  : 18px;
 }
 
+.btn-back-carousel > i, .btn-back-preview > i {
+	margin-top : 28px;
+	color      : white;
+	font-size  : 32px;
+	cursor     : pointer;
+}
+
+.btn-back-carousel > p, .btn-back-preview > p  {
+	margin-top : 30px;
+	color      : white;
+	font-size  : 18px;
+	cursor     : pointer;
+}
+
+.btn-back-carousel > p:hover, .btn-back-preview > p:hover {
+	margin-top : 30px;
+	color      : yellow;
+	font-size  : 18px;
+	cursor     : pointer;
+}
+
 .customizer-start-over, .btn-start-over {
 	text-align : center;
-	width      : 230px;
+	width      : 200px;
 }
 
 .btn-with-divider {
@@ -38,23 +59,23 @@
 }
 
 .customizer-car-color > p.active, .customizer-car-color > p:hover {
-	color : orange !important;
+	color : #F26122 !important;
 }
 
 .customizer-car-tint > p.active, .customizer-car-tint > p:hover {
-	color : #87CEEB !important;
+	color : #21D3FF !important;
 }
 
 .customizer-car-decal > p.active, .customizer-car-decal > p:hover {
-	color : violet !important;
+	color : #8424F7 !important;
 }
 
 .customizer-car-rims > p.active, .customizer-car-rims > p:hover {
-	color : green !important;
+	color : #0EDC7A !important;
 }
 
 .customizer-car-body > p.active, .customizer-car-body > p:hover {
-	color : yellow !important;
+	color : #FFF546 !important;
 }
 
 .customizer-holder {
@@ -75,17 +96,26 @@
 
 .customizer-car-container {
 	position        : relative;
-	top             : 60px;
-	right           : 80px;
+	top             : 80px;
+	right           : 120px;
+	image-rendering : -o-crisp-edges;
+}
+
+.preview-car-container {
+	position        : relative;
+	top             : 60px !important;
+	right           : 80px !important;
 	image-rendering : -o-crisp-edges;
 }
 
 .customizer-title {
-	font-size : 16px;
+	font-size : 20px;
 	margin    : 0 0;
+	color     : black;
 }
 
 .customizer-info {
+	color : black;
 }
 
 .customizer-item-3 {
