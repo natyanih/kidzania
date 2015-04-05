@@ -111,6 +111,6 @@ $( '.customizer-selector' ).on( 'click', function () {
 	} else {
 		// find other selection indicators and remove
 		$( this ).siblings().find( '.selection-indicator' ).remove();
-		$( this ).prepend( '<i class="fa fa-check-circle fa-2 selection-indicator"></i>' );
+		$( this ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 	}
 } );

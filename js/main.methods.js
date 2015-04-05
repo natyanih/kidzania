@@ -174,9 +174,17 @@ var methods = (function() {
 
                 console.log(currentCar);
                 console.log('type: ' + type + ' - id: ' + id);
-
-                customizer.renderCar();
+            } else {
+            	if ( type === 'color' ) {
+            		currentCar[ type ] = 1;
+            	} else if ( type === 'raceBG' ) {
+            		currentCar[ type ] = 3;
+            	} else {
+            		currentCar[ type ] = null;
+            	}
             }
+
+            customizer.renderCar();
         },
 
         'resetCar': function() {

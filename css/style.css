@@ -64,9 +64,10 @@ html, body {
 }
 
 .selection-indicator {
-    color    : green;
-    position : absolute;
-    top      : 5px;
-    left     : 5px;
-    z-index  : 10;
+    color       : green;
+    position    : absolute;
+    top         : 5px;
+    left        : 5px;
+    z-index     : 10;
+    text-shadow : 2px 2px 2px black;
 }
