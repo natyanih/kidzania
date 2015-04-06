@@ -102,6 +102,7 @@ $( '.btn-back-carousel' ).on( 'click', function () {
 } );
 
 $( '.btn-back-preview' ).on( 'click', function () {
+	currentCar.currentSide = 1;
 	customizer.renderCar();
 	methods.hideDiv( 'carousel' );
 

@@ -25,6 +25,9 @@ var customizer = ( function (){
 			img.src   = 'images/assets/' + currentCar.name + '/slices/color/' + color + '/' + side + '.png';
 
 			img.onload = function() {
+				width = img.width > width ? width : img.width;
+				// width = currentCar.name === 'crv' && currentCar.currentSide === 2 ? 270 : width;
+				// width = currentCar.name === 'crv' && currentCar.currentSide === 3 ? 300 : width;
 				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				self.renderTint();
 				self.renderDecal();
@@ -46,6 +49,7 @@ var customizer = ( function (){
 				img.src = 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/' + side + '.png';
 
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
@@ -63,6 +67,7 @@ var customizer = ( function (){
 				img.src = 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/' + side + '.png';
 
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
@@ -79,6 +84,7 @@ var customizer = ( function (){
 				img.src = 'images/assets/' + currentCar.name + '/slices/rims/' + currentCar.rims + '/' + side + '.png';
 
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
@@ -96,6 +102,7 @@ var customizer = ( function (){
 				img.src = 'images/assets/' + currentCar.name + '/slices/grill/' + currentCar.grill + '/' + side + '.png';
 
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
@@ -113,6 +120,7 @@ var customizer = ( function (){
 				img.src = 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/' + side + '.png';
 
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
@@ -127,8 +135,8 @@ var customizer = ( function (){
 				var offsetY = adjustment[ currentCar.name ].offset.spoiler[ side ].y;
 
 				img.src = 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/' + side + '.png';
-
 				img.onload = function() {
+					width = img.width > width ? width : img.width;
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}

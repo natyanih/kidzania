@@ -1,19 +1,34 @@
-function carousel () {
-	$( '#carousel-main' ).carousel( { interval : 2000 } );
-	$( '#carousel-main' ).bind( 'slid.bs.carousel', function ( e ) {
-	   var carouselData = $( this ).data( 'bs.carousel' );
+function carousel() {
+    $('#carousel-main').carousel({
+        interval: 2000
+    });
+    $('#carousel-main').bind('slid.bs.carousel', function(e) {
+        var carouselData = $(this).data('bs.carousel');
 
-		selectCar = carouselData.$element.find( '.item.active' ).attr( 'id' );
-	} );
+        selectCar = carouselData.$element.find('.item.active').attr('id');
+    });
 }
 
 // EVENT LISTENERS
-$( '.btn-select-car' ).on( 'click', function () {
-	console.log( 'Selected Car: ' + selectCar );
-	currentCar.name = selectCar || 'crv';
-	methods.hideDiv( 'carousel' );
+$('.btn-select-car').on('click', function() {
+    console.log('Selected Car: ' + selectCar);
+    currentCar = {
+        'name': selectCar || 'crv',
+        'color': 1,
+        'tint': null,
+        'decal': null,
+        'rims': null,
+        'grill': null,
+        'skirt': null,
+        'spoiler': null,
+        'currentSide': 1,
+        'raceBG': 3
+    };
+    // remove selection indicators
+    $('.customizer-main').find('.selection-indicator').remove();
+    methods.hideDiv('carousel');
 
-	// display default car
-	// jazz = yellow
-	methods.initCanvas();
-} );
+    // display default car
+    // jazz = yellow
+    methods.initCanvas();
+});
