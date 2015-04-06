@@ -28,6 +28,7 @@ $( '.customizer-car-body' ).on( 'click', function () {
 
 $( '.customizer-start-over' ).on( 'click', function () {
 	methods.resetCar();
+	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
 } );
 
 $( '.btn-start-over' ).on( 'click', function () {
@@ -36,6 +37,9 @@ $( '.btn-start-over' ).on( 'click', function () {
 
 	// change back background to garage
 	$( '.customizer-main' ).removeClass( 'preview-main' );
+
+	// remove selection indicators
+	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
 } );
 
 $( '.preview-background-1' ).on( 'click', function () {

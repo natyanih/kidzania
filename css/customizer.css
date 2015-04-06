@@ -144,10 +144,10 @@
 }
 
 .customizer-item-3-1 {
-	width         : 110px;
-	height        : 110px;
-	margin-right  : 15px;
-	margin-bottom : 15px;
+	width         : 120px;
+	height        : 120px;
+	margin-right  : 20px;
+	margin-bottom : 0;
 	cursor        : pointer;
 }
 
@@ -161,7 +161,11 @@
 }
 
 .customizer-item-3 > p, .customizer-item-3-1 > p, .customizer-item-1 > p, .customizer-item-auto > p {
-	text-align : center;
+	text-align          : center;
+	color               : black;
+	text-shadow         : 0 0 2px #fff; /* horizontal-offset vertical-offset 'blur' colour */
+	-moz-text-shadow    : 0 0 2px #fff;
+	-webkit-text-shadow : 0 0 2px #fff;
 }
 
 .customizer-item-3 > img {
