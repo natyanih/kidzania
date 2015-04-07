@@ -174,17 +174,20 @@ var methods = (function() {
 
                 console.log(currentCar);
                 console.log('type: ' + type + ' - id: ' + id);
+                customizer.renderCar();
             } else {
-            	if ( type === 'color' ) {
+            	if ( type === 'color' && id !== 1 ) {
             		currentCar[ type ] = 1;
+                    customizer.renderCar();
+                } else if ( type === 'color' && id === 1 ) {
+
             	} else if ( type === 'raceBG' ) {
             		currentCar[ type ] = 3;
             	} else {
             		currentCar[ type ] = null;
+                    customizer.renderCar();
             	}
             }
-
-            customizer.renderCar();
         },
 
         'resetCar': function() {

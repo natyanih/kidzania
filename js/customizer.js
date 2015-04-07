@@ -112,7 +112,15 @@ $( '.btn-back-preview' ).on( 'click', function () {
 
 $( '.customizer-selector' ).on( 'click', function () {
 	if ( $( this ).find( '.selection-indicator' ).length > 0 ) {
-		$( this ).find( '.selection-indicator' ).remove();
+
+		if ( !( $( this ).hasClass( 'type-default-color' ) ) ) {
+			$( this ).find( '.selection-indicator' ).remove();
+		}
+
+		// if color and no more color selected
+		if ( $( this ).hasClass( 'type-color' ) ) {
+			$( this ).siblings( '.type-default-color' ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+		}
 	} else {
 		// find other selection indicators and remove
 		$( this ).siblings().find( '.selection-indicator' ).remove();
