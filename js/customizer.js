@@ -121,9 +121,19 @@ $( '.customizer-selector' ).on( 'click', function () {
 		if ( $( this ).hasClass( 'type-color' ) ) {
 			$( this ).siblings( '.type-default-color' ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 		}
+
 	} else {
-		// find other selection indicators and remove
-		$( this ).siblings().find( '.selection-indicator' ).remove();
+
+		if ( $( this ).hasClass( 'type-grill' ) ) {
+			$( this ).siblings( '.type-grill' ).find( '.selection-indicator' ).remove();
+		} else if ( $( this ).hasClass( 'type-skirt' ) ) {
+			$( this ).siblings( '.type-skirt' ).find( '.selection-indicator' ).remove();
+		} else if  ( $( this ).hasClass( 'type-spoiler' ) ) {
+			$( this ).siblings( '.type-spoiler' ).find( '.selection-indicator' ).remove();
+		} else {
+			// find other selection indicators and remove
+			$( this ).siblings().find( '.selection-indicator' ).remove();
+		}
 		$( this ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 	}
 } );
