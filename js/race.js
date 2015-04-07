@@ -21,7 +21,6 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 function addCarStyle () {
      // ADDING CUSTOMIZE STYLE IN RACE CAR
-     console.log( currentCar )
     if ( currentCar.skirt && currentCar.skirt !== 1 ) {
 	$( '.race-car1-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' );
 	if ( !$( '.race-car1-skirt' ).hasClass( 'race-skirt-city' ) || !$( '.race-car1-skirt' ).hasClass( 'race-skirt-crv' ) || !$( '.race-car1-skirt' ).hasClass( 'race-skirt-jazz' ) ) {
