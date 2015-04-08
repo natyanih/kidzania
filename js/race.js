@@ -23,37 +23,55 @@ function addCarStyle () {
      // ADDING CUSTOMIZE STYLE IN RACE CAR
     if ( currentCar.skirt && currentCar.skirt !== 1 ) {
 	$( '.race-car1-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' );
-	if ( !$( '.race-car1-skirt' ).hasClass( 'race-skirt-city' ) || !$( '.race-car1-skirt' ).hasClass( 'race-skirt-crv' ) || !$( '.race-car1-skirt' ).hasClass( 'race-skirt-jazz' ) ) {
+	if ( !$( '.race-car1-skirt' ).hasClass( 'race-skirt-city' ) && !$( '.race-car1-skirt' ).hasClass( 'race-skirt-crv' ) && !$( '.race-car1-skirt' ).hasClass( 'race-skirt-jazz' ) ) {
 	    $( '.race-car1-skirt' ).addClass( 'race-skirt-' + currentCar.name );
-	}
+	}else{
+	 $( '.race-car1-skirt' ).removeClass( 'race-skirt-' + currentCar.prevCarName );
+	 $( '.race-car1-skirt' ).addClass( 'race-skirt-' + currentCar.name );
+    }
     }
     if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
 	$( '.race-car1-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' );
-	if ( !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-city' ) || !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-crv' ) || !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-jazz' ) ) {
+	if ( !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-city' ) && !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-crv' ) && !$( '.race-car1-spoiler' ).hasClass( 'race-spoiler-jazz' ) ) {
 	    $( '.race-car1-spoiler' ).addClass( 'race-spoiler-' + currentCar.name );
-	}
+	} else {
+	 $( '.race-car1-spoiler' ).removeClass( 'race-spoiler-' + currentCar.prevCarName );
+	 $( '.race-car1-spoiler' ).addClass( 'race-spoiler-' + currentCar.name );
+    }
     }
     if ( currentCar.tint ) {
 	$( '.race-car1-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' );
-	if ( !$( '.race-car1-tint' ).hasClass( 'race-tint-city' ) || !$( '.race-car1-tint' ).hasClass( 'race-tint-crv' ) || !$( '.race-car1-tint' ).hasClass( 'race-tint-jazz' ) ) {
+	if ( !$( '.race-car1-tint' ).hasClass( 'race-tint-city' ) && !$( '.race-car1-tint' ).hasClass( 'race-tint-crv' ) && !$( '.race-car1-tint' ).hasClass( 'race-tint-jazz' ) ) {
 	    $( '.race-car1-tint' ).addClass( 'race-tint-' + currentCar.name );
-	}
+	} else {
+	$( '.race-car1-tint' ).removeClass( 'race-tint-' + currentCar.prevCarName );
+	$( '.race-car1-tint' ).addClass( 'race-tint-' + currentCar.name );
+    }
     }
 
     if ( currentCar.decal ) {
 	$( '.race-car1-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' );
-	if ( !$( '.race-car1-decal' ).hasClass( 'race-decal-city' ) || !$( '.race-car1-decal' ).hasClass( 'race-decal-crv' ) || !$( '.race-car1-decal' ).hasClass( 'race-decal-jazz' ) ) {
+	if ( !$( '.race-car1-decal' ).hasClass( 'race-decal-city' ) && !$( '.race-car1-decal' ).hasClass( 'race-decal-crv' ) && !$( '.race-car1-decal' ).hasClass( 'race-decal-jazz' ) ) {
 	    $( '.race-car1-decal' ).addClass( 'race-decal-' + currentCar.name );
-	}
+	} else {
+	 $( '.race-car1-decal' ).removeClass( 'race-decal-' + currentCar.prevCarName );
+	 $( '.race-car1-decal' ).addClass( 'race-decal-' + currentCar.name );
+    }
     }
 
     $( '.race-car1' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
     $( '.race-car1-rim-back, .race-car1-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
-    if ( !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-city' ) || !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-crv' ) || !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-jazz' ) ) {
+    if ( !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-city' ) && !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-crv' ) && !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-jazz' ) ) {
 	$( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
+    } else {
+	$( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
+	$( '.race-car1-rim-back' ).removeClass( 'race-rim-back-' + currentCar.prevCarName );
     }
-    if ( !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-city' ) || !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-crv' ) || !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-jazz' ) ) {
+    if ( !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-city' ) && !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-crv' ) && !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-jazz' ) ) {
 	$( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
+    } else {
+	$( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
+	$( '.race-car1-rim-front' ).removeClass( 'race-rim-front-' + currentCar.prevCarName );
     }
 }
 
@@ -121,44 +139,102 @@ $( document ).ready( function ( $ ) {
 	    if ( !raceAgain ) {
                 $( '.race-main' ).addClass( 'hidden' );
                 $( '#congrats-screen' ).removeClass( 'hidden' );
+		$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 		    // ADDING CUSTOMIZE STYLE IN RACE CAR
 		    if ( currentCar.name === 'crv' ) {
 		    $( '.car-congrats' ).css( 'top', 301 );
+	    document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 			$( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
 			    + '<br /> Your favorite SUV now includes more available technology than ever before, like Lane Keeping Assist System, Adaptive Cruise Control and our Collision Mitigation Braking System.</p>' );
 		    }
 
 		    if ( currentCar.name === 'city' ) {
 		    $( '.car-congrats' ).css( 'top', 320 );
+	    document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 			$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
 			    + ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
 			    + ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
 		    }
 
 		    if ( currentCar.name === 'jazz' ) {
+		$( '.car-congrats' ).css( 'top', 269 );
+		document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 			$( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road.'
 			    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 		    }
 
-		    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
-			$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
-		    }
-		    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
-			$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
-		    }
+		 //    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
+			// $( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
+		 //    }
+		 //    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
+			// $( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
+		 //    }
 
-		    if ( currentCar.tint ) {
-			$( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
-		    }
+		 //    if ( currentCar.tint ) {
+			// $( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
+		 //    }
 
-		    if ( currentCar.decal ) {
-			$( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
-		    }
+		 //    if ( currentCar.decal ) {
+			// $( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
+		 //    }
 
-		    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
-		    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
+		 //    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
+		 //    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
+		 //    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
+		 //    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
+
+		if ( currentCar.skirt && currentCar.skirt !== 1 ) {
+		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' );
+		if ( !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-city' ) && !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-crv' ) && !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-jazz' ) ) {
+		    $( '.car-congrats-skirt' ).addClass( 'car-congrats-skirt-' + currentCar.name );
+		}else{
+		     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
+		     $( '.car-congrats-skirt' ).addClass( 'car-congrats-skirt-' + currentCar.name );
+		}
+		}
+		if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
+		$( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' );
+		if ( !$( '.car-congrats-spoiler' ).hasClass( 'car-congrats-spoiler-city' ) && !$( '.car-congrats-spoiler' ).hasClass( 'car-congrats-spoiler-crv' ) && !$( '.car-congrats-spoiler' ).hasClass( 'car-congrats-spoiler-jazz' ) ) {
+		    $( '.car-congrats-spoiler' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
+		} else {
+		     $( '.car-congrats-spoiler' ).removeClass( 'car-congrats-spoiler-' + currentCar.prevCarName );
+		     $( '.car-congrats-spoiler' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
+		}
+		}
+		if ( currentCar.tint ) {
+		$( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' );
+		if ( !$( '.car-congrats-tint' ).hasClass( 'car-congrats-tint-city' ) && !$( '.car-congrats-tint' ).hasClass( 'car-congrats-tint-crv' ) && !$( '.car-congrats-tint' ).hasClass( 'car-congrats-tint-jazz' ) ) {
+		    $( '.car-congrats-tint' ).addClass( 'car-congrats-tint-' + currentCar.name );
+		} else {
+		    $( '.car-congrats-tint' ).removeClass( 'car-congrats-tint-' + currentCar.prevCarName );
+		    $( '.car-congrats-tint' ).addClass( 'car-congrats-tint-' + currentCar.name );
+		}
+		}
+
+		if ( currentCar.decal ) {
+		$( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' );
+		if ( !$( '.car-congrats-decal' ).hasClass( 'car-congrats-decal-city' ) && !$( '.car-congrats-decal' ).hasClass( 'car-congrats-decal-crv' ) && !$( '.car-congrats-decal' ).hasClass( 'car-congrats-decal-jazz' ) ) {
+		    $( '.car-congrats-decal' ).addClass( 'car-congrats-decal-' + currentCar.name );
+		} else {
+		     $( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName );
+		     $( '.car-congrats-decal' ).addClass( 'car-congrats-decal-' + currentCar.name );
+		}
+		}
+
+		$( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
+		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
+		if ( !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-city' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-crv' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-jazz' ) ) {
+		$( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
+		} else {
 		    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
+		    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName );
+		}
+		if ( !$( '.car-congrats-rim-front' ).hasClass( 'car-congrats-rim-front-city' ) && !$( '.car-congrats-rim-front' ).hasClass( 'car-congrats-rim-front-crv' ) && !$( '.car-congrats-rim-front' ).hasClass( 'car-congrats-rim-front-jazz' ) ) {
+		$( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
+		} else {
 		    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
+		    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName );
+		}
 		    // END
 	    }
 	    raceAgain = false;
@@ -173,10 +249,11 @@ $( document ).ready( function ( $ ) {
 	$( '.race-game-precounter span' ).show();
 	$( '.race-car1-rim-back, .race-car1-rim-front' ).removeClass( 'race-rim-animate' );
 	$( '.race-car1-container, .race-background, .race-car2-container' ).removeClass( 'race-accelerate-car' );
-	$( '.race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
+	$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 	$( '.race-car1-container' ).remove();
 	$( '.race-car2-container' ).remove();
 	$( '.race-background' ).append( [ newCar1, newCar2 ] );
+	$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 	addCarStyle();
 	$( '.race-restart-overlay' ).addClass( 'hidden' );
 	$( '.race-start-btn' ).click();

@@ -31,7 +31,8 @@ var methods = (function() {
 						'skirt'       : null,
 						'spoiler'     : null,
 						'currentSide' : 1,
-						'raceBG'      : null
+						'raceBG'      : null,
+						'prevCarName' : currentCar.name
 					};
 					carousel();
                 	break;

@@ -10,7 +10,8 @@ var currentCar = {
     'skirt'       : null,
     'spoiler'     : null,
     'currentSide' : 1,
-    'raceBG'      : 3
+    'raceBG'      : 3,
+    'prevCarName' : null
 };
 
 var adjustment = {
