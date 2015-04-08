@@ -141,6 +141,11 @@ var customizer = ( function (){
 				};
 			}
 			$( '#customizer-car-container' ).fadeIn();
+		},
+
+		'selectDefaultColor' : function () {
+			var parentClass = '.' + currentCar.name + '-div-car-color';
+			$( parentClass ).find( '.type-default-color' ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 		}
 
 	};

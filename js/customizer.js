@@ -29,6 +29,7 @@ $( '.customizer-car-body' ).on( 'click', function () {
 $( '.customizer-start-over' ).on( 'click', function () {
 	methods.resetCar();
 	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
+	customizer.selectDefaultColor();
 } );
 
 $( '.btn-start-over' ).on( 'click', function () {
@@ -40,6 +41,7 @@ $( '.btn-start-over' ).on( 'click', function () {
 
 	// remove selection indicators
 	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
+	customizer.selectDefaultColor();
 } );
 
 $( '.preview-background-1' ).on( 'click', function () {
@@ -119,7 +121,7 @@ $( '.customizer-selector' ).on( 'click', function () {
 
 		// if color and no more color selected
 		if ( $( this ).hasClass( 'type-color' ) ) {
-			$( this ).siblings( '.type-default-color' ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+			customizer.selectDefaultColor();
 		}
 
 	} else {
