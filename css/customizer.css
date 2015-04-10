@@ -95,7 +95,7 @@
 }
 
 .customizer-car-container {
-	position        : absolute;
+	position        : relative;
 	top             : 140px;
 	right           : 120px;
 	image-rendering : -o-crisp-edges;
@@ -103,7 +103,7 @@
 }
 
 .customizer-car-container-2 {
-	position        : absolute;
+	position        : relative;
 	top             : 140px;
 	right           : 120px;
 	image-rendering : -o-crisp-edges;
