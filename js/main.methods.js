@@ -10,6 +10,13 @@ var methods = (function() {
 					$('#carousel-main').show();
 					$('#loading').hide();
                     $('.customizer-main').hide();
+
+                    // remove classes if returned from congrats page
+                    $( '.customizer-main' ).removeClass( 'preview-main' );
+                    $( '.customizer-main' ).removeClass( 'sunset-forest' );
+                    $( '.customizer-main' ).removeClass( 'city-street' );
+                    $( '.customizer-main' ).removeClass( 'summer-beach' );
+
                     $('.btn-view-car').hide();
                     $('.btn-back-carousel').hide();
                     $('.btn-back-preview').hide();
