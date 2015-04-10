@@ -159,6 +159,7 @@ $( document ).ready( function ( $ ) {
 		$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 		    // ADDING CUSTOMIZE STYLE IN RACE CAR
 	    document.styleSheets[10].addRule( '.car-congrats', 'top: 433px !important; left: 578px !important;' );
+        document.styleSheets[10].addRule( '.sep-congrats span', 'color : #B6B6B6 !important;' );
 		    if ( currentCar.name === 'crv' ) {
 		    $( '.car-congrats' ).css( 'top', 301 );
 	    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
