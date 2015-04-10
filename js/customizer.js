@@ -138,14 +138,18 @@ $( '.btn-back-preview' ).on( 'click', function () {
 
 $( '.customizer-selector' ).on( 'click', function () {
 	if ( $( this ).find( '.selection-indicator' ).length > 0 ) {
+		console.log( 'customizer-select' );
 
-		if ( !( $( this ).hasClass( 'type-default-color' ) ) ) {
-			$( this ).find( '.selection-indicator' ).remove();
-		}
+		$( this ).find( '.selection-indicator' ).remove();
 
 		// if color and no more color selected
 		if ( $( this ).hasClass( 'type-color' ) ) {
 			customizer.selectDefaultColor();
+		}
+
+		if ( $( this ).hasClass( 'type-tint' ) ) {
+			console.log( 'has Class tint' );
+			customizer.selectDefaultTint();
 		}
 
 	} else {
