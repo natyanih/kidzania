@@ -146,7 +146,21 @@ var customizer = ( function (){
 		'selectDefaultColor' : function () {
 			var parentClass = '.' + currentCar.name + '-div-car-color';
 			$( parentClass ).find( '.type-default-color' ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
-		}
+		},
+
+		'selectDefaultTint' : function () {
+			var parentClass = '.' + currentCar.name + '-div-car-tint';
+			var tintClass   = '.' + currentCar.name + '-customizer-tint-1';
+
+			$( parentClass ).find( tintClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+		},
+
+		'selectDefaultBackground' : function () {
+			var parentClass = '.' + currentCar.name + '-div-car-background';
+			var bgClass   = '.' + currentCar.name + '-customizer-background-3';
+
+			$( parentClass ).find( bgClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+		},
 
 	};
 })();

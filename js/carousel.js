@@ -22,14 +22,14 @@ $('.btn-select-car').on('click', function() {
         'skirt': null,
         'spoiler': null,
         'currentSide': 1,
-        'raceBG': 3
+        'raceBG': null
     };
     // remove selection indicators
     $('.customizer-main').find('.selection-indicator').remove();
 
     // add default selection indicator for color
-    var defaultColor = '.' + currentCar.name + '-customizer-color-1';
-    $( defaultColor ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+    customizer.selectDefaultColor();
+    customizer.selectDefaultTint();
 
     methods.hideDiv('carousel');
 

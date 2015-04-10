@@ -149,6 +149,18 @@ var methods = (function() {
             // change background to preview background
             $('.customizer-main').addClass('preview-main');
             $('.customizer-car-container').addClass( 'preview-car-container' );
+
+            switch ( currentCar.raceBG ) {
+                case 1 :
+                    $( '.preview-main' ).addClass( 'sunset-forest' );
+                    break;
+                case 2 :
+                    $( '.preview-main' ).addClass( 'summer-beach' );
+                    break;
+                case 3 :
+                    $( '.preview-main' ).addClass( 'city-street' );
+                    break;
+            }
         },
 
         'showCustomizer': function(customizer) {
@@ -182,8 +194,6 @@ var methods = (function() {
                     customizer.renderCar();
                 } else if ( type === 'color' && id === 1 ) {
 
-            	} else if ( type === 'raceBG' ) {
-            		currentCar[ type ] = 3;
             	} else {
             		currentCar[ type ] = null;
                     customizer.renderCar();

@@ -30,6 +30,7 @@ $( '.customizer-start-over' ).on( 'click', function () {
 	methods.resetCar();
 	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
 	customizer.selectDefaultColor();
+	customizer.selectDefaultTint();
 } );
 
 $( '.btn-start-over' ).on( 'click', function () {
@@ -38,31 +39,51 @@ $( '.btn-start-over' ).on( 'click', function () {
 
 	// change back background to garage
 	$( '.customizer-main' ).removeClass( 'preview-main' );
+	$( '.customizer-main' ).removeClass( 'sunset-forest' );
+	$( '.customizer-main' ).removeClass( 'city-street' );
+	$( '.customizer-main' ).removeClass( 'summer-beach' );
 
 	// remove selection indicators
 	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
 	customizer.selectDefaultColor();
+	customizer.selectDefaultTint();
 } );
 
 $( '.preview-background-1' ).on( 'click', function () {
-	methods.applyAsset({
-        'type' : 'raceBG',
-        'id'   : 1
-    });
+    $( '.preview-main' ).removeClass( 'summer-beach' );
+    $( '.preview-main' ).removeClass( 'city-street' );
+    if ( currentCar.raceBG === 1 ) {
+    	$( '.preview-main' ).removeClass( 'sunset-forest' );
+    	currentCar.raceBG = null;
+    } else {
+    	$( '.preview-main' ).addClass( 'sunset-forest' );
+    	currentCar.raceBG = 1;
+    }
 } );
 
 $( '.preview-background-2' ).on( 'click', function () {
-	methods.applyAsset({
-        'type' : 'raceBG',
-        'id'   : 2
-    });
+	$( '.preview-main' ).removeClass( 'city-street' );
+    $( '.preview-main' ).removeClass( 'sunset-forest' );
+    if ( currentCar.raceBG === 2 ) {
+		$( '.preview-main' ).removeClass( 'summer-beach' );
+		currentCar.raceBG = null;
+    } else {
+    	$( '.preview-main' ).addClass( 'summer-beach' );
+    	currentCar.raceBG = 2;
+    }
 } );
 
 $( '.preview-background-3' ).on( 'click', function () {
-	methods.applyAsset({
-        'type' : 'raceBG',
-        'id'   : 3
-    });
+    $( '.preview-main' ).removeClass( 'sunset-forest' );
+	$( '.preview-main' ).removeClass( 'summer-beach' );
+	console.log( currentCar.raceBG );
+	if ( currentCar.raceBG === 3 ) {
+		$( '.preview-main' ).removeClass( 'city-street' );
+		currentCar.raceBG = null;
+	} else {
+		$( '.preview-main' ).addClass( 'city-street' );
+		currentCar.raceBG = 3;
+	}
 } );
 
 $( '.btn-rotate-counter' ).on( 'click', function () {
@@ -104,6 +125,9 @@ $( '.btn-back-carousel' ).on( 'click', function () {
 } );
 
 $( '.btn-back-preview' ).on( 'click', function () {
+	$( '.preview-main' ).removeClass( 'sunset-forest' );
+	$( '.preview-main' ).removeClass( 'summer-beach' );
+	$( '.preview-main' ).removeClass( 'city-street' );
 	currentCar.currentSide = 1;
 	customizer.renderCar();
 	methods.hideDiv( 'carousel' );

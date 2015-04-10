@@ -1,8 +1,9 @@
 $( '.btn-race-car' ).on( 'click', function () {
     methods.hideDiv( 'preview' );
 
-    currentCar.color = currentCar.color || 1;
-    currentCar.rims  = currentCar.rims || 1;
+    currentCar.color  = currentCar.color || 1;
+    currentCar.rims   = currentCar.rims || 1;
+    currentCar.raceBG = currentCar.raceBG || 3;
 
     addCarStyle();
 

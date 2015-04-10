@@ -8,18 +8,36 @@
     background-size: 100% auto;
 }
 
+.city-street {
+    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/city-background.png');
+    background-position: center center, right top;
+    background-size: 100% auto, auto auto;
+}
+
+.sunset-forest {
+    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/forest-background.png');
+    background-position: center center, right top;
+    background-size: 100% auto, auto auto;
+}
+
+.summer-beach {
+    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/beach-background.png');
+    background-position: center center, right top;
+    background-size: 100% auto, auto auto;
+}
+
 .btn-rotate-counter {
-    position : relative;
-    top      : -webkit-calc(100%/ 2);
-    top      : calc(100% / 2);
-    right    : 50px;
-    cursor : pointer;
+    position: relative;
+    top: -webkit-calc(100%/ 2);
+    top: calc(100% / 2);
+    right: 50px;
+    cursor: pointer;
 }
 
 .btn-rotate-clockwise {
-	position : absolute;
-    top    : -webkit-calc(100%/ 2);
-    top    : calc(100% / 2);
-    right  : 795px;
-    cursor : pointer;
+    position: absolute;
+    top: -webkit-calc(100%/ 2);
+    top: calc(100% / 2);
+    right: 795px;
+    cursor: pointer;
 }
