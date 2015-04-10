@@ -694,7 +694,7 @@
         <div class="video">
             <video id="video" width="300" height="300" autoplay></video>
             <div class="form-info-congrats">
-		<form onsubmit="return printPage()">
+		<form id="myForm" onsubmit="return printPage()">
 		    <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name" required>
 		    <span id="desinger-name-congrats-cont"></span>
 		    <div class="sep-congrats">
@@ -709,7 +709,7 @@
 		    </div>
 		    <span id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</span>
 		    <span id="retake-picture" class="btn form-info-dis-congrats hidden">RETAKE PICTURE</span>
-		    <button type="submit" class="btn hidden print-congrats form-info-dis-congrats">PRINT</button>
+		    <button type="submit" class="btn hidden print-congrats form-info-dis-congrats print-btn">PRINT</button>
 		</form>
             </div>
         </div>

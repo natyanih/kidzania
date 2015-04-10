@@ -58,6 +58,13 @@ function getValue ( id, target ) {
     var input = document.getElementById( id );
     var value = input.value;
 
+    if ( document.getElementById( 'desinger-name-congrats' ).value.match( /^\s*$/ ) ) {
+
+        document.getElementById( id ).setCustomValidity('White spaces not allowed');
+    } else {
+        document.getElementById( id ).setCustomValidity('');
+    }
+
     var span = document.getElementById( target );
     span.innerText = value;
 }
