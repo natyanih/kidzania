@@ -43,3 +43,7 @@
 	text-align : center;
 	color      : #FFF;
 }
+
+.progress-bar-success {
+    background-color : #A0F937;
+}
