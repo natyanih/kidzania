@@ -185,15 +185,15 @@ var methods = (function() {
         },
 
         'applyAsset': function(args) {
-            console.log(args);
             var type = args.type;
             var id = args.id;
+
+            console.log(currentCar);
+            console.log('type: ' + type + ' - id: ' + id);
 
             if (currentCar[type] !== id) {
                 currentCar[type] = id;
 
-                console.log(currentCar);
-                console.log('type: ' + type + ' - id: ' + id);
                 customizer.renderCar();
             } else {
             	if ( type === 'color' && id !== 1 ) {
@@ -203,6 +203,9 @@ var methods = (function() {
 
                 } else if ( type === 'tint' && id === 1 ) {
 
+                } else if ( type === 'tint' ) && id === 2 {
+                    currentCar[ type ] = 1;
+                    customizer.renderCar();
             	} else {
             		currentCar[ type ] = null;
                     customizer.renderCar();

@@ -95,10 +95,19 @@
 }
 
 .customizer-car-container {
-	position        : relative;
+	position        : absolute;
 	top             : 140px;
 	right           : 120px;
 	image-rendering : -o-crisp-edges;
+	z-index         : 2;
+}
+
+.customizer-car-container-2 {
+	position        : absolute;
+	top             : 140px;
+	right           : 120px;
+	image-rendering : -o-crisp-edges;
+	z-index         : 1;
 }
 
 .preview-car-container {
