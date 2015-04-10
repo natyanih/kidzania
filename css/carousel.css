@@ -1,13 +1,20 @@
 /* MAIN CAROUSEL */
 
 .carousel > .carousel-body {
-    height: -moz-calc( 100% - 201px);
-    height: -webkit-calc( 100% - 201px);
-    height: calc( 100% - 201px);
-    background-color: #ffcc00;
-    background: url('../images/backgrounds/carousel-bg.jpg');
-    background-size: 100% auto;
+    height              : -moz-calc( 100% - 201px);
+    height              : -webkit-calc( 100% - 201px);
+    height              : calc( 100% - 201px);
+    min-width           : 1360px;
+    min-height          : 510px;
+    background-color    : #ffcc00;
+    background          : url('../images/backgrounds/carousel-bg.jpg');
+    background-size     : auto auto;
     background-position : center center;
+    position            : relative;
+}
+
+.carouse-inner {
+    height: 100%;
 }
 
 .carousel-info {
@@ -16,14 +23,14 @@
     top: 0;
     left: 150px;
     width: 500px;
-    height: 500px;
     text-align: left;
+    height: 600px;
 }
 
 .carousel-info > .car-details {
     width: 100%;
     position: absolute;
-    top: 30px;
+    top: 60px;
 }
 
 .car-details > p,
@@ -53,7 +60,7 @@
 .carousel-control > img {
     height: 50px;
     position: relative;
-    top: 225px;
+    top: 275px;
 }
 
 .car-details-table {
@@ -69,4 +76,21 @@
 
 .car-details-table table tr td:nth-child(2) {
     padding-left: 25px;
+}
+
+@media screen and ( max-height : 718px) {
+    .carousel-info {
+        height : 500px;
+    }
+    .carousel-info > .car-details {
+        width: 100%;
+        position: absolute;
+        top: 30px;
+    }
+
+    .carousel-control > img {
+        height: 50px;
+        position: relative;
+        top: 225px;
+    }
 }

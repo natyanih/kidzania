@@ -1,6 +1,7 @@
 function carousel() {
     $('#carousel-main').carousel({
-        interval: 2000
+        'interval' : 3000,
+        'pause'    : true
     });
     $('#carousel-main').bind('slid.bs.carousel', function(e) {
         var carouselData = $(this).data('bs.carousel');

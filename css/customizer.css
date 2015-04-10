@@ -5,7 +5,7 @@
 	background-color : #ffcc00;
 	background       : url( '../images/backgrounds/garage-bg.jpg' );
 	background-position : center center;
-	background-size  : 100% auto;
+	background-size  : auto auto;
 }
 
 .btn-customizer, .btn-back-carousel, .btn-back-preview{
