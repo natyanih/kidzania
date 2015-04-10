@@ -3,7 +3,7 @@ var sequence   = [ 1,4,7,2,5,6,8,3 ];
 var currentCar = {
     'name'        : null,
     'color'       : 1,
-    'tint'        : null,
+    'tint'        : 1,
     'decal'       : null,
     'rims'        : null,
     'grill'       : null,

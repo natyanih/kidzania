@@ -17,7 +17,7 @@ $('.btn-select-car').on('click', function() {
     currentCar = {
         'name': selectCar || 'city',
         'color': 1,
-        'tint': null,
+        'tint': 1,
         'decal': null,
         'rims': null,
         'grill': null,

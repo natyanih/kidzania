@@ -31,7 +31,7 @@ var methods = (function() {
 					currentCar = {
 						'name'        : null,
 						'color'       : 1,
-						'tint'        : null,
+						'tint'        : 1,
 						'decal'       : null,
 						'rims'        : null,
 						'grill'       : null,
@@ -212,14 +212,14 @@ var methods = (function() {
             currentCar = {
                 'name'        : currentCar.name,
                 'color'       : 1,
-                'tint'        : null,
+                'tint'        : 1,
                 'decal'       : null,
                 'rims'        : null,
                 'grill'       : null,
                 'skirt'       : null,
                 'spoiler'     : null,
                 'currentSide' : 1,
-                'raceBG'      : 3
+                'raceBG'      : null
             };
             customizer.renderCar();
         },
