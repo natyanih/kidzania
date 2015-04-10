@@ -1,5 +1,16 @@
 @page {
-	size: landscape;
+	size   : A4;
+	margin : 0;
+}
+
+html, body {
+	width  : 210mm;
+	height : 297mm;
+}
+
+.printing-congrats {
+	-webkit-transform: rotate(90deg); -moz-transform:rotate(-90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .congrats-background img {
@@ -9,11 +20,20 @@
 }
 
 .video {
-	top: 360px;
+	top  : 360px;
+	left : 241px;
+}
+
+#video {
+	width  : 230px;
+	height : 230px;
 }
 
 .canvas-container {
-	top: 398px;
+	top    : 360px;
+	left   : 241px;
+	width  : 230px;
+	height : 230px;
 }
 
 .my-dream-car-congrats {

@@ -66,8 +66,12 @@
 
 .honda-logo-congrats {
     position : absolute;
-    left     : 1049px;
+    left     : 1203px;
     top      : 16px;
+}
+
+.honda-logo-congrats img {
+	width : 175px;
 }
 .form-info-dis-congrats {
 	margin-bottom: 10px;
@@ -80,11 +84,11 @@
 .kidzania-logo-congrats {
 	position : absolute;
 	top      : 687px;
-	left     : 994px;
+	left     : 1178px;
 }
 
 .kidzania-logo-congrats img {
-	width : 400px;
+	width : 220px;
 }
 
 #desinger-name-congrats-cont {

@@ -1,6 +1,6 @@
 #loading {
     height              : -webkit-calc( 100% );
-    background          : url( '/images/loading/loading-bg.png' );
+    background          : url( '../images/loading/loading-bg.png' );
     background-position : center center;
     background-size     : auto 100%;
 

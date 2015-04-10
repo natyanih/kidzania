@@ -164,26 +164,6 @@ $( document ).ready( function ( $ ) {
 			    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 		    }
 
-		 //    if ( currentCar.skirt && currentCar.skirt !== 1 ) {
-			// $( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' ).addClass( 'car-congrats-skirt-' + currentCar.name );
-		 //    }
-		 //    if ( currentCar.spoiler && currentCar.spoiler !== 1 ) {
-			// $( '.car-congrats-spoiler' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/6.png' ).addClass( 'car-congrats-spoiler-' + currentCar.name );
-		 //    }
-
-		 //    if ( currentCar.tint ) {
-			// $( '.car-congrats-tint' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/tint/' + currentCar.tint + '/6.png' ).addClass( 'car-congrats-tint-' + currentCar.name );
-		 //    }
-
-		 //    if ( currentCar.decal ) {
-			// $( '.car-congrats-decal' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/decal/' + currentCar.decal + '/6.png' ).addClass( 'car-congrats-decal-' + currentCar.name + '-' + currentCar.decal );
-		 //    }
-
-		 //    $( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
-		 //    $( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
-		 //    $( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
-		 //    $( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
-
 		if ( currentCar.skirt && currentCar.skirt !== 1 ) {
 		$( '.car-congrats-skirt' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/6.png' );
 		if ( !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-city' ) && !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-crv' ) && !$( '.car-congrats-skirt' ).hasClass( 'car-congrats-skirt-jazz' ) ) {
