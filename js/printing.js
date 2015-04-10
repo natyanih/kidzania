@@ -74,6 +74,7 @@ $( '.congrats-back-home' ).on( 'click', function () {
     $( '#congrats-screen' ).addClass( 'hidden' );
     $( '.race-carsmoke' ).hide();
     $( '.race-enemy-tire, .race-enemy-tireback' ).hide();
+    $( '#canvas' ).addClass( 'hidden' );
     $('#carousel').show();
     $( '.race-prestart-overlay' ).show();
     $( '.race-game-precounter' ).hide();

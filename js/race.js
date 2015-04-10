@@ -152,9 +152,10 @@ $( document ).ready( function ( $ ) {
 	}, 13500 );
 	setTimeout( function () {
 	    if ( !raceAgain ) {
-	    console.log( currentCar.prevCarName )
                 $( '.race-main' ).addClass( 'hidden' );
                 $( '#congrats-screen' ).removeClass( 'hidden' );
+		$( '#desinger-name-congrats' ).attr('autocomplete', 'off');
+		$( '#car-name-congrats' ).attr('autocomplete', 'off');
 		$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 		    // ADDING CUSTOMIZE STYLE IN RACE CAR
 	    document.styleSheets[10].addRule( '.car-congrats', 'top: 433px !important; left: 578px !important;' );

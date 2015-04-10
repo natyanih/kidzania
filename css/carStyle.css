@@ -39,8 +39,8 @@
 
 .race-spoiler-crv {
     width    : 250px;
-    top      : 11px;
-    left     : 6px;
+    top      : 12px;
+    left     : 2px;
 }
 
 .race-rim-back-crv {
@@ -90,7 +90,7 @@
 .car-congrats-spoiler-crv {
     width : 700px;
     top   : 32px;
-    left  : 22px;
+    left  : 9px;
 }
 
 .car-congrats-rim-back-crv {
