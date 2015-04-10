@@ -2,7 +2,7 @@ function carousel() {
     $('#carousel-main').carousel({
         'interval' : 3000,
         'pause'    : true
-    });
+    }).carousel('pause');
     $('#carousel-main').bind('slid.bs.carousel', function(e) {
         var carouselData = $(this).data('bs.carousel');
 
@@ -14,7 +14,7 @@ function carousel() {
 $('.btn-select-car').on('click', function() {
     console.log('Selected Car: ' + selectCar);
     currentCar = {
-        'name': selectCar || 'crv',
+        'name': selectCar || 'city',
         'color': 1,
         'tint': null,
         'decal': null,
