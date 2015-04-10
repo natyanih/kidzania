@@ -129,7 +129,7 @@ $( '.btn-back-preview' ).on( 'click', function () {
 	$( '.preview-main' ).removeClass( 'summer-beach' );
 	$( '.preview-main' ).removeClass( 'city-street' );
 	currentCar.currentSide = 1;
-	customizer.renderCar();
+	customizer.renderCar( { 'customize' : true, 'render' : 'wholeCar' } );
 	methods.hideDiv( 'carousel' );
 
 	// change back background to garage

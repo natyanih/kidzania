@@ -1,16 +1,41 @@
 var customizer = ( function (){
-	var canvas  = document.getElementById('customizer-car-container');
+	var carCanvas  = document.getElementById('customizer-car-container');
+	var carContext = carCanvas.getContext('2d');
+
+	var canvas  = document.getElementById('customizer-car-container-2');
 	var context = canvas.getContext('2d');
 
 	return {
-		'clearCanvas' : function () {
+		'clearAssetCanvas' : function () {
+			var self    = this;
+
 			context.clearRect ( 0 , 0 , canvas.width, canvas.height );
-			this.renderColor();
+			this.renderTint();
+			this.renderTint();
+			self.renderDecal();
+			self.renderRims();
+			self.renderGrill();
+			self.renderSkirt();
+			self.renderSpoiler();
 		},
 
-		'renderCar' : function () {
-			$( '#customizer-car-container' ).hide();
-			this.clearCanvas();
+		'renderCar' : function ( args ) {
+			// $( '#customizer-car-container' ).hide();
+
+			// args.customize = false - preview car
+			// args.customize = true
+			if ( !args.customize ) {
+				this.renderColor();
+				this.clearAssetCanvas();
+			} else if ( args.customize && args.render === 'color' ) {
+				this.renderColor();
+			} else if ( args.customize && args.render === 'asset' ) {
+				this.clearAssetCanvas();
+			} else {
+				// resetCar - render both color and assets
+				this.renderColor();
+				this.clearAssetCanvas();
+			}
 		},
 
 		'renderColor' : function () {
@@ -22,19 +47,14 @@ var customizer = ( function (){
 			var offsetY = adjustment[ currentCar.name ].offset.color[ side ].y;
 			var img     = new Image();
 
+			carContext.clearRect ( 0 , 0 , carCanvas.width, carCanvas.height );
 			img.src   = 'images/assets/' + currentCar.name + '/slices/color/' + color + '/' + side + '.png';
 
 			img.onload = function() {
 				width = img.width > width ? width : img.width;
 				// width = currentCar.name === 'crv' && currentCar.currentSide === 2 ? 270 : width;
 				// width = currentCar.name === 'crv' && currentCar.currentSide === 3 ? 300 : width;
-				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
-				self.renderTint();
-				self.renderDecal();
-				self.renderRims();
-				self.renderGrill();
-				self.renderSkirt();
-				self.renderSpoiler();
+				carContext.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 			};
 		},
 
@@ -140,7 +160,7 @@ var customizer = ( function (){
 					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
 				};
 			}
-			$( '#customizer-car-container' ).fadeIn();
+			//$( '#customizer-car-container' ).fadeIn();
 		},
 
 		'selectDefaultColor' : function () {

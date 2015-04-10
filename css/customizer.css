@@ -99,15 +99,21 @@
 	top             : 140px;
 	right           : 120px;
 	image-rendering : -o-crisp-edges;
-	z-index         : 2;
 }
 
-.customizer-car-container-2 {
-	position        : relative;
-	top             : 140px;
-	right           : 120px;
-	image-rendering : -o-crisp-edges;
-	z-index         : 1;
+/* ASSETS canvas */
+.customizer-car-container-div {
+	position : absolute;
+	top      : 0;
+	right    : 0;
+}
+
+.div-1 {
+	z-index : 1;
+}
+
+.div-2 {
+	z-index : 2;
 }
 
 .preview-car-container {

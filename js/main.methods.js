@@ -184,7 +184,7 @@ var methods = (function() {
             }
         },
 
-        'applyAsset': function(args) {
+        'applyAsset': function( args ) {
             var type = args.type;
             var id = args.id;
 
@@ -194,21 +194,29 @@ var methods = (function() {
             if (currentCar[type] !== id) {
                 currentCar[type] = id;
 
-                customizer.renderCar();
+                // render 2 canvases if color
+                if ( type === 'color' ) {
+                    customizer.renderCar( { 'customize' : true, 'render' : 'color' } );
+                } else if ( type === 'currentSide' ) {
+                    customizer.renderCar( { 'customize' : false, 'render' : 'wholeCar' } );
+                } else {
+                    customizer.renderCar( { 'customize' : true, 'render' : 'asset' } );
+                }
+
             } else {
             	if ( type === 'color' && id !== 1 ) {
             		currentCar[ type ] = 1;
-                    customizer.renderCar();
+                    customizer.renderCar({ 'customize' : true, 'render' : 'color' } );
                 } else if ( type === 'color' && id === 1 ) {
 
                 } else if ( type === 'tint' && id === 1 ) {
 
                 } else if ( type === 'tint' && id === 2 ) {
                     currentCar[ type ] = 1;
-                    customizer.renderCar();
+                    customizer.renderCar( { 'customize' : true, 'render' : 'asset' } );
             	} else {
             		currentCar[ type ] = null;
-                    customizer.renderCar();
+                    customizer.renderCar( { 'customize' : true, 'render' : 'asset' } );
             	}
             }
         },
@@ -226,13 +234,18 @@ var methods = (function() {
                 'currentSide' : 1,
                 'raceBG'      : null
             };
-            customizer.renderCar();
+            customizer.renderCar( { 'customize' : true, 'render' : 'wholeCar' } );
         },
 
         'initCanvas': function() {
-            var canvas = document.getElementById('customizer-car-container');
+            var carCanvas = document.getElementById('customizer-car-container');
+            var carContext = carCanvas.getContext('2d');
+            carContext.clearRect ( 0 , 0 , carCanvas.width, carCanvas.height );
+
+            var canvas  = document.getElementById('customizer-car-container-2');
             var context = canvas.getContext('2d');
             context.clearRect ( 0 , 0 , canvas.width, canvas.height );
+
             var img = new Image();
 
             var side = currentCar.currentSide || 1;
@@ -243,7 +256,7 @@ var methods = (function() {
             img.src = 'images/assets/' + currentCar.name + '/slices/color/1/' + side + '.png';
 
             img.onload = function() {
-                context.drawImage(img, offsetX, offsetY, width, img.height * width / img.width);
+                carContext.drawImage(img, offsetX, offsetY, width, img.height * width / img.width);
             };
         }
     };
