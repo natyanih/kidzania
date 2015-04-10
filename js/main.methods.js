@@ -203,7 +203,7 @@ var methods = (function() {
 
                 } else if ( type === 'tint' && id === 1 ) {
 
-                } else if ( type === 'tint' ) && id === 2 {
+                } else if ( type === 'tint' && id === 2 ) {
                     currentCar[ type ] = 1;
                     customizer.renderCar();
             	} else {
