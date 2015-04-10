@@ -58,9 +58,9 @@ function getValue ( id, target ) {
     var input = document.getElementById( id );
     var value = input.value;
 
-    if ( document.getElementById( 'desinger-name-congrats' ).value.match( /^\s*$/ ) ) {
+    if ( document.getElementById( id ).value.match( /^\s*$/ ) ) {
 
-        document.getElementById( id ).setCustomValidity('White spaces not allowed');
+        document.getElementById( id ).setCustomValidity( 'Please fill out this field' );
     } else {
         document.getElementById( id ).setCustomValidity('');
     }
