@@ -66,9 +66,14 @@ var newCar2 = $( '.race-car2-container' ).clone();
 
 $( '.congrats-back-home' ).on( 'click', function () {
     currentCar.prevCarName = currentCar.name;
-    $( '#desinger-name-congrats' ).value = '';
-    $( '#car-name-congrats' ).value = '';
+    document.getElementById( 'desinger-name-congrats' ).value = '';
+    document.getElementById( 'car-name-congrats' ).value = '';
+    $( '#retake-picture' ).addClass( 'hidden' );
+    $( '#take-picture' ).removeClass( 'hidden' );
+    $('.print-congrats').addClass('hidden');
     $( '#congrats-screen' ).addClass( 'hidden' );
+    $( '.race-carsmoke' ).hide();
+    $( '.race-enemy-tire, .race-enemy-tireback' ).hide();
     $('#carousel').show();
     $( '.race-prestart-overlay' ).show();
     $( '.race-game-precounter' ).hide();
