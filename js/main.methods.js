@@ -201,6 +201,8 @@ var methods = (function() {
                     customizer.renderCar();
                 } else if ( type === 'color' && id === 1 ) {
 
+                } else if ( type === 'tint' && id === 1 ) {
+
             	} else {
             		currentCar[ type ] = null;
                     customizer.renderCar();
