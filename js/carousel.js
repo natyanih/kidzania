@@ -13,6 +13,7 @@ function carousel() {
 // EVENT LISTENERS
 $('.btn-select-car').on('click', function() {
     console.log('Selected Car: ' + selectCar);
+    console.log( currentCar.prevCarName )
     currentCar = {
         'name': selectCar || 'city',
         'color': 1,
@@ -23,7 +24,8 @@ $('.btn-select-car').on('click', function() {
         'skirt': null,
         'spoiler': null,
         'currentSide': 1,
-        'raceBG': null
+	'raceBG': null,
+	'prevCarName' : currentCar.prevCarName
     };
     // remove selection indicators
     $('.customizer-main').find('.selection-indicator').remove();

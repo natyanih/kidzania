@@ -30,14 +30,24 @@ var canvas = document.getElementById('canvas'),
     };
 
 document.getElementById('take-picture').addEventListener('click', function(e) {
+    $( '#canvas' ).removeClass( 'hidden' );
     context.drawImage(video, 0, 0, 300, 225);
-    e.target.textContent = 'Retake Picture';
+    $( this ).addClass( 'hidden' );
+    $( '#retake-picture' ).removeClass( 'hidden' );
     $('.print-congrats').removeClass('hidden');
 });
 
-$('.print-congrats').on('click', function() {
-    window.print();
+document.getElementById('retake-picture').addEventListener('click', function(e) {
+    $( '#canvas' ).addClass( 'hidden' );
+    $( this ).addClass( 'hidden' );
+    $( '#take-picture' ).removeClass( 'hidden' );
+    $('.print-congrats').removeClass('hidden');
 });
+
+function printPage() {
+    window.print();
+    return false;
+};
 
 $( '.desinger-name-congrats' ).keydown( function ( e ) {
     console.log( this.value + String.fromCharCode(e.keyCode) )
@@ -55,6 +65,9 @@ var newCar1 = $( '.race-car1-container' ).clone();
 var newCar2 = $( '.race-car2-container' ).clone();
 
 $( '.congrats-back-home' ).on( 'click', function () {
+    currentCar.prevCarName = currentCar.name;
+    $( '#desinger-name-congrats' ).value = '';
+    $( '#car-name-congrats' ).value = '';
     $( '#congrats-screen' ).addClass( 'hidden' );
     $('#carousel').show();
     $( '.race-prestart-overlay' ).show();

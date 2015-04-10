@@ -63,16 +63,16 @@ function addCarStyle () {
     $( '.race-car1' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
     $( '.race-car1-rim-back, .race-car1-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
     if ( !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-city' ) && !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-crv' ) && !$( '.race-car1-rim-back' ).hasClass( 'race-rim-back-jazz' ) ) {
-	$( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
+	   $( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
     } else {
-	$( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
 	$( '.race-car1-rim-back' ).removeClass( 'race-rim-back-' + currentCar.prevCarName );
+	   $( '.race-car1-rim-back' ).addClass( 'race-rim-back-' + currentCar.name );
     }
     if ( !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-city' ) && !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-crv' ) && !$( '.race-car1-rim-front' ).hasClass( 'race-rim-front-jazz' ) ) {
-	$( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
+	   $( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
     } else {
-	$( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
 	$( '.race-car1-rim-front' ).removeClass( 'race-rim-front-' + currentCar.prevCarName );
+	   $( '.race-car1-rim-front' ).addClass( 'race-rim-front-' + currentCar.name );
     }
 }
 
@@ -138,20 +138,23 @@ $( document ).ready( function ( $ ) {
 	}, 13500 );
 	setTimeout( function () {
 	    if ( !raceAgain ) {
+	    console.log( currentCar.prevCarName )
                 $( '.race-main' ).addClass( 'hidden' );
                 $( '#congrats-screen' ).removeClass( 'hidden' );
 		$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
 		    // ADDING CUSTOMIZE STYLE IN RACE CAR
+	    document.styleSheets[10].addRule( '.car-congrats', 'top: 433px !important; left: 578px !important;' );
 		    if ( currentCar.name === 'crv' ) {
 		    $( '.car-congrats' ).css( 'top', 301 );
-	    document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
+	    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
+	    //document.styleSheets[10].addRule( '.car-congrats', 'top: 419px !important;' );
 			$( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
 			    + '<br /> Your favorite SUV now includes more available technology than ever before, like Lane Keeping Assist System, Adaptive Cruise Control and our Collision Mitigation Braking System.</p>' );
 		    }
 
 		    if ( currentCar.name === 'city' ) {
 		    $( '.car-congrats' ).css( 'top', 320 );
-	    document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 			$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
 			    + ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
 			    + ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
@@ -159,7 +162,8 @@ $( document ).ready( function ( $ ) {
 
 		    if ( currentCar.name === 'jazz' ) {
 		$( '.car-congrats' ).css( 'top', 269 );
-		document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
+	    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
+	    //document.styleSheets[10].addRule( '.car-congrats', 'top: 405px !important;' );
 			$( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road.'
 			    + ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 		    }

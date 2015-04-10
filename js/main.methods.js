@@ -39,7 +39,7 @@ var methods = (function() {
 						'spoiler'     : null,
 						'currentSide' : 1,
 						'raceBG'      : null,
-						'prevCarName' : currentCar.name
+						'prevCarName' : currentCar.prevCarName
 					};
 					carousel();
                 	break;

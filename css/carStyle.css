@@ -103,7 +103,7 @@
     left  : 526px;
 }
 
-.car-congrats-decal-crv-1 {
+.car-congrats-decal-crv {
     width   : 700px;
     top     : 0;
     z-index : 1;
@@ -205,7 +205,7 @@
     left  : 526px;
 }
 
-.car-congrats-decal-city-1{
+.car-congrats-decal-city {
     width   : 700px;
     top     : 26px;
     left    : 0;
@@ -309,7 +309,7 @@
     left  : 529px;
 }
 
-.car-congrats-decal-jazz-1 {
+.car-congrats-decal-jazz {
     width   : 700px;
     top     : 14px;
     left    : -1px;

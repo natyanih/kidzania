@@ -15,11 +15,11 @@
     left     : 383px;
 }
 .my-dream-car-congrats img{
-    width : 700px;
+    width : 668px;
 }
 
 .video {
-	top      : 200px;
+	top      : 134px;
 	position : absolute;
 	z-index  : 1000;
 	left     : 100px;
@@ -35,13 +35,19 @@
 	background-color : #3F3B3B;
 }
 
+#retake-picture {
+	width            : 300px;
+	color            : #fff;
+	background-color : #3F3B3B;
+}
+
 .print-congrats {
 	width      : 300px;
 	background : url('../images/button-bg.png');
 }
 
 .canvas-container {
-	top  : 238px;
+	top  : 172px;
 	left : 100px;
 
     z-index  : 1000000000000;

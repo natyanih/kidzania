@@ -1,49 +1,40 @@
 @page {
-	size   : A4;
+	size   : a4 landscape;
 	margin : 0;
 }
 
 html, body {
-	width  : 210mm;
-	height : 297mm;
-}
-
-.printing-congrats {
-	-webkit-transform: rotate(90deg); -moz-transform:rotate(-90deg);
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	margin-top   : auto;
+	margin-left  : auto;
+	margin-right : auto;
+	width        : 210mm;
+	height       : 297mm;
 }
 
 .congrats-background img {
 	max-width : 1992px !important;
-	height    : 1005px;
-	margin    : 0;
+	height    : 1017px;
+	margin    : 0 0 0 -95px;
+	width     : 1467px;
 }
 
 .video {
-	top  : 360px;
-	left : 241px;
-}
-
-#video {
-	width  : 230px;
-	height : 230px;
+	top : 283px;
 }
 
 .canvas-container {
-	top    : 360px;
-	left   : 241px;
-	width  : 230px;
-	height : 230px;
+	top  : 322px;
+	left : 100px;
 }
 
 .my-dream-car-congrats {
 	display : block;
 	width   : 800px;
-	top     : 124px;
+	top     : 38px;
 }
 
 .my-dream-car-congrats img {
-	width : 800px;
+	width : 646px;
 }
 
 .car-congrats {
@@ -55,6 +46,14 @@ html, body {
 .form-info-congrats button {
 	display: none;
 
+}
+
+.form-info-congrats {
+	width : 300px;
+}
+
+#take-picture, #retake-picture {
+	display: none;
 }
 
 .congrats-back-home {
@@ -102,10 +101,21 @@ html, body {
 }
 
 .car-details-congrats {
-	top  : 319px;
-	left : 1003px;
+	top  : 252px;
+	left : 900px;
 }
 
 .kidzania-logo-congrats {
-	top : 851px;
+	top  : 851px;
+	left : 1125px;
+}
+
+.honda-logo-congrats {
+    position : absolute;
+    left     : 1170px;
+    top      : 24px;
+}
+
+.honda-logo-congrats img {
+	width : 175px;
 }

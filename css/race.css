@@ -138,8 +138,7 @@
 
 .race-background.race-city-background {
     width           : 100%;
-    height          : 775px;
-    min-height      : 775px;
+    height          : -webkit-calc( 100% );
     background      : url( ../images/race/city-background.png ) 0 100% repeat-x;
     background-size : auto 100%;
     position        : relative;
@@ -147,8 +146,7 @@
 }
 .race-background.race-forest-background {
     width           : 100%;
-    height          : 775px;
-    min-height      : 775px;
+    height          : -webkit-calc( 100% );
     background      : url( ../images/race/forest-background.png ) 0 100% repeat-x;
     background-size : auto 100%;
     position        : relative;
@@ -157,7 +155,6 @@
 .race-background.race-beach-background {
     width           : 100%;
     height          : 775px;
-    min-height      : 775px;
     background      : url( ../images/race/beach-background.png ) 0 100% repeat-x;
     background-size : auto 100%;
     position        : relative;
