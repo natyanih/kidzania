@@ -152,6 +152,7 @@ $( document ).ready( function ( $ ) {
 	}, 13500 );
 	setTimeout( function () {
 	    if ( !raceAgain ) {
+                loadCamera();
                 $( '.race-main' ).addClass( 'hidden' );
                 $( '#congrats-screen' ).removeClass( 'hidden' );
 		$( '#desinger-name-congrats' ).attr('autocomplete', 'off');
@@ -285,3 +286,25 @@ $( document ).ready( function ( $ ) {
       }
     } );
 } );
+
+function loadCamera() {
+
+    $( function() {
+        if (navigator.getUserMedia) {
+            navigator.getUserMedia(videoObj, function(stream) {
+                video.src = stream;
+                video.play();
+            }, errBack);
+        } else if (navigator.webkitGetUserMedia) {
+            navigator.webkitGetUserMedia(videoObj, function(stream) {
+                video.src = window.webkitURL.createObjectURL(stream);
+                video.play();
+            }, errBack);
+        } else if (navigator.mozGetUserMedia) {
+            navigator.mozGetUserMedia(videoObj, function(stream) {
+                video.src = window.URL.createObjectURL(stream);
+                video.play();
+            }, errBack);
+        }
+    } );
+}

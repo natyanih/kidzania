@@ -1,23 +1,4 @@
 // CONGRATS PAGE AND PRINTING
-window.addEventListener('DOMContentLoaded', function() {
-
-    if (navigator.getUserMedia) {
-        navigator.getUserMedia(videoObj, function(stream) {
-            video.src = stream;
-            video.play();
-        }, errBack);
-    } else if (navigator.webkitGetUserMedia) {
-        navigator.webkitGetUserMedia(videoObj, function(stream) {
-            video.src = window.webkitURL.createObjectURL(stream);
-            video.play();
-        }, errBack);
-    } else if (navigator.mozGetUserMedia) {
-        navigator.mozGetUserMedia(videoObj, function(stream) {
-            video.src = window.URL.createObjectURL(stream);
-            video.play();
-        }, errBack);
-    }
-}, false);
 
 var canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d'),
