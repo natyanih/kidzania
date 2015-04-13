@@ -10,6 +10,7 @@ var methods = (function() {
 					$('#carousel-main').show();
 					$('#loading').hide();
                     $('.customizer-main').hide();
+                    $( '.header-title' ).text( 'SELECT A CAR' );
 
                     // remove classes if returned from congrats page
                     $( '.customizer-main' ).removeClass( 'preview-main' );
