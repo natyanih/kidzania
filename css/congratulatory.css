@@ -4,9 +4,16 @@
 	overflow : hidden;
 }
 
-.congrats-background img {
-	width  : 100%;
-	height : 805px;
+.bg-under-congrats {
+	width    : 100%;
+	height   : 805px;
+	position : absolute;
+}
+
+.bg-stage-congrats {
+	width      : 100%;
+	height     : 100%;
+	margin-top : 205px;
 }
 
 .my-dream-car-congrats{
@@ -62,7 +69,7 @@
 
 .car-details-congrats {
     position   : absolute;
-    top        : 169px;
+    top        : 245px;
     text-align : right;
     color      : #000;
     width      : 400px;
@@ -89,7 +96,7 @@
 
 .kidzania-logo-congrats {
 	position : absolute;
-	top      : 687px;
+	top      : 752px;
 	left     : 1178px;
 }
 
@@ -115,14 +122,14 @@
 
 .congrats-back-home p {
 	margin-top : 30px;
-	color      : white;
+	color      : black;
 	font-size  : 18px;
 	cursor     : pointer;
 }
 
 .congrats-back-home i {
 	margin-top : 28px;
-	color      : white;
+	color      : black;
 	font-size  : 32px;
 	cursor     : pointer;
 }
