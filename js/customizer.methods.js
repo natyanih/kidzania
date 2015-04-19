@@ -113,53 +113,47 @@ var customizer = ( function (){
 
 		'renderGrill' : function () {
 			var img = new Image();
-			if ( currentCar.grill && currentCar.grill !== 1 ) {
-				var side    = currentCar.currentSide || 1;
-				var width   = adjustment[ currentCar.name ].dimension.grill[ side ].width;
-				var offsetX = adjustment[ currentCar.name ].offset.grill[ side ].x;
-				var offsetY = adjustment[ currentCar.name ].offset.grill[ side ].y;
+			var side    = currentCar.currentSide || 1;
+			var width   = adjustment[ currentCar.name ].dimension.grill[ side ].width;
+			var offsetX = adjustment[ currentCar.name ].offset.grill[ side ].x;
+			var offsetY = adjustment[ currentCar.name ].offset.grill[ side ].y;
 
-				img.src = 'images/assets/' + currentCar.name + '/slices/grill/' + currentCar.grill + '/' + side + '.png';
+			img.src = 'images/assets/' + currentCar.name + '/slices/grill/' + currentCar.grill + '/' + side + '.png';
 
-				img.onload = function() {
-					width = img.width > width ? width : img.width;
-					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
-				};
-			}
+			img.onload = function() {
+				width = img.width > width ? width : img.width;
+				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
+			};
 
 		},
 
 		'renderSkirt' : function () {
 			var img = new Image();
-			if ( currentCar.skirt && currentCar.skirt !== 1 && currentCar.currentSide !== 2 && currentCar.currentSide !== 3 ) {
-				var side    = currentCar.currentSide || 1;
-				var width   = adjustment[ currentCar.name ].dimension.skirt[ side ].width;
-				var offsetX = adjustment[ currentCar.name ].offset.skirt[ side ].x;
-				var offsetY = adjustment[ currentCar.name ].offset.skirt[ side ].y;
+			var side    = currentCar.currentSide || 1;
+			var width   = adjustment[ currentCar.name ].dimension.skirt[ side ].width;
+			var offsetX = adjustment[ currentCar.name ].offset.skirt[ side ].x;
+			var offsetY = adjustment[ currentCar.name ].offset.skirt[ side ].y;
 
-				img.src = 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/' + side + '.png';
+			img.src = 'images/assets/' + currentCar.name + '/slices/skirt/' + currentCar.skirt + '/' + side + '.png';
 
-				img.onload = function() {
-					width = img.width > width ? width : img.width;
-					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
-				};
-			}
+			img.onload = function() {
+				width = img.width > width ? width : img.width;
+				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
+			};
 		},
 
 		'renderSpoiler' : function () {
 			var img = new Image();
-			if ( currentCar.spoiler && currentCar.spoiler !== 1 && currentCar.currentSide !== 3  ) {
-				var side    = currentCar.currentSide || 1;
-				var width   = adjustment[ currentCar.name ].dimension.spoiler[ side ].width;
-				var offsetX = adjustment[ currentCar.name ].offset.spoiler[ side ].x;
-				var offsetY = adjustment[ currentCar.name ].offset.spoiler[ side ].y;
+			var side    = currentCar.currentSide || 1;
+			var width   = adjustment[ currentCar.name ].dimension.spoiler[ side ].width;
+			var offsetX = adjustment[ currentCar.name ].offset.spoiler[ side ].x;
+			var offsetY = adjustment[ currentCar.name ].offset.spoiler[ side ].y;
 
-				img.src = 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/' + side + '.png';
-				img.onload = function() {
-					width = img.width > width ? width : img.width;
-					context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
-				};
-			}
+			img.src = 'images/assets/' + currentCar.name + '/slices/spoiler/' + currentCar.spoiler + '/' + side + '.png';
+			img.onload = function() {
+				width = img.width > width ? width : img.width;
+				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
+			};
 			//$( '#customizer-car-container' ).fadeIn();
 		},
 

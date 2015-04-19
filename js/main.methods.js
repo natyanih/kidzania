@@ -68,6 +68,7 @@ var methods = (function() {
                     $('.city-customizer-holder').hide();
                     $('.crv-customizer-holder').hide();
                     $('.civic-customizer-holder').hide();
+                    $('.crz-customizer-holder').hide();
 
                     // load html
                     if (currentCar.name === 'jazz') {
@@ -116,6 +117,18 @@ var methods = (function() {
                         $('.civic-div-car-rims').hide();
                         $('.civic-div-car-body').hide();
                         $('.civic-div-car-background').hide();
+                    }
+
+                    if (currentCar.name === 'crz') {
+                        $('.crz-customizer-holder').show();
+                        $('.crz-div-car-color').show();
+
+                        // hide other customizer divs
+                        $('.crz-div-car-tint').hide();
+                        $('.crz-div-car-decal').hide();
+                        $('.crz-div-car-rims').hide();
+                        $('.crz-div-car-body').hide();
+                        $('.crz-div-car-background').hide();
                     }
 
                     // add color to car color button
