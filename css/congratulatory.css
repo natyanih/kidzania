@@ -13,7 +13,8 @@
 .bg-stage-congrats {
 	width      : 100%;
 	height     : 100%;
-	margin-top : 205px;
+	margin-top : -1px;
+	position : absolute;
 }
 
 .my-dream-car-congrats{

@@ -164,8 +164,8 @@ $( document ).ready( function ( $ ) {
 	    // ADDING CUSTOMIZE STYLE IN RACE CAR
         document.styleSheets[10].addRule( '.sep-congrats span', 'color : #B6B6B6 !important;' );
 	    if ( currentCar.name === 'crv' ) {
-	    $( '.car-congrats' ).css( { 'top': 391, 'left' : 517 } );
-	    document.styleSheets[10].addRule( '.car-congrats', 'top: 613px !important; left: 533px !important;' );
+	    $( '.car-congrats' ).css( { 'top': 281, 'left' : 413 } );
+	    document.styleSheets[10].addRule( '.car-congrats', 'top: 543px !important; left: 493px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[10].addRule( '.car-congrats', 'top: 419px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>A new engine and new technology make CR-V one of the highest fuel efficiency SUVs on the market.'
@@ -173,8 +173,8 @@ $( document ).ready( function ( $ ) {
 	    }
 
 	    if ( currentCar.name === 'city' ) {
-	    $( '.car-congrats' ).css( { 'top': 432, 'left' : 527 } );
-	    document.styleSheets[10].addRule( '.car-congrats', 'top: 633px !important; left: 533px !important;' );
+	    $( '.car-congrats' ).css( { 'top': 308, 'left' : 402 } );
+	    document.styleSheets[10].addRule( '.car-congrats', 'top: 563px !important; left: 493px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
 		+ ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
@@ -182,8 +182,8 @@ $( document ).ready( function ( $ ) {
 	    }
 
 	    if ( currentCar.name === 'jazz' ) {
-		$( '.car-congrats' ).css( { 'top': 387, 'left' : 513 } );
-		document.styleSheets[10].addRule( '.car-congrats', 'top: 613px !important; left: 510px !important;' );
+		$( '.car-congrats' ).css( { 'top': 271, 'left' : 420 } );
+		document.styleSheets[10].addRule( '.car-congrats', 'top: 483px !important; left: 493px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 	//document.styleSheets[10].addRule( '.car-congrats', 'top: 405px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road.'

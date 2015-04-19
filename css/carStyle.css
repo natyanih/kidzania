@@ -10,7 +10,7 @@
 }
 
 .car-congrats-body {
-    width : 700px
+    width : 900px
 }
 
 .race-rim-animate {
@@ -76,52 +76,58 @@
 }
 
 .car-congrats-tint-crv {
-    width : 700px;
-    top   : 0;
-    left  : 1px;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 1px;
 }
 
 .car-congrats-skirt-crv {
-    width   : 700px;
-    top     : 0;
-    z-index : 10;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    z-index   : 10;
 }
 
 .car-congrats-spoiler-crv {
-    width : 700px;
-    top   : 32px;
-    left  : 9px;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 45px;
+    left      : 9px;
 }
 
 .car-congrats-rim-back-crv {
-    width : 94px;
-    top   : 207px;
-    left  : 99px;
+    width : 123px;
+    top   : 269px;
+    left  : 129px;
 }
 
 .car-congrats-rim-front-crv {
-    width : 94px;
-    top   : 206px;
-    left  : 526px;
+    width : 123px;
+    top   : 263px;
+    left  : 678px;
 }
 
 .car-congrats-decal-crv-1 {
-    width   : 700px;
-    top     : 0;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    z-index   : 1;
 }
 
 .car-congrats-decal-crv-2 {
-    width   : 700px;
-    top     : 8px;
-    left    : 1px;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 8px;
+    left      : 1px;
+    z-index   : 1;
 }
 
 .car-congrats-decal-crv-3 {
-    width   : 700px;
-    top     : 0;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    z-index   : 1;
 }
 
 
@@ -179,54 +185,61 @@
 }
 
 .car-congrats-tint-city {
-    width : 700px;
-    top   : 25px;
-    left  : 0;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 36px;
+    left      : -3px;
 }
 
 .car-congrats-skirt-city {
-    width   : 700px;
-    top     : 22px;
-    z-index : 10;
+    width     : 888px !important;
+    max-width : 900px !important;
+    top       : 31px;
+    left      : 6px;
+    z-index   : 10;
 }
 
 .car-congrats-spoiler-city {
-    width : 700px;
-    top   : 29px;
-    left  : 0;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 38px;
+    left      : 0;
 }
 
 .car-congrats-rim-back-city {
-    width : 85px;
-    top   : 179px;
-    left  : 93px;
+    width : 110px;
+    top   : 230px;
+    left  : 122px;
 }
 
 .car-congrats-rim-front-city {
-    width : 85px;
-    top   : 180px;
-    left  : 526px;
+    width : 110px;
+    top   : 233px;
+    left  : 674px;
 }
 
 .car-congrats-decal-city-1 {
-    width   : 690px;
-    top     : 26px;
-    left    : 6px;
-    z-index : 1;
+    width     : 891px !important;
+    max-width : 900px !important;
+    top       : 33px;
+    left      : 7px;
+    z-index   : 1;
 }
 
 .car-congrats-decal-city-2 {
-    width   : 700px;
-    top     : 26px;
-    left    : 6px;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 34px;
+    left      : 7px;
+    z-index   : 1;
 }
 
 .car-congrats-decal-city-3 {
-    width   : 700px;
-    top     : 26px;
-    left    : 3px;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 35px;
+    left      : 3px;
+    z-index   : 1;
 }
 
 /* FOR jazz */
@@ -282,53 +295,59 @@
 }
 
 .car-congrats-tint-jazz {
-    width : 700px;
-    top   : 13px;
-    left  : 0;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 20px;
+    left      : 0;
 }
 
 .car-congrats-skirt-jazz {
-    width   : 700px;
-    top     : 14px;
-    left    : 0;
-    z-index : 10;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 14px;
+    left      : 0;
+    z-index   : 10;
 }
 
 .car-congrats-spoiler-jazz {
-    width : 700px;
-    top   : 16px;
-    left  : 2px;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 18px;
+    left      : 2px;
 }
 
 .car-congrats-rim-back-jazz {
-    width : 95px;
-    top   : 217px;
-    left  : 59px;
+    width : 120px;
+    top   : 278px;
+    left  : 75px;
 }
 
 .car-congrats-rim-front-jazz {
-    width : 95px;
-    top   : 223px;
-    left  : 529px;
+    width : 120px;
+    top   : 287px;
+    left  : 683px;
 }
 
 .car-congrats-decal-jazz-1 {
-    width   : 700px;
-    top     : 14px;
-    left    : 0;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 19px;
+    left      : 0;
+    z-index   : 1;
 }
 
 .car-congrats-decal-jazz-2 {
-    width   : 700px;
-    top     : 14px;
-    left    : 0;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 19px;
+    left      : 0;
+    z-index   : 1;
 }
 
 .car-congrats-decal-jazz-3 {
-    width   : 700px;
-    top     : 14px;
-    left    : 0;
-    z-index : 1;
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 14px;
+    left      : 0;
+    z-index   : 1;
 }
