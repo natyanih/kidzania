@@ -180,3 +180,63 @@
     left      : 0;
     z-index   : 1;
 }
+
+
+/* FOR CIVIC */
+
+.car-congrats-tint-civic {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+}
+
+.car-congrats-skirt-civic {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 10;
+}
+
+.car-congrats-spoiler-civic {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+}
+
+.car-congrats-rim-back-civic {
+    width : 108px;
+    top   : 242px;
+    left  : 157px;
+}
+
+.car-congrats-rim-front-civic {
+    width : 108px;
+    top   : 240px;
+    left  : 768px;
+}
+
+.car-congrats-decal-civic-1 {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;
+}
+
+.car-congrats-decal-civic-2 {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;
+}
+
+.car-congrats-decal-civic-3 {
+    width     : 1000px !important;
+    max-width : 1000px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;

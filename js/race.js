@@ -173,12 +173,20 @@ $( document ).ready( function ( $ ) {
 	    }
 
 	    if ( currentCar.name === 'city' ) {
-	    $( '.car-congrats' ).css( { 'top': 308, 'left' : 402 } );
+	$( '.car-congrats' ).css( { 'top': 308, 'left' : 402 } );
+	document.styleSheets[10].addRule( '.car-congrats', 'top: 563px !important; left: 493px !important;' );
+    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
+	+ ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
+	+ ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
+	}
+
+	if ( currentCar.name === 'civic' ) {
+	    $( '.car-congrats' ).css( { 'top': 298, 'left' : 427 } );
 	    document.styleSheets[10].addRule( '.car-congrats', 'top: 563px !important; left: 493px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>The All New City is offered with Honda’s improved 1.5 liter i-VTEC engine that delivers maximum power'
-		+ ' output of 120 ps at 6600 rpm. The 1.5 liter i-VTEC engine is mated to a new 5-speed Manual Transmission and developed under the Honda’s Earth Dreams Technology, '
-		+ ' new Continuously Variable Transmission (CVT with 7-speed paddle shifters).</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CIVIC </h2> <p>The spirit of racing has been running through Honda’s pipelines and powertrain since the era of its ' +
+	'great grandfathers. With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
 	    }
 
 	    if ( currentCar.name === 'jazz' ) {

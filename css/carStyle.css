@@ -351,3 +351,114 @@
     left      : 0;
     z-index   : 1;
 }
+
+/* FOR CIVIC */
+
+.race-tint-civic {
+    width    : 250px;
+    top      : 0px;
+    left     : 0;
+}
+
+.race-skirt-civic {
+    width   : 250px;
+    top     : 0;
+    left    : 0;
+    z-index : 10;
+}
+
+.race-spoiler-civic {
+   width : 250px;
+   top   : 0;
+   left  : 0;
+}
+
+.race-rim-back-civic {
+   width    : 28px;
+   top      : 61px;
+   left     : 39px;
+}
+.race-rim-front-civic {
+    width    : 29px;
+    top      : 60px;
+    left     : 191px;
+}
+
+.race-decal-civic-1 {
+    width   : 250px;
+    top     : 0;
+    left    : 0;
+    z-index : 1;
+}
+
+.race-decal-civic-2 {
+    width   : 250px;
+    top     : 0;
+    left    : 0;
+    z-index : 1;
+}
+
+.race-decal-civic-3 {
+    width   : 250px;
+    top     : 0;
+    left    : 0;
+    z-index : 1;
+}
+
+.car-congrats-tint-civic {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+}
+
+.car-congrats-skirt-civic {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 10;
+}
+
+.car-congrats-spoiler-civic {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+}
+
+.car-congrats-rim-back-civic {
+    width : 102px;
+    top   : 218px;
+    left  : 137px;
+}
+
+.car-congrats-rim-front-civic {
+    width : 102px;
+    top   : 215px;
+    left  : 687px;
+}
+
+.car-congrats-decal-civic-1 {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;
+}
+
+.car-congrats-decal-civic-2 {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;
+}
+
+.car-congrats-decal-civic-3 {
+    width     : 900px !important;
+    max-width : 900px !important;
+    top       : 0;
+    left      : 0;
+    z-index   : 1;
+}
