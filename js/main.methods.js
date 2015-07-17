@@ -9,6 +9,7 @@ var methods = (function() {
                 case 'loading' :
 					$('#carousel-main').show();
 					$('#loading').hide();
+                    $('#welcome').hide();
                     $('.customizer-main').hide();
                     $( '.header-title' ).text( 'SELECT A CAR' );
 
@@ -47,6 +48,7 @@ var methods = (function() {
 				// from carousel to customizer
                 case 'carousel':
                     $('#loading').hide();
+                    $('#welcome').hide();
                     $('#carousel-main').hide();
                     $('.customizer-main').show();
                     $('.btn-view-car').show();
@@ -141,6 +143,7 @@ var methods = (function() {
                     // customizer to car preview
                 case 'customizer':
                     $('#loading').hide();
+                    $('#welcome').hide();
                     $('#carousel-main').hide();
                     $('.customizer-main').hide();
                     $('.preview-main').show();
@@ -155,6 +158,7 @@ var methods = (function() {
                     // car preview to race
                 case 'preview':
                     $('#loading').hide();
+                    $('#welcome').hide();
                     $('#carousel-main').hide();
                     $('#carousel').hide();
                     $('.race-main').show();
@@ -164,6 +168,7 @@ var methods = (function() {
                     // if no id
                 default:
                     $('#carousel').hide();
+                    $('#loading').hide();
                     break;
             }
         },

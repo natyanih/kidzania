@@ -5,31 +5,31 @@
     background-size     : auto 100%;
 
 }
-.my-dream-car-loading{
+.car-design-loading{
     position : absolute;
     top      : 50px;
-    left     : 387px;
+    left     : 290px;
 }
-.my-dream-car-loading img{
-    width : 668px;
+.car-design-loading img{
+    width : 800px;
 }
 
 .honda-logo-loading {
     position : absolute;
-    top      : 50px;
-    left     : 59px;
+    top      : 20px;
+    left     : 39px;
 }
 .honda-logo-loading img {
-    width : 175px;
+    width : 150px;
 }
 
 .kidzania-logo-loading {
     position : absolute;
-    top      : 50px;
+    top      : 30px;
     left     : 1176px;
 }
 .kidzania-logo-loading img {
-    width : 220px;
+    width : 230px;
 }
 
 .loading-progress {
@@ -46,4 +46,16 @@
 
 .progress-bar-success {
     background-color : #A0F937;
+}
+
+.urbano-loading {
+    position : absolute;
+    top      : -75px;
+    left     : 350px;
+    z-index  : 9999;
+    width    : 100%;
+}
+
+.urbano-loading img {
+    width: 20%;
 }
