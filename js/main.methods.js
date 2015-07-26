@@ -71,6 +71,7 @@ var methods = (function() {
                     $('.crv-customizer-holder').hide();
                     $('.civic-customizer-holder').hide();
                     $('.crz-customizer-holder').hide();
+                    $('.brio-customizer-holder').hide();
 
                     // load html
                     if (currentCar.name === 'jazz') {
@@ -131,6 +132,18 @@ var methods = (function() {
                         $('.crz-div-car-rims').hide();
                         $('.crz-div-car-body').hide();
                         $('.crz-div-car-background').hide();
+                    }
+
+                    if (currentCar.name === 'brio') {
+                        $('.brio-customizer-holder').show();
+                        $('.brio-div-car-color').show();
+
+                        // hide other customizer divs
+                        $('.brio-div-car-tint').hide();
+                        $('.brio-div-car-decal').hide();
+                        $('.brio-div-car-rims').hide();
+                        $('.brio-div-car-body').hide();
+                        $('.brio-div-car-background').hide();
                     }
 
                     // add color to car color button
