@@ -1,20 +1,20 @@
-                    <div class="jazz-customizer-decal-1 customizer-item-3 pull-left customizer-selector">
-                        <img src="images/assets/jazz/buttons/decals/1.png" alt="TATTOO" width="100">
+<div class="city-customizer-decal-1 customizer-item-3 pull-left customizer-selector">
+                        <img src="images/assets/city/buttons/decal/1.png" alt="TATTOO" width="100">
                         <p>TATTOO</p>
                     </div>
-                    <div class="jazz-customizer-decal-2 customizer-item-3 pull-left customizer-selector">
-                        <img src="images/assets/jazz/buttons/decals/2.png" alt="RACER" width="100">
+                    <div class="city-customizer-decal-2 customizer-item-3 pull-left customizer-selector">
+                        <img src="images/assets/city/buttons/decal/2.png" alt="RACER" width="100">
                         <p>RACER</p>
                     </div>
-                    <div class="jazz-customizer-decal-3 customizer-item-3 customizer-item-last pull-left customizer-selector">
-                        <img src="images/assets/jazz/buttons/decals/3.png" alt="SPEED" width="100">
+                    <div class="city-customizer-decal-3 customizer-item-3 customizer-item-last pull-left customizer-selector">
+                        <img src="images/assets/city/buttons/decal/3.png" alt="SPEED" width="100">
                         <p>SPEED</p>
                     </div>
-                    <div class="jazz-customizer-decal-4 customizer-item-3 pull-left customizer-selector">
-                        <img src="images/assets/jazz/buttons/decals/4.png" alt="GLAM" width="100">
+                    <div class="city-customizer-decal-4 customizer-item-3 pull-left customizer-selector">
+                        <img src="images/assets/city/buttons/decal/4.png" alt="GLAM" width="100">
                         <p>GLAM</p>
                     </div>
-                    <div class="jazz-customizer-decal-5 customizer-item-3 pull-left customizer-selector">
-                        <img src="images/assets/jazz/buttons/decals/5.png" alt="STOKED" width="100">
+                    <div class="city-customizer-decal-5 customizer-item-3 pull-left customizer-selector">
+                        <img src="images/assets/city/buttons/decal/5.png" alt="STOKED" width="100">
                         <p>STOKED</p>
                     </div>
