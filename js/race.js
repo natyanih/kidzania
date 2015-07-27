@@ -1,26 +1,28 @@
 $( '.btn-race-car' ).on( 'click', function () {
     methods.hideDiv( 'preview' );
 
-    currentCar.color  = currentCar.color || 1;
-    currentCar.rims   = currentCar.rims || 1;
-    currentCar.raceBG = currentCar.raceBG || 3;
+ //    currentCar.color  = currentCar.color || 1;
+ //    currentCar.rims   = currentCar.rims || 1;
+ //    currentCar.raceBG = currentCar.raceBG || 3;
 
-    addCarStyle();
+ //    addCarStyle();
 
-    // DEFAULT RACE BG
+ //    // DEFAULT RACE BG
 
-    $( '.race-background' ).removeClass( 'race-city-background' );
-    $( '.race-background' ).removeClass( 'race-forest-background' );
-    $( '.race-background' ).removeClass( 'race-beach-background' );
+ //    $( '.race-background' ).removeClass( 'race-city-background' );
+ //    $( '.race-background' ).removeClass( 'race-forest-background' );
+ //    $( '.race-background' ).removeClass( 'race-beach-background' );
 
-    $( '.race-background' ).addClass( 'race-city-background' );
-    if ( currentCar.raceBG === 1 ) {
-	$( '.race-background' ).addClass( 'race-forest-background' );
-    }
+ //    $( '.race-background' ).addClass( 'race-city-background' );
+ //    if ( currentCar.raceBG === 1 ) {
+	// $( '.race-background' ).addClass( 'race-forest-background' );
+ //    }
 
-    if ( currentCar.raceBG === 2 ) {
-	$( '.race-background' ).addClass( 'race-beach-background' );
-    }
+ //    if ( currentCar.raceBG === 2 ) {
+	// $( '.race-background' ).addClass( 'race-beach-background' );
+ //    }
+	$( '#congrats-screen' ).removeClass( 'hidden' );
+	loadCamera();
 
 } );
 
@@ -155,9 +157,7 @@ $( document ).ready( function ( $ ) {
     $( '.race-proceed-btn' ).on( 'click', function () {
 	console.log( 123 )
 
-                loadCamera();
-                $( '.race-main' ).addClass( 'hidden' );
-                $( '#congrats-screen' ).removeClass( 'hidden' );
+				$( '.race-main' ).addClass( 'hidden' );
 	$( '#desinger-name-congrats' ).attr('autocomplete', 'off');
 	$( '#car-name-congrats' ).attr('autocomplete', 'off');
 	$( '.race-car1-container, .race-car2-container, .race-finish-line-container, .race-mini-map-container .race-car1-mini' ).removeClass( 'race-finish-game' );
@@ -308,6 +308,7 @@ function loadCamera() {
             }, errBack);
         } else if (navigator.webkitGetUserMedia) {
             navigator.webkitGetUserMedia(videoObj, function(stream) {
+							console.log(stream);
                 video.src = window.webkitURL.createObjectURL(stream);
                 video.play();
             }, errBack);

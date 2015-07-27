@@ -1,6 +1,18 @@
 // CONGRATS PAGE AND PRINTING
 
-var canvas = document.getElementById('canvas'),
+
+function printPage () {
+    var access = prompt( "PRINT ACCESSIBILITY" );
+		if ( access === 'print' ) {
+			window.print();
+			return true;
+		}
+		alert( 'Wrong password' );
+    return false;
+}
+
+var canvas  = document.getElementById('canvas'),
+
     context = canvas.getContext('2d'),
     video = document.getElementById('video'),
     videoObj = {
@@ -10,25 +22,36 @@ var canvas = document.getElementById('canvas'),
         console.log('Video capture error: ', error.code);
     };
 
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius  = 70;
+context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+console.log( context )
 document.getElementById('take-picture').addEventListener('click', function(e) {
     $( '#canvas' ).removeClass( 'hidden' );
     context.drawImage(video, 0, 0, 300, 225);
     $( this ).addClass( 'hidden' );
     $( '#retake-picture' ).removeClass( 'hidden' );
-    $('.print-congrats').removeClass('hidden');
+    $( '#print-congrats-done' ).removeClass( 'hidden' );
 });
 
 document.getElementById('retake-picture').addEventListener('click', function(e) {
     $( '#canvas' ).addClass( 'hidden' );
     $( this ).addClass( 'hidden' );
     $( '#take-picture' ).removeClass( 'hidden' );
-    $('.print-congrats').removeClass('hidden');
+    //$('.print-button').removeClass('hidden');
 });
 
-function printPage() {
-    window.print();
-    return false;
-};
+document.getElementById( 'print-icon' ).addEventListener('click', function(e) {
+	printPage();
+});
+
+function done () {
+	$( '#retake-picture' ).addClass( 'hidden' );
+	$('.print-button').removeClass('hidden');
+	$( '#print-congrats-done' ).addClass( 'hidden' );
+	return false;
+}
 
 $( '.desinger-name-congrats' ).keydown( function ( e ) {
     console.log( this.value + String.fromCharCode(e.keyCode) )
@@ -58,7 +81,6 @@ $( '.congrats-back-home' ).on( 'click', function () {
     document.getElementById( 'car-name-congrats' ).value = '';
     $( '#retake-picture' ).addClass( 'hidden' );
     $( '#take-picture' ).removeClass( 'hidden' );
-    $('.print-congrats').addClass('hidden');
     $( '#congrats-screen' ).addClass( 'hidden' );
     $( '.race-carsmoke' ).hide();
     $( '.race-enemy-tire, .race-enemy-tireback' ).hide();

@@ -46,7 +46,7 @@
     <img src="images/assets/jazz/slices/color/5/1.png" style="display:none">
     <img src="images/assets/jazz/slices/color/6/1.png" style="display:none">
 
-    <div id="welcome"></div>
+		 <div id="welcome"></div>
 
     <div id="loading">
         <div class="car-design-loading">
@@ -1178,111 +1178,39 @@
                 <p>DONE</p>
             </div>
             <div class="btn-race-car pull-right btn-green">
-                <p>RACE</p>
+                    <p>Done</p>
             </div>
             <div class="btn-start-over btn-customizer pull-right btn-with-divider">
-                <p>START OVER</p>
-            </div>
-        </div>
-    </div>
-    <div class="race-main hidden">
-        <div class="race-prestart-overlay">
-            <button class="race-start-btn">START</button>
-        </div>
-        <div class="race-restart-overlay hidden">
-            <button class="race-restart-btn">RACE AGAIN</button>
-            <button class="race-proceed-btn">PROCEED</button>
-        </div>
-        <div class="race-game-precounter">
-            <span>READY</span>
-        </div>
-        <div class="race-game-precounter-go">
-            <span>GO!</span>
-        </div>
-        <div class="race-background race-height-follower">
-            <div class="race-honda-logo">
-                <img src="images/race/honda-logo.png" alt="">
-            </div>
-            <div class="race-mini-map-container">
-                <img class="race-car1-mini" src="images/race/car.png" alt="">
-                <div class="race-mini-road"></div>
-                <img class="race-finishline-flag" src="images/race/finishline-flag.png" alt="">
-            </div>
-            <div class="race-beach-other-items-container">
-                <img class="race-beach-sun" src="images/race/sun-icon.png" alt="">
-                <img class="race-beach-tower" src="images/race/tower-icon.png" alt="">
-            </div>
-            <div class="race-meter-container">
-                <img class="race-fuel" src="images/race/fuelmeter.png" alt="">
-                <div class="race-speedometer-container pull-right">
-                    <img class="race-speedometer" src="images/race/speedometer.png" alt="">
-                    <img class="race-speedometer-indicator" src="images/race/meter-indicator.png" alt="">
-                </div>
-            </div>
-            <div class="race-car1-container">
-                <div class="race-car1-inner">
-                    <img class="race-car1 race-car-img" src="" alt="">
-                    <img class="race-car1-tint race-car1-custom race-car-img" src="" alt="">
-                    <img class="race-car1-skirt race-car1-custom race-car-img" src="" alt="">
-                    <img class="race-car1-spoiler race-car1-custom race-car-img" src="" alt="">
-                    <img class="race-car1-rim-back race-car1-custom race-car-img" src="" alt="">
-                    <img class="race-car1-rim-front race-car1-custom race-car-img" src="" alt="">
-                    <img class="race-car1-decal race-car1-custom race-car-img" src="" alt="">
-                    <div class="race-carsmoke">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="race-car2-container">
-                <div class="race-car2-inner">
-                    <img class="race-car2" src="images/race/car-enemy.png" alt="">
-                    <img class="race-enemy-tireback" src="images/race/tire.png" alt="">
-                    <img class="race-enemy-tire" src="images/race/tire.png" alt="">
-                </div>
-            </div>
-            <div class="race-finish-line-container">
-                <img src="images/race/finish-line.png" alt="">
-            </div>
-            <div class="race-winner-container">
-                <span>YOU WIN!</span>
-            </div>
-            <div class="race-buttons-container">
-                <a class="race-brake-btn">
-                    <img src="images/race/brake-icon.png" alt="">
-                </a>
-                <a class="race-accelerate-btn race-accelerate-btn-container">
-                    <img src="images/race/accelerate-icon.png" alt="">
-                </a>
-                <span class="race-accelerate-overlay"></span>
+                    <p>START OVER</p>
             </div>
         </div>
     </div>
     <div id="congrats-screen" class="printing-congrats hidden">
         <div class="congrats-background">
-            <img class="bg-under-congrats" src="images/certificate/certificate_wo_stage.png" alt="">
-            <img class="bg-stage-congrats" src="images/certificate/stage.png" alt="">
+	    <img class="bg-under-congrats" src="images/certificate/City-street-bg.png" alt="">
         </div>
-        <div class="my-dream-car-congrats">
-            <img src="images/loading/my_dream_car_logo.png">
+				<div class="pic-holder-congrats">
+					<img class="" src="images/certificate/pic-place-holder.png">
+				</div>
+	<div class="car-design-congrats">
+	    <img src="images/certificate/cardesign_logo.png">
         </div>
-        <canvas id="canvas" width="300" height="250" class="canvas-container canvas-print"></canvas>
+				<div class="canvas-container-congrats">
+					<canvas id="canvas" width="300" height="250" class="canvas-container canvas-print"></canvas>
+				</div>
         <div class="video">
-            <video id="video" width="300" height="300" autoplay></video>
+					  <div class="video-container">
+							<video id="video" width="190" height="190" autoplay></video>
+						</div>
             <div class="form-info-congrats">
-                <form id="myForm" onsubmit="return printPage()">
+		<form id="myForm" onsubmit="return done()">
                     <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name" required>
                     <span id="desinger-name-congrats-cont"></span>
                     <div class="sep-congrats">
                         <hr>
                         <span>Designer</span>
                     </div>
+										<div class="other-fields-congrats">
                     <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name" required>
                     <span id="car-name-congrats-cont"></span>
                     <div class="sep-congrats">
@@ -1291,10 +1219,15 @@
                     </div>
                     <span id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</span>
                     <span id="retake-picture" class="btn form-info-dis-congrats hidden">RETAKE PICTURE</span>
-                    <button type="submit" class="btn hidden print-congrats form-info-dis-congrats print-btn">PRINT</button>
+		    <button type="submit" id="print-congrats-done" class="btn print-congrats form-info-dis-congrats hidden">Done</button>
+									</div>
                 </form>
             </div>
         </div>
+				<div class="print-button hidden">
+						<span>PRINT</span>
+						<button type="button" id="print-icon" class="btn form-info-dis-congrats"><img src="images/certificate/print_icon.png"></button>
+				</div>
         <div class="congrats-back-home pull-left">
             <i class="fa fa-home fa-3x pull-left"></i>
             <p class="pull-left"> HOME</p>
@@ -1309,11 +1242,11 @@
             <img class="car-congrats-rim-front car-congrats-custom race-car-img" src="" alt="">
             <img class="car-congrats-decal car-congrats-custom race-car-img" src="" alt="">
         </div>
-        <div class="honda-logo-congrats">
-            <img src="images/loading/Honda-logo_loading.png" alt="">
-        </div>
         <div class="kidzania-logo-congrats">
-            <img src="images/loading/loading_kidzania.png" alt="">
+	    <img src="images/certificate/kidzania_logo.png" alt="">
+	</div>
+	<div class="honda-logo-congrats">
+						<img src="images/loading/Honda-logo_loading.png" alt="">
         </div>
         <div class="car-details-congrats"></div>
     </div>
