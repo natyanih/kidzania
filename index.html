@@ -45,9 +45,7 @@
     <img src="images/assets/jazz/slices/color/4/1.png" style="display:none">
     <img src="images/assets/jazz/slices/color/5/1.png" style="display:none">
     <img src="images/assets/jazz/slices/color/6/1.png" style="display:none">
-
-		 <div id="welcome"></div>
-
+    <div id="welcome"></div>
     <div id="loading">
         <div class="car-design-loading">
             <img src="images/loading/car-design.png">
@@ -410,7 +408,6 @@
                         <img src="images/assets/jazz/buttons/decal/5.png" alt="STOKED" width="100">
                         <p>STOKED</p>
                     </div>
-
                 </div>
                 <div class="customizer-container jazz-div-car-rims pull-left">
                     <p class="customizer-title">RIMS</p>
@@ -699,7 +696,7 @@
                         <p>Front/Back Grill 2</p>
                     </div>
                     <div class="city-customizer-skirt-2 customizer-item-3-1 pull-left customizer-selector
-                    type-skirt">
+									type-skirt">
                         <img src="images/assets/city/buttons/skirt/2.png" alt="Side Skirts 1" width="120">
                         <p>Side Skirt 1</p>
                     </div>
@@ -784,7 +781,6 @@
                         <img src="images/assets/crv/buttons/decal/5.png" alt="STOKED" width="100">
                         <p>STOKED</p>
                     </div>
-
                 </div>
                 <div class="customizer-container civic-div-car-rims pull-left">
                     <p class="customizer-title">RIMS</p>
@@ -825,7 +821,7 @@
                         <p>Front/Back Grill 2</p>
                     </div>
                     <div class="civic-customizer-skirt-2 customizer-item-3-1 pull-left customizer-selector
-                    type-skirt">
+									type-skirt">
                         <img src="images/assets/civic/buttons/skirt/2.png" alt="Side Skirts 1" width="120">
                         <p>Side Skirt 1</p>
                     </div>
@@ -956,7 +952,7 @@
                         <p>Front/Back Grill 3</p>
                     </div>
                     <div class="crz-customizer-skirt-1 customizer-item-3-3 pull-left customizer-selector
-                    type-skirt">
+									type-skirt">
                         <img src="images/assets/crz/buttons/skirt/1.png" alt="Side Skirts 1" width="110">
                         <p>Side Skirt 1</p>
                     </div>
@@ -1093,7 +1089,7 @@
                         <p>Front/Back Grill 3</p>
                     </div>
                     <div class="brio-customizer-skirt-1 customizer-item-3-3 pull-left customizer-selector
-                    type-skirt">
+									type-skirt">
                         <img src="images/assets/brio/buttons/skirt/1.png" alt="Side Skirts 1" width="110">
                         <p>Side Skirt 1</p>
                     </div>
@@ -1178,56 +1174,48 @@
                 <p>DONE</p>
             </div>
             <div class="btn-race-car pull-right btn-green">
-                    <p>Done</p>
+                <p>Done</p>
             </div>
             <div class="btn-start-over btn-customizer pull-right btn-with-divider">
-                    <p>START OVER</p>
+                <p>START OVER</p>
             </div>
         </div>
     </div>
     <div id="congrats-screen" class="printing-congrats hidden">
         <div class="congrats-background">
-	    <img class="bg-under-congrats" src="images/certificate/City-street-bg.png" alt="">
+            <img class="bg-under-congrats" src="images/certificate/City-street-bg.png" alt="">
         </div>
-				<div class="pic-holder-congrats">
-					<img class="" src="images/certificate/pic-place-holder.png">
-				</div>
-	<div class="car-design-congrats">
-	    <img src="images/certificate/cardesign_logo.png">
+        <div class="pic-holder-congrats">
+            <img class="" src="images/certificate/pic-place-holder.png">
         </div>
-				<div class="canvas-container-congrats">
-					<canvas id="canvas" width="300" height="250" class="canvas-container canvas-print"></canvas>
-				</div>
+        <div class="car-design-congrats">
+            <img src="images/certificate/cardesign_logo.png">
+        </div>
+        <div class="canvas-container-congrats">
+            <canvas id="canvas" width="300" height="250" class="canvas-container canvas-print"></canvas>
+        </div>
         <div class="video">
-					  <div class="video-container">
-							<video id="video" width="190" height="190" autoplay></video>
-						</div>
+            <div class="video-container">
+                <video id="video" width="190" height="190" autoplay></video>
+            </div>
             <div class="form-info-congrats">
-		<form id="myForm" onsubmit="return done()">
+                <form id="myForm" onsubmit="return done()">
                     <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name" required>
                     <span id="desinger-name-congrats-cont"></span>
-                    <div class="sep-congrats">
-                        <hr>
-                        <span>Designer</span>
+                    <div class="other-fields-congrats">
+                        <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name" required>
+                        <span id="car-name-congrats-cont"></span>
+                        <span id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</span>
+                        <span id="retake-picture" class="btn form-info-dis-congrats hidden">RETAKE PICTURE</span>
+                        <button type="submit" id="print-congrats-done" class="btn print-congrats form-info-dis-congrats hidden">Done</button>
                     </div>
-										<div class="other-fields-congrats">
-                    <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name" required>
-                    <span id="car-name-congrats-cont"></span>
-                    <div class="sep-congrats">
-                        <hr>
-                        <span>Car</span>
-                    </div>
-                    <span id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</span>
-                    <span id="retake-picture" class="btn form-info-dis-congrats hidden">RETAKE PICTURE</span>
-		    <button type="submit" id="print-congrats-done" class="btn print-congrats form-info-dis-congrats hidden">Done</button>
-									</div>
                 </form>
             </div>
         </div>
-				<div class="print-button hidden">
-						<span>PRINT</span>
-						<button type="button" id="print-icon" class="btn form-info-dis-congrats"><img src="images/certificate/print_icon.png"></button>
-				</div>
+        <div class="print-button hidden">
+            <span>PRINT</span>
+            <button type="button" id="print-icon" class="btn form-info-dis-congrats"><img src="images/certificate/print_icon.png"></button>
+        </div>
         <div class="congrats-back-home pull-left">
             <i class="fa fa-home fa-3x pull-left"></i>
             <p class="pull-left"> HOME</p>
@@ -1243,10 +1231,10 @@
             <img class="car-congrats-decal car-congrats-custom race-car-img" src="" alt="">
         </div>
         <div class="kidzania-logo-congrats">
-	    <img src="images/certificate/kidzania_logo.png" alt="">
-	</div>
-	<div class="honda-logo-congrats">
-						<img src="images/loading/Honda-logo_loading.png" alt="">
+            <img src="images/certificate/kidzania_logo.png" alt="">
+        </div>
+        <div class="honda-logo-congrats">
+            <img src="images/loading/Honda-logo_loading.png" alt="">
         </div>
         <div class="car-details-congrats"></div>
     </div>
