@@ -18,6 +18,7 @@ var methods = (function() {
                     $( '.customizer-main' ).removeClass( 'sunset-forest' );
                     $( '.customizer-main' ).removeClass( 'city-street' );
                     $( '.customizer-main' ).removeClass( 'summer-beach' );
+                    $( '.customizer-main' ).removeClass( 'motor-sport' );
 
                     $('.btn-view-car').hide();
                     $('.btn-back-carousel').hide();
@@ -198,6 +199,9 @@ var methods = (function() {
                     break;
                 case 3 :
                     $( '.preview-main' ).addClass( 'city-street' );
+                    break;
+                case 4 :
+                    $( '.preview-main' ).addClass( 'motor-sport' );
                     break;
             }
         },
