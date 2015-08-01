@@ -47,3 +47,9 @@
     right: 795px;
     cursor: pointer;
 }
+
+.preview-urbano {
+    position : absolute;
+    top      : 250px;
+    left     : 400px;
+}

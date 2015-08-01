@@ -30,6 +30,7 @@ var methods = (function() {
                     $('.btn-preview-group').hide();
                     $('.btn-rotate-clockwise').hide();
                     $('.btn-rotate-counter').hide();
+                    $('.preview-urbano').hide();
 					// reset car
 					currentCar = {
 						'name'        : null,
@@ -62,6 +63,7 @@ var methods = (function() {
                     $('.btn-preview-group').hide();
                     $('.btn-rotate-clockwise').hide();
                     $('.btn-rotate-counter').hide();
+                    $('.preview-urbano').hide();
 
                     $( '.header-title' ).text( 'GARAGE' );
 
@@ -152,7 +154,6 @@ var methods = (function() {
                     $('.btn-preview-group').show();
                     $('.btn-view-car').hide();
                     $('.btn-customizer-group').hide();
-                    console.log( $('#customizer-car-container') )
                     $('.customizer-car-container').addClass('preview-car-container');
                     break;
 
@@ -180,6 +181,7 @@ var methods = (function() {
             $('.btn-rotate-clockwise').show();
             $('.btn-rotate-counter').show();
             $('.btn-back-preview').show();
+            $('.preview-urbano').show();
 
             // hide customizer footer buttons, .btn-view-car
             $('.btn-view-car').hide();
