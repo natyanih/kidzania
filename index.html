@@ -1042,13 +1042,13 @@
                 <video id="video" width="190" height="190" autoplay></video>
             </div>
             <div class="form-info-congrats">
-                <form id="myForm" onsubmit="return done()">
-                    <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name" required>
+                <form id="myForm" onsubmit="return done( event )">
+                    <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont', event  )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont', event )" class="form-control form-info-dis-congrats input-print" placeholder="DESIGNER'S NAME" maxlength="20" required>
 										<div class="designer-name-print">
 											<span id="desinger-name-congrats-cont"></span>
 										</div>
                     <div class="other-fields-congrats">
-                        <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name" required>
+                        <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont', event )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont', event )" class="form-control form-info-dis-congrats input-print car" placeholder="CAR'S NAME" required>
 												<div class="car-name-print">
 													<span id="car-name-congrats-cont"></span>
 												</div>

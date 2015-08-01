@@ -73,7 +73,7 @@ console.log( document.styleSheets[11] );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>Advanced mobility is in your hands with The All-New Honda City.'
 	+ ' Designed in line with a vision that is ahead of its time. Utilizing cutting-edge driving innovations and delivering outstanding comfort'
-	+ ' features – it is the sedan for drivers who want more.).</p>' );
+	+ ' features – it is the sedan for drivers who want more.</p>' );
 	}
 
 	if ( currentCar.name === 'civic' ) {
@@ -91,7 +91,7 @@ console.log( document.styleSheets[11] );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 405px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road. To'
-		+ ' To add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
+		+ ' add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 	    }
 
 	if ( currentCar.name === 'crz' ) {
@@ -171,6 +171,7 @@ console.log( document.styleSheets[11] );
 
 	$( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
 	if ( currentCar.rims ) {
+		console.log( "ASASDASD" );
 		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
 			if ( !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-city' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-crv' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-jazz' ) ) {
 			$( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
@@ -182,6 +183,8 @@ console.log( document.styleSheets[11] );
 			} else {
 					$( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
 			}
+	} else { 
+		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', '' );
 	}
 	loadCamera();
 } );

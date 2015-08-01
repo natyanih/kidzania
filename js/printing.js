@@ -75,7 +75,7 @@ $( '.print-button' ).click( function(e) {
 	showPrintModal();
 } );
 
-function done () {
+function done ( event ) {
 	$( '#car-name-congrats-cont' ).css( { 'display' : 'block' } );
 	$( '#desinger-name-congrats-cont' ).css( { 'display' : 'block' } );
 	$( '#car-name-congrats' ).css( { 'display' : 'none' } );
@@ -90,7 +90,7 @@ $( '.desinger-name-congrats' ).keydown( function ( e ) {
     console.log( this.value + String.fromCharCode(e.keyCode) )
 } );
 
-function getValue ( id, target ) {
+function getValue ( id, target, event ) {
 
     var input = document.getElementById( id );
     var value = input.value;
@@ -108,6 +108,11 @@ function getValue ( id, target ) {
 
     var span = document.getElementById( target );
     span.innerText = value;
+
+		if ( event.keyCode === 13 ) {
+			event.preventDefault();
+			return false;
+		}
 }
 var newCar1 = $( '.race-car1-container' ).clone();
 var newCar2 = $( '.race-car2-container' ).clone();

@@ -12,6 +12,10 @@ html, body {
 	padding-top : 0mm;*/
 }
 
+#congrats-screen {
+	-webkit-print-color-adjust : exact;
+}
+
 .print-button {
 	display : none;
 }
