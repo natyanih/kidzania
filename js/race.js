@@ -21,7 +21,11 @@ $( '.btn-race-car' ).on( 'click', function () {
  //    if ( currentCar.raceBG === 2 ) {
 	// $( '.race-background' ).addClass( 'race-beach-background' );
  //    }
-	$( '#congrats-screen' ).removeClass( 'hidden' );
+
+	setTimeout( function () {
+		$( '#desinger-name-congrats' ).focus();
+	} );
+		$( '#congrats-screen' ).removeClass( 'hidden' );
 
 	$( '#desinger-name-congrats' ).attr('autocomplete', 'off');
 	$( '#car-name-congrats' ).attr('autocomplete', 'off');

@@ -15,7 +15,7 @@
 	width      : 434px;
 	position   : relative;
 	text-align : center;
-	top        : -27px;
+	top        : 38px;
 	left       : -66px;
 }
 
@@ -23,7 +23,7 @@
 #car-name-congrats-cont {
 	display     : inline-block;
 	font-size   : 48px;
-	font-weight : bold;
+	font-weight : 200;
 }
 
 
@@ -163,6 +163,7 @@
 	font-family : 'Helvetica Neue', 'Helvetica,Arial,sans-serif';
 	color       : white;
 	font-size   : 20px;
+	margin-left : -10px;
 }
 
 .print-congrats {

@@ -70,9 +70,9 @@ document.getElementById('retake-picture').addEventListener('click', function(e) 
     //$('.print-button').removeClass('hidden');
 });
 
-document.getElementById( 'print-icon' ).addEventListener('click', function(e) {
+$( '.print-button' ).click( function(e) {
 	showPrintModal();
-});
+} );
 
 function done () {
 	$( '#car-name-congrats-cont' ).css( { 'display' : 'block' } );
