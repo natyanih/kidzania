@@ -12,6 +12,10 @@ html, body {
 	padding-top : 0mm;*/
 }
 
+.print-button {
+	display : none;
+}
+
 .print-modal {
 	display : none;
 }
@@ -52,6 +56,21 @@ html, body {
 	border-bottom-right-radius : 700px;
 }
 
+.designer-name-print {
+	width      : 434px;
+	position   : relative;
+	text-align : center;
+	top        : 408px;
+	left       : 48px;
+}
+
+.car-name-print {
+	width      : 600px;
+	position   : relative;
+	text-align : center;
+	top        : 145px;
+	left       : -72px;
+}
 
 .printing-congrats {
 	-webkit-transform: rotate(90deg);
@@ -137,22 +156,14 @@ html, body {
 }
 
 #desinger-name-congrats-cont {
-	display    : block;
-	text-align : center;
+	display    : inline-block;
 	color      : white !important;
-	font-size  : 37px;
-	position   : absolute;
-	top        : 408px;
-	left       : 209px;
+	font-size  : 33px;
 }
 
 #car-name-congrats-cont {
-	display     : block;
-	text-align  : center;
-	position    : absolute;
-	top         : 187px;
-	left        : 70px;
-	font-size   : 60px;
+	display     : inline-block;
+	font-size   : 48px;
 	font-weight : bold;
 }
 

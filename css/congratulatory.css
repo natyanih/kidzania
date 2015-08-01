@@ -6,12 +6,44 @@
 
 .urbano-congrats {
 	position : absolute;
-	top      : 285px;
+	top      : 318px;
 	left     : 1233px;
 }
 
+
+.car-name-print {
+	width      : 434px;
+	position   : relative;
+	text-align : center;
+	top        : -27px;
+	left       : -66px;
+}
+
+
+#car-name-congrats-cont {
+	display     : inline-block;
+	font-size   : 48px;
+	font-weight : bold;
+}
+
+
+.designer-name-print {
+	width      : 434px;
+	position   : relative;
+	text-align : center;
+	top        : 266px;
+	left       : -5px;
+}
+
+
+#desinger-name-congrats-cont {
+	display    : inline-block;
+	color      : white !important;
+	font-size  : 33px;
+}
+
 .canvas-container {
-	width       : 190px;
+	width       : 193px;
 	height      : 164px;
 	margin-left : -20px;
 }
@@ -23,7 +55,7 @@
 	top           : 311px;
 	left          : 142px;
 	width         : 139px;
-	z-index       : 100000000;
+	z-index       : 1;
 	height        : 180px;
 }
 
@@ -75,7 +107,6 @@
 
 .video {
 	position : absolute;
-	z-index  : 1000;
 }
 
 .video-container {
@@ -83,8 +114,8 @@
 	overflow      : hidden;
 	border-radius : 1000px;
 	position      : relative;
-	width         : 138px;
-	height        : 173px;
+	width         : 140px;
+	height        : 187px;
 	top           : 313px;
 	left          : 141px;
 }
@@ -188,11 +219,17 @@
 	border           : none;
 	background-color : transparent;
 	box-shadow       : none;
-	top              : 287px;
-	left             : 142px;
+	top              : 273px;
+	left             : -7px;
 	position         : relative;
 	color            : white;
-	width            : 150px;
+	width            : 434px;
+	z-index          : 10;
+	text-align       : center;
+}
+
+#car-name-congrats {
+	/*text-align : center;*/
 }
 
 #desinger-name-congrats-cont {

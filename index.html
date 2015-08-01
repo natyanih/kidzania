@@ -1028,10 +1028,14 @@
             <div class="form-info-congrats">
                 <form id="myForm" onsubmit="return done()">
                     <input type="text" id="desinger-name-congrats" onKeyPress="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" onKeyUp="getValue( 'desinger-name-congrats', 'desinger-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print" placeholder="Designer's Name" required>
-                    <span id="desinger-name-congrats-cont"></span>
+										<div class="designer-name-print">
+											<span id="desinger-name-congrats-cont"></span>
+										</div>
                     <div class="other-fields-congrats">
                         <input type="text" id="car-name-congrats" onKeyPress="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" onKeyUp="getValue( 'car-name-congrats', 'car-name-congrats-cont' )" class="form-control form-info-dis-congrats input-print car" placeholder="Cars Name" required>
-                        <span id="car-name-congrats-cont"></span>
+												<div class="car-name-print">
+													<span id="car-name-congrats-cont"></span>
+												</div>
                         <span id="take-picture" class="btn form-info-dis-congrats">TAKE A PICTURE</span>
                         <span id="retake-picture" class="btn form-info-dis-congrats hidden">RETAKE PICTURE</span>
                         <button type="submit" id="print-congrats-done" class="btn print-congrats form-info-dis-congrats hidden">Done</button>

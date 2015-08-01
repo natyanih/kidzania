@@ -75,6 +75,10 @@ document.getElementById( 'print-icon' ).addEventListener('click', function(e) {
 });
 
 function done () {
+	$( '#car-name-congrats-cont' ).css( { 'display' : 'block' } );
+	$( '#desinger-name-congrats-cont' ).css( { 'display' : 'block' } );
+	$( '#car-name-congrats' ).css( { 'display' : 'none' } );
+	$( '#desinger-name-congrats' ).css( { 'display' : 'none' } );
 	$( '#retake-picture' ).addClass( 'hidden' );
 	$('.print-button').removeClass('hidden');
 	$( '#print-congrats-done' ).addClass( 'hidden' );
@@ -90,6 +94,10 @@ function getValue ( id, target ) {
     var input = document.getElementById( id );
     var value = input.value;
 
+		if ( id !== 'desinger-name-congrats' ) {
+			value = '"' + input.value + '"';
+		}
+
     if ( document.getElementById( id ).value.match( /^\s*$/ ) ) {
 
         document.getElementById( id ).setCustomValidity( 'Please fill out this field' );
@@ -104,6 +112,12 @@ var newCar1 = $( '.race-car1-container' ).clone();
 var newCar2 = $( '.race-car2-container' ).clone();
 
 $( '.congrats-back-home' ).on( 'click', function () {
+
+		$('.print-button').addClass('hidden');
+		$( '#car-name-congrats-cont' ).css( { 'display' : 'none' } );
+		$( '#desinger-name-congrats-cont' ).css( { 'display' : 'none' } );
+		$( '#car-name-congrats' ).css( { 'display' : 'block' } );
+		$( '#desinger-name-congrats' ).css( { 'display' : 'block' } );
     currentCar.prevCarName = currentCar.name;
     document.getElementById( 'desinger-name-congrats' ).value = '';
     document.getElementById( 'car-name-congrats' ).value = '';
