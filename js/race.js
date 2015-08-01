@@ -39,15 +39,18 @@ $( '.btn-race-car' ).on( 'click', function () {
 console.log( document.styleSheets[11] );
 	if ( currentCar.raceBG === 1 ) {
 		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Forestgreen-bg.png' );
+		$( '.forest-bg' ).removeClass( 'hidden' );
 	} else if ( currentCar.raceBG === 2 ) {
 		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Summer-beach-bg.png' );
+		$( '.beach-bg' ).removeClass( 'hidden' );
 	}  else if ( currentCar.raceBG === 4 ) {
 		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Motor-Sport-bg.png' );
+		$( '.sport-bg' ).removeClass( 'hidden' );
 	} else {
 		$( '#car-name-congrats-cont' ).css( { 'color' : '' } );
 		$( '.car-details-congrats' ).css( { 'color' : '' } );
 		$( '.car-details-congrats' ).removeClass( 'print-white' );
-		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/City-street-bg.png' );
+		$( '.street-bg' ).removeClass( 'hidden' );
 	}
 	setTimeout( function () {
 		$( '#desinger-name-congrats' ).focus();

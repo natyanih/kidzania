@@ -119,6 +119,12 @@ var newCar2 = $( '.race-car2-container' ).clone();
 
 $( '.congrats-back-home' ).on( 'click', function () {
 
+		// backgrounds
+		$( '.forest-bg' ).addClass( 'hidden' );
+		$( '.beach-bg' ).addClass( 'hidden' );
+		$( '.sport-bg' ).addClass( 'hidden' );
+		$( '.street-bg' ).addClass( 'hidden' );
+
 		$('.print-button').addClass('hidden');
 		$( '#car-name-congrats-cont' ).css( { 'display' : 'none' } );
 		$( '#desinger-name-congrats-cont' ).css( { 'display' : 'none' } );
