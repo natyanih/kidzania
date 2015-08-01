@@ -33,7 +33,7 @@ html, body {
 }
 
 .urbano-congrats {
-	top  : 438px !important;
+	top  : 412px !important;
 	left : 1344px !important;
 }
 
@@ -192,4 +192,8 @@ html, body {
 
 .honda-logo-congrats img {
 	width : 175px;
+}
+
+.print-white > h2, .print-white > p {
+	color : white !important;
 }
