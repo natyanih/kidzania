@@ -1,15 +1,43 @@
 // CONGRATS PAGE AND PRINTING
 
 
-function printPage () {
-    var access = prompt( "PRINT ACCESSIBILITY" );
-		if ( access === 'print' ) {
-			window.print();
-			return true;
-		}
-		alert( 'Wrong password' );
-    return false;
+function showPrintModal () {
+	$( '.print-modal' ).removeClass( 'hidden' );
+	setTimeout( function () {
+		$( '.password' ).focus();
+	} );
+    //var access = prompt( "PRINT ACCESSIBILITY" );
+		//if ( access === 'print' ) {
+			//window.print();
+			//return true;
+		//}
+		//alert( 'Wrong password' );
+    //return false;
 }
+
+// ****Close modal
+function closeModal () {
+	$( '.print-modal' ).addClass( 'hidden' );
+	$( '.password' ).val( '' );
+}
+$( '.close-modal' ).click( function () {
+	closeModal();
+} );
+
+function printPage () {
+	var pass = $( '.password' ).val();
+
+	if ( pass === 'admin' ) {
+		window.print();
+		return closeModal();
+	}
+	$( '.password-cont' ).addClass( 'has-error' );
+	return true;
+}
+
+$( '.footer-modal' ).click( function () {
+	printPage();
+} );
 
 var canvas  = document.getElementById('canvas'),
 
@@ -43,7 +71,7 @@ document.getElementById('retake-picture').addEventListener('click', function(e) 
 });
 
 document.getElementById( 'print-icon' ).addEventListener('click', function(e) {
-	printPage();
+	showPrintModal();
 });
 
 function done () {

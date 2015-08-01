@@ -235,3 +235,67 @@
 	left     : 48px;
 	position : relative;
 }
+
+.print-modal {
+	position : absolute;
+	height   : 252px;
+	width    : 350px;
+	top      : 217px;
+	left     : 573px;
+	z-index  : 1000;
+}
+
+.modal-background {
+	height              : -webkit-calc( 100% );
+	background          : url( '../images/certificate/background.png' );
+	background-position : center center;
+	background-size     : auto 100%;
+}
+
+.close-modal {
+	position : relative;
+	top      : -231px;
+	left     : 324px;
+}
+
+.close-modal img {
+	width : 15px;
+}
+
+.close-modal :hover {
+	cursor : pointer;
+}
+
+.body-modal {
+	position    : relative;
+	top         : -246px;
+	width       : 278px;
+	margin-left : 35px;
+}
+
+.body-modal h3 {
+	text-align : center;
+}
+
+.body-modal span {
+	margin-left : 22px;
+}
+
+.body-modal input {
+	margin-top : 16px;
+}
+
+.footer-modal {
+	position : relative;
+	top : -224px;
+	margin-left: 35px;
+}
+
+.footer-modal img {
+	width : 276px;
+}
+
+.footer-modal :hover {
+	cursor : pointer;
+}
+
