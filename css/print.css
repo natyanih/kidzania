@@ -21,7 +21,7 @@ html, body {
 }
 
 .pic-holder-congrats {
-	top : 166px;
+	top : 203px;
 }
 
 .pic-holder-congrats img {
@@ -33,7 +33,7 @@ html, body {
 }
 
 .urbano-congrats {
-	top  : 403px !important;
+	top  : 438px !important;
 	left : 1344px !important;
 }
 
@@ -46,7 +46,7 @@ html, body {
 }
 
 .canvas-container-congrats {
-	top                        : 507px;
+	top                        : 544px;
 	left                       : 171px;
 	width                      : 173px;
 	height                     : 207px;
@@ -60,7 +60,7 @@ html, body {
 	width      : 434px;
 	position   : relative;
 	text-align : center;
-	top        : 408px;
+	top        : 456px;
 	left       : 48px;
 }
 
@@ -68,7 +68,7 @@ html, body {
 	width      : 600px;
 	position   : relative;
 	text-align : center;
-	top        : 195px;
+	top        : 234px;
 	left       : -72px;
 }
 
@@ -158,13 +158,13 @@ html, body {
 #desinger-name-congrats-cont {
 	display    : inline-block;
 	color      : white !important;
-	font-size  : 33px;
+	font-size  : 23px;
 }
 
 #car-name-congrats-cont {
 	display     : inline-block;
-	font-size   : 48px;
-	font-weight : bold;
+	font-size   : 37px;
+	font-weight : 200;
 }
 
 .car {
@@ -172,7 +172,7 @@ html, body {
 }
 
 .car-details-congrats {
-	top  : 920px;
+	top  : 950px;
 	left : 575px;
 }
 

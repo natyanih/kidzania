@@ -64,6 +64,7 @@ document.getElementById('take-picture').addEventListener('click', function(e) {
 });
 
 document.getElementById('retake-picture').addEventListener('click', function(e) {
+		$( '#print-congrats-done' ).addClass( 'hidden' );
     $( '#canvas' ).addClass( 'hidden' );
     $( this ).addClass( 'hidden' );
     $( '#take-picture' ).removeClass( 'hidden' );
@@ -116,8 +117,8 @@ $( '.congrats-back-home' ).on( 'click', function () {
 		$('.print-button').addClass('hidden');
 		$( '#car-name-congrats-cont' ).css( { 'display' : 'none' } );
 		$( '#desinger-name-congrats-cont' ).css( { 'display' : 'none' } );
-		$( '#car-name-congrats' ).css( { 'display' : 'block' } );
-		$( '#desinger-name-congrats' ).css( { 'display' : 'block' } );
+		$( '#car-name-congrats' ).css( { 'display' : 'inline-block' } );
+		$( '#desinger-name-congrats' ).css( { 'display' : 'inline-block' } );
     currentCar.prevCarName = currentCar.name;
     document.getElementById( 'desinger-name-congrats' ).value = '';
     document.getElementById( 'car-name-congrats' ).value = '';
