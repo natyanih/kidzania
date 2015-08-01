@@ -1,0 +1,24 @@
+/*Settings*/
+
+.settings {
+	height              : 100%;
+	min-width           : 1360px;
+	min-height          : 510px;
+	background-color    : #ffcc00;
+	background          : url('../images/backgrounds/carousel-bg.jpg');
+	background-size     : auto auto;
+	background-position : center center;
+	position            : relative;
+}
+.settings > .header {
+    height          : 114px;
+    background      : url( '../images/header-bg.png' );
+    background-size : auto 100%;
+    text-align      : center;
+}
+
+.settings-form-control {
+		max-width : 330px;
+		padding   : 15px;
+		margin    : 0 auto;
+}

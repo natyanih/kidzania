@@ -22,6 +22,21 @@ $( '.btn-race-car' ).on( 'click', function () {
 	// $( '.race-background' ).addClass( 'race-beach-background' );
  //    }
 
+	$( '#car-name-congrats-cont' ).css( { 'color' : 'white' } );
+	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white;', 1 );
+
+	if ( currentCar.raceBG === 1 ) {
+		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Forestgreen-bg.png' );
+	} else if ( currentCar.raceBG === 2 ) {
+		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Summer-beach-bg.png' );
+	}  else if ( currentCar.raceBG === 4 ) {
+		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Motor-Sport-bg.png' );
+	} else {
+		$( '#car-name-congrats-cont' ).css( { 'color' : '' } );
+		console.log( document.styleSheets[11] );
+		document.styleSheets[11].deleteRule( 1 );
+		$( '.bg-under-congrats' ).attr( 'src', 'images/backgrounds/city-background.jpg' );
+	}
 	setTimeout( function () {
 		$( '#desinger-name-congrats' ).focus();
 	} );
