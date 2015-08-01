@@ -76,73 +76,73 @@
 }
 
 .car-congrats-tint-crv {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     left      : 1px;
 }
 
 .car-congrats-skirt-crv {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     z-index   : 10;
 }
 
 .car-congrats-spoiler-crv {
-    width     : 900px !important;
-    max-width : 900px !important;
-    top       : 1px;
+    width     : 800px !important;
+    max-width : 800px !important;
+    top       : -1px;
     left      : 2px;
 }
 
 .car-congrats-rim-back-crv {
-    width : 102px;
-    top   : 269px;
-    left  : 167px;
+    width : 93px;
+    top   : 235px;
+    left  : 146px;
 }
 
 .car-congrats-rim-front-crv {
-    width : 102px;
-    top   : 263px;
-    left  : 659px;
+    width : 93px;
+    top   : 233px;
+    left  : 584px;
 }
 
 .car-congrats-decal-crv-1 {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     left      : 3px;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-2 {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     left      : 1px;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-3 {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     z-index   : 1;
 }
 
 
 .car-congrats-decal-crv-4 {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     z-index   : 1;
 }
 
 
 .car-congrats-decal-crv-5 {
-    width     : 900px !important;
-    max-width : 900px !important;
+    width     : 800px !important;
+    max-width : 800px !important;
     top       : 0;
     z-index   : 1;
 }

@@ -4,6 +4,12 @@
 	overflow : hidden;
 }
 
+.urbano-congrats {
+	position : absolute;
+	top      : 285px;
+	left     : 1233px;
+}
+
 .canvas-container {
 	width       : 190px;
 	height      : 164px;

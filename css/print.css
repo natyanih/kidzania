@@ -24,6 +24,15 @@ html, body {
 	width : 843px;
 }
 
+.urbano-congrats {
+	top  : 403px !important;
+	left : 1344px !important;
+}
+
+.urbano-congrats img {
+	width : 300px;
+}
+
 .video-container {
 	display : none;
 }
@@ -147,8 +156,8 @@ html, body {
 }
 
 .car-details-congrats {
-	top  : 403px;
-	left : 1175px;
+	top  : 920px;
+	left : 575px;
 }
 
 .kidzania-logo-congrats {
