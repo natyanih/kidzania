@@ -13,7 +13,7 @@ function savePass () {
 		if ( current === $( '.current-pass' ).val() ) {
 			window.localStorage.setItem( 'password', $( '.retype' ).val() );
 			$( '.current-cont' ).removeClass( 'has-error' );
-			alert( 'Password Change!' );
+			alert( 'Password changed successfully.' );
 			return true;
 		}
 		$( '.current-cont' ).addClass( 'has-error' );
