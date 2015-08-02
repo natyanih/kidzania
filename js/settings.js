@@ -22,6 +22,7 @@ function savePass () {
 			return true;
 		}
 		$( '.current-cont' ).addClass( 'has-error' );
+		return false;
 	}
 	$( '.retype-cont' ).addClass( 'has-error' );
 	$( '.new-cont' ).addClass( 'has-error' );
