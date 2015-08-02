@@ -8,6 +8,9 @@ Deploy code in Mac
 - run
 'python -m SimpleHTTPServer 8080'
 
+Access settings
+- http://localhost:8080/settings.html
+
 Deploying in other platforms:
 - you will need an http server (xampp, wamp etc)
 - simply copy files htdocs
