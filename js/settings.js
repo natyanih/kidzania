@@ -7,17 +7,24 @@ if ( !window.localStorage.getItem( 'password' ) ) {
 }
 function savePass () {
 
+	var newPass = $( '.new-pass' ).val();
+	var retype  = $( '.retype' ).val();
+	var equal   = newPass === retype ? true : false;
 	var current = window.localStorage.getItem( 'password' );
 	console.log( current )
-	if ( self ) {
+	if ( equal ) {
 		if ( current === $( '.current-pass' ).val() ) {
 			window.localStorage.setItem( 'password', $( '.retype' ).val() );
 			$( '.current-cont' ).removeClass( 'has-error' );
+			$( '.retype-cont' ).removeClass( 'has-error' );
+			$( '.new-cont' ).removeClass( 'has-error' );
 			alert( 'Password changed successfully.' );
 			return true;
 		}
 		$( '.current-cont' ).addClass( 'has-error' );
 	}
+	$( '.retype-cont' ).addClass( 'has-error' );
+	$( '.new-cont' ).addClass( 'has-error' );
 	return false;
 }
 
