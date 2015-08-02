@@ -27,7 +27,8 @@ $( '.close-modal' ).click( function () {
 function printPage () {
 	var pass = $( '.password' ).val();
 
-	if ( pass === 'admin' ) {
+    var adminPass = window.localStorage.getItem( 'password' );
+	if ( pass === adminPass ) {
 		window.print();
 		return closeModal();
 	}

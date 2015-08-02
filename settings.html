@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Honda: My Dream Car!</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+		<div class="settings">
+			<div class="header">
+				<div class="honda-logo pull-left"><img src="images/honda-header-logo.png" alt="Honda: My Dream Car!">
+				</div>
+				<div class="kidzania-logo pull-right"><img src="images/kidzania-header-logo.png" height="60px">
+				</div>
+				<p class="header-title">SETTINGS</p>
+			</div>
+			<div class="settings-form-control">
+				<form id="myForm" onsubmit="return savePass( event )">
+					<h3>CHANGE PASSWORD</h3>
+
+					<label class="text-muted">Input your current password.</label>
+					<h4 class="success hidden text-success">Password Change!</h4>
+					<hr>
+					<span class="col-md-4">Current Password</span>
+					<span class="col-md-8 current-cont">
+						<input type="password" class="form-control current-pass" onKeyPress="getValue( event, 'current'  )" onKeyUp="getValue( event, 'current' )" required>
+					</span>
+					<label class="text-muted">Create your new password.</label>
+					<hr>
+					<span class="col-md-4">New Password</span>
+					<span class="col-md-8 margin-bottom new-cont">
+						<input type="password" class="form-control new-pass" onKeyPress="getValue( event, 'new'  )" onKeyUp="getValue( event, 'new' )" required>
+					</span>
+					<span class="col-md-4">Re-type Password</span>
+					<span class="col-md-8 margin-bottom retype-cont">
+						<input type="password" class="form-control retype" onKeyPress="getValue( event, 'retype'  )" onKeyUp="getValue( event, 'retype' )" required>
+					</span>
+					<label class="col-md-4"></label>
+					<div class="col-md-8 margin-bottom">
+						<button type="submit" class="btn col-md-12 save-button">Save</button>
+					</div>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+		<div class="urbano-settings">
+			<img src="images/settings/urbano.png" alt="">
+		</div>
+    <!-- jQuery -->
+    <script src="lib/jquery-2.1.3.min.js"></script>
+    <script src="js/settings.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
