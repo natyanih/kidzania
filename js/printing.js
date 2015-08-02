@@ -27,6 +27,10 @@ $( '.close-modal' ).click( function () {
 function printPage () {
 	var pass = $( '.password' ).val();
 
+    if ( !window.localStorage.getItem( 'password' ) ) {
+        window.localStorage.setItem( 'password', 'admin' );
+    }
+
     var adminPass = window.localStorage.getItem( 'password' );
 	if ( pass === adminPass ) {
 		window.print();
@@ -125,6 +129,8 @@ $( '.congrats-back-home' ).on( 'click', function () {
 		$( '.beach-bg' ).addClass( 'hidden' );
 		$( '.sport-bg' ).addClass( 'hidden' );
 		$( '.street-bg' ).addClass( 'hidden' );
+
+		$( '.print-modal' ).addClass( 'hidden' );
 
 		$('.print-button').addClass('hidden');
 		$( '#car-name-congrats-cont' ).css( { 'display' : 'none' } );
