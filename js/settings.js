@@ -26,12 +26,11 @@ function getValue ( event, name ) {
 	var retype  = $( '.retype' ).val();
 	var equal   = newPass === retype ? true : false;
 
-		if ( event.keyCode === 13 ) {
+		if ( event.keyCode === 13 || event.keyCode === 9 ) {
 			event.preventDefault();
 			return false;
 		}
-
-		if ( name === 'retype' || name === 'new' ) {
+		if ( name === 'retype' || name === 'new' && newPass !== '' && retype !== '' ) {
 			self = equal;
 			if ( !equal ) {
 				$( '.retype-cont' ).addClass( 'has-error' );
