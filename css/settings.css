@@ -1,11 +1,14 @@
 /*Settings*/
+body {
+	font-family : avenir;
+}
 
 .settings {
 	height              : 100%;
 	min-width           : 1440px;
 	min-height          : 601px;
 	background-color    : #ffcc00;
-	background          : url('../images/backgrounds/carousel-bg.jpg');
+	background          : url('../images/settings/shadows.png');
 	background-size     : auto auto;
 	background-position : center center;
 	position            : absolute;
@@ -33,16 +36,30 @@
 	margin-bottom : 11px;
 }
 
+.current-pass {
+	margin-bottom : 30px;
+}
+
+.span {
+	font-size : 18px;
+}
+
 hr {
-	margin-top : -3px;
+	margin-top   : -3px;
+	margin-right : 15px;
 }
 
 h3 {
-	margin-bottom : 41px;
+	margin-bottom : 35px;
+	font-weight   : 600;
 }
 
 h4 {
 	display : inline;
+}
+
+label {
+	font-weight : normal;
 }
 
 .urbano-settings {
