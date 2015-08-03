@@ -43,9 +43,8 @@
 .carousel-img {
     position: relative;
     top: 180px;
-    right: 180px;
-    width: 500px;
-    height: 300px;
+    right: 120px;
+    width: 650px;
 }
 
 .carousel-img > img {
