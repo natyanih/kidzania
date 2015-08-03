@@ -9,27 +9,31 @@
 }
 
 .city-street {
-    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/city-background.jpg');
-    background-position: center center, right top;
-    background-size: 100% auto, auto auto;
+    background-image    : url('../images/backgrounds/stage.png'), url('../images/backgrounds/city-background.jpg');
+    background-position : center bottom, right top;
+    background-size     : 100% auto, auto auto;
+    background-repeat   : no-repeat;
 }
 
 .sunset-forest {
-    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/forest-background.jpg');
-    background-position: center center, right top;
-    background-size: 100% auto, auto auto;
+    background-image    : url('../images/backgrounds/stage.png'), url('../images/backgrounds/forest-background.jpg');
+    background-position : center bottom, right top;
+    background-size     : 100% auto, auto auto;
+    background-repeat   : no-repeat;
 }
 
 .summer-beach {
-    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/beach-background.jpg');
-    background-position: center center, right top;
-    background-size: 100% auto, auto auto;
+    background-image    : url('../images/backgrounds/stage.png'), url('../images/backgrounds/beach-background.jpg');
+    background-position : center bottom, right top;
+    background-size     : 100% auto, auto auto;
+    background-repeat   : no-repeat;
 }
 
 .motor-sport {
-    background-image: url('../images/backgrounds/preview.png'), url('../images/backgrounds/motor-sport-background.jpg');
-    background-position: center center, right top;
-    background-size: 100% auto, auto auto;
+    background-image    : url('../images/backgrounds/stage.png'), url('../images/backgrounds/motor-sport-background.jpg');
+    background-position : center bottom, right top;
+    background-size     : 100% auto, auto auto;
+    background-repeat   : no-repeat;
 }
 
 .btn-rotate-counter {
