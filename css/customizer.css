@@ -123,6 +123,22 @@
 	image-rendering : -o-crisp-edges;
 }
 
+.customizer-title-cont {
+	display      : table-cell;
+	margin-right : 30px;
+}
+
+/*decal table-cell*/
+.table-cell-decal {
+	display      : table-cell;
+	height       : 70px !important;
+	margin-right : 87px !important;
+}
+
+.decal-container {
+	width : 400px;
+}
+
 .customizer-title {
 	font-size : 20px;
 	margin    : 0 0;
