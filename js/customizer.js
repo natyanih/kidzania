@@ -27,27 +27,11 @@ $( '.customizer-car-body' ).on( 'click', function () {
 } );
 
 $( '.customizer-start-over' ).on( 'click', function () {
-	methods.resetCar();
-	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
-	customizer.selectDefaultColor();
-	customizer.selectDefaultTint();
+	methods.hideDiv( 'loading' );
 } );
 
 $( '.btn-start-over' ).on( 'click', function () {
-	methods.resetCar();
-	methods.hideDiv( 'carousel' );
-
-	// change back background to garage
-	$( '.customizer-main' ).removeClass( 'preview-main' );
-	$( '.customizer-main' ).removeClass( 'sunset-forest' );
-	$( '.customizer-main' ).removeClass( 'city-street' );
-	$( '.customizer-main' ).removeClass( 'summer-beach' );
-	$( '.customizer-main' ).removeClass( 'motor-sport' );
-
-	// remove selection indicators
-	$( '.customizer-main' ).find( '.selection-indicator' ).remove();
-	customizer.selectDefaultColor();
-	customizer.selectDefaultTint();
+	methods.hideDiv( 'loading' );
 } );
 
 $( '.preview-background-1' ).on( 'click', function () {
