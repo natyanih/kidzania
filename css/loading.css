@@ -24,9 +24,8 @@
 }
 
 .kidzania-logo-loading {
-    position : absolute;
-    top      : 30px;
-    left     : 1176px;
+	margin-left : -webkit-calc( 82% );
+	padding-top : 11px;
 }
 .kidzania-logo-loading img {
     width : 230px;
