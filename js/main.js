@@ -4,8 +4,8 @@ $(document).ready(function($) {
 
 		 function welcomePage () {
 				 var welcome = setInterval( function () {
-						 $('#welcome').fadeOut('fast');
-						 $('#loading').fadeIn('slow');
+						 $('#welcome').hide();
+						 $('#loading').show();
 						 clearInterval(welcome);
 						 loadingPage();
 				 }, 3000 );
@@ -18,8 +18,8 @@ $(document).ready(function($) {
 						 if ($bar.width() >= 400) {
 								 clearInterval(progress);
 								 $('.progress-bar').removeClass('active');
-								 $('#loading').fadeOut('fast');
-								 $('#carousel').fadeIn('fast');
+								 $('#loading').hide();
+								 $('#carousel').show();
 								 $('.customizer-main').hide();
 								 $('.jazz-customizer-holder').hide();
 								 $('.preview-main').hide();

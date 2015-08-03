@@ -11,8 +11,8 @@ html, body {
 /* CAROUSEL HEADER */
 .carousel > .header, .customizer > .header {
     height          : 114px;
-    background      : url( '../images/header-bg.png' );
-    background-size : auto 100%;
+    background      : url( '../images/HEADER.png' );
+    background-size : 1361px 134px;
     text-align      : center;
 }
 
