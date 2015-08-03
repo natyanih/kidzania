@@ -1,7 +1,4 @@
 /*Settings*/
-body {
-	font-family : avenir;
-}
 
 .settings {
 	height              : 100%;
@@ -51,7 +48,6 @@ hr {
 
 h3 {
 	margin-bottom : 35px;
-	font-weight   : 600;
 }
 
 h4 {
