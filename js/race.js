@@ -25,32 +25,32 @@ $( '.btn-race-car' ).on( 'click', function () {
 	$( '#car-name-congrats-cont' ).css( { 'color' : 'white' } );
 	$( '.car-details-congrats' ).css( { 'color' : 'white' } );
 	$( '.car-details-congrats' ).addClass( 'print-white' );
-	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;', 1 );
 
 	var ruleLength = document.styleSheets[11].rules.length - 1;
 
 	if ( currentCar.prevCarName ) {
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
 		document.styleSheets[11].deleteRule( ruleLength );
-		document.styleSheets[11].deleteRule( 1 );
 		document.styleSheets[11].deleteRule( 2 );
+		if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
+			document.styleSheets[11].deleteRule( 1 );
+		}
 	}
 
+	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;', 1 );
 console.log( document.styleSheets[11] );
 	if ( currentCar.raceBG === 1 ) {
-		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Forestgreen-bg.png' );
 		$( '.forest-bg' ).removeClass( 'hidden' );
 	} else if ( currentCar.raceBG === 2 ) {
-		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Summer-beach-bg.png' );
 		$( '.beach-bg' ).removeClass( 'hidden' );
 	}  else if ( currentCar.raceBG === 4 ) {
-		$( '.bg-under-congrats' ).attr( 'src', 'images/certificate/Motor-Sport-bg.png' );
 		$( '.sport-bg' ).removeClass( 'hidden' );
 	} else {
 		$( '#car-name-congrats-cont' ).css( { 'color' : '' } );
 		$( '.car-details-congrats' ).css( { 'color' : '' } );
 		$( '.car-details-congrats' ).removeClass( 'print-white' );
 		$( '.street-bg' ).removeClass( 'hidden' );
+		document.styleSheets[11].deleteRule( 1 );
 	}
 	setTimeout( function () {
 		$( '#desinger-name-congrats' ).focus();
