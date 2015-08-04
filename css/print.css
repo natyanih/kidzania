@@ -69,11 +69,11 @@ html, body {
 }
 
 .car-name-print {
-	width      : 600px;
+	width      : 400px;
 	position   : relative;
 	text-align : center;
 	top        : 234px;
-	left       : -72px;
+	left       : -14px;
 }
 
 .printing-congrats {
@@ -177,7 +177,7 @@ html, body {
 
 .car-details-congrats {
 	position : absolute;
-	top      : 928px;
+	top      : 915px;
 	left     : 499px;
 	width    : 992px;
 }
