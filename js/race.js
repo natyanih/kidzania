@@ -84,7 +84,7 @@ console.log( document.styleSheets[11] );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 573px !important; left: 400px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CIVIC </h2> <p>The spirit of racing has been running through Honda’s pipelines and powertrain since the era of its ' +
-	'great grandfathers. With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
+	'great grandfathers.<br /> With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
 	    }
 
 	    if ( currentCar.name === 'jazz' ) {
@@ -102,7 +102,7 @@ console.log( document.styleSheets[11] );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 543px !important; left: 483px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
-	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport,Normal and Econ.</p>' );
+	' to adjust vehicle<br /> settings based on personal preference and conditions. There are three driving modes: Sport,Normal and Econ.</p>' );
 	    }
 
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
