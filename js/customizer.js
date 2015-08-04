@@ -153,6 +153,10 @@ $( '.customizer-selector' ).on( 'click', function () {
 			customizer.selectDefaultTint();
 		}
 
+		if ( $(this).hasClass( 'type-background' ) ) {
+			customizer.selectDefaultBackground();
+		}
+
 	} else {
 
 		if ( $( this ).hasClass( 'type-grill' ) ) {

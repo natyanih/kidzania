@@ -217,6 +217,12 @@ var methods = (function() {
             $('.btn-customizer > p.active').removeClass('active');
             $(btnClass).find('p').addClass('active');
 
+            currentCar.raceBG = 3;
+            var parentClass = '.' + currentCar.name + '-div-car-background';
+            var bgClass   = '.' + currentCar.name + '-customizer-background-3';
+
+            $( parentClass ).find( bgClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+
             if (customizer === 'background') {
                 this.showPreview();
             }
