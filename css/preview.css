@@ -2,10 +2,10 @@
     height: -moz-calc( 100% - 201px);
     height: -webkit-calc( 100% - 201px);
     height: calc( 100% - 201px);
-    background-color: #ffcc00;
-    background: url('../images/backgrounds/preview.png');
-    background-position: center center;
-    background-size: 100% auto;
+    background-image    : url('../images/backgrounds/stage.png'), url('../images/backgrounds/city-background.jpg');
+    background-position : center bottom, right top;
+    background-size     : 100% auto, auto auto;
+    background-repeat   : no-repeat;
 }
 
 .city-street {
