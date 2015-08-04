@@ -176,8 +176,18 @@ html, body {
 }
 
 .car-details-congrats {
-	top  : 950px;
-	left : 575px;
+	position : absolute;
+	top      : 928px;
+	left     : 499px;
+	width    : 992px;
+}
+
+.car-details-congrats p {
+	font-size : 16px
+}
+
+.car-details-congrats h2 {
+	margin-left : 344px;
 }
 
 .kidzania-logo-congrats {
