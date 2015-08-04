@@ -66,8 +66,8 @@ console.log( document.styleSheets[11] );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 523px !important; left: 493px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering'
-		+ '<br /> and design in the Honda DNA. Navigate roads with elegance, safety, and power while feeling comfort and confidence behind the wheel.</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA.'
+		+ '<br />Navigate roads with elegance, safety, and power while feeling comfort and confidence behind the wheel.</p>' );
 	    }
 
 	    if ( currentCar.name === 'city' ) {
@@ -93,8 +93,8 @@ console.log( document.styleSheets[11] );
 		document.styleSheets[11].addRule( '.car-congrats', 'top: 495px !important; left: 400px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 405px !important;' );
-	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road. To'
-		+ ' add up excitement, the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road. To add up excitement,'
+		+ '<br/> the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 	    }
 
 	if ( currentCar.name === 'crz' ) {
