@@ -1,15 +1,31 @@
 @page {
-	size   : a4;
+	size   : 203mm 127mm;
 	margin : 0;
 }
 
 html, body {
-	width       : 210mm;
-	height      : 297mm;
+	width       : 203mm;
+	height      : 127mm;
 	margin: 0;
 	/*margin      : 0mm;
 	margin-top  : 0mm;
 	padding-top : 0mm;*/
+}
+
+.bg-under-congrats {
+	width     : 304mm;
+	min-width : 304mm;
+	height    : 190mm;
+	top       : 0;
+	left      : 1px;
+}
+
+.bg-under-congrats-backup {
+	width     : 304mm;
+	min-width : 304mm;
+	height    : 190mm;
+	top       : 0;
+	left      : 1px;
 }
 
 #congrats-screen {
@@ -25,24 +41,26 @@ html, body {
 }
 
 .pic-holder-congrats {
-	top : 203px;
+	top  : 8px;
+	left : 10px;
 }
 
 .pic-holder-congrats img {
-	width : 422px;
+	width : 255px;
+}
+
+.car-design-congrats {
+	top  : 101px !important;
+	left : 396px !important;
 }
 
 .car-design-congrats img {
-	width : 843px;
+	width : 480px;
 }
 
 .urbano-congrats {
-	top  : 412px !important;
-	left : 1344px !important;
-}
-
-.urbano-congrats img {
-	width : 300px;
+	top  : 250px !important;
+	left : 947px !important;
 }
 
 .video-container {
@@ -50,38 +68,38 @@ html, body {
 }
 
 .canvas-container-congrats {
-	top                        : 544px;
-	left                       : 171px;
-	width                      : 173px;
-	height                     : 207px;
+	top                        : 299px;
+	left                       : 133px;
+	width                      : 104px;
+	height                     : 117px;
 	border-top-left-radius     : 1000px;
 	border-top-right-radius    : 1000px;
-	border-bottom-left-radius  : 700px;
-	border-bottom-right-radius : 700px;
+	border-bottom-left-radius  : 228px;
+	border-bottom-right-radius : 228px;
 }
 
 .designer-name-print {
-	width      : 434px;
+	width      : 138px;
 	position   : relative;
 	text-align : center;
-	top        : 456px;
-	left       : 48px;
+	top        : 131px;
+	left       : 115px;
 }
 
 .car-name-print {
-	width      : 400px;
+	width      : 250px;
 	position   : relative;
 	text-align : center;
-	top        : 234px;
-	left       : -14px;
+	top        : -123px;
+	left       : -10px;
 }
 
 .printing-congrats {
-	-webkit-transform: rotate(90deg);
-  height: 1002px;
-  width: 1644px;
-  margin-top: 86mm;
-  margin-left: -36mm;
+	/*-webkit-transform: rotate(90deg);*/
+  /*height: 1002px;*/
+  /*width: 1644px;*/
+  /*margin-top: 86mm;*/
+  /*margin-left: -36mm;*/
 }
 .congrats-background {
 	width       : 100%;
@@ -91,11 +109,19 @@ html, body {
 
  }
 
-.bg-under-congrats {
-	height     : 100%;
-	min-width  : 1675px;
-	min-height : 1186px;
+ .congrats-background img {
+	width     : 304mm;
+	min-width : 304mm;
+	height    : 190mm;
+	top       : 0;
+	left      : 1px;
 }
+
+/*.bg-under-congrats {*/
+	/*height     : 100%;*/
+	/*min-width  : 1675px;*/
+	/*min-height : 1186px;*/
+/*}*/
 
 .bg-stage-congrats {
 	height: 100%;
@@ -113,8 +139,8 @@ html, body {
 .canvas-container {
 	top    : 322px;
 	left   : 100px;
-	width  : 268px;
-	height : 208px;
+	width  : 162px;
+	height : 127px;
 }
 
 .my-dream-car-congrats {
@@ -162,12 +188,12 @@ html, body {
 #desinger-name-congrats-cont {
 	display    : inline-block;
 	color      : white !important;
-	font-size  : 23px;
+	font-size  : 18px;
 }
 
 #car-name-congrats-cont {
 	display     : inline-block;
-	font-size   : 37px;
+	font-size   : 27px;
 	font-weight : 200;
 }
 
@@ -177,35 +203,36 @@ html, body {
 
 .car-details-congrats {
 	position : absolute;
-	top      : 915px;
-	left     : 499px;
-	width    : 992px;
+	top      : 543px;
+	left     : 322px;
+	width    : 669px;
 }
 
 .car-details-congrats p {
-	font-size : 16px
+	font-size : 11px
 }
 
 .car-details-congrats h2 {
-	margin-left : 344px;
+	margin-left : 194px;
 }
 
 .kidzania-logo-congrats {
-  left: 1356px;
-  position: absolute;
+  left     : 935px;
+  position : absolute;
 }
 
 .kidzania-logo-congrats img {
-	min-width : 289px;
+	width : 183px;
 }
 
 .honda-logo-congrats {
-    position: absolute;
-  top: 24px;
+	position : absolute;
+	top      : 24px;
+	left     : 22px;
 }
 
 .honda-logo-congrats img {
-	width : 175px;
+	width : 100px;
 }
 
 .print-white > h2, .print-white > p {
