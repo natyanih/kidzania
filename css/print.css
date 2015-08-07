@@ -94,13 +94,6 @@ html, body {
 	left       : -10px;
 }
 
-.printing-congrats {
-	/*-webkit-transform: rotate(90deg);*/
-  /*height: 1002px;*/
-  /*width: 1644px;*/
-  /*margin-top: 86mm;*/
-  /*margin-left: -36mm;*/
-}
 .congrats-background {
 	width       : 100%;
 	margin      : 0mm;
@@ -118,21 +111,6 @@ html, body {
 	margin-left : -1mm;
 }
 
-/*.bg-under-congrats {*/
-	/*height     : 100%;*/
-	/*min-width  : 1675px;*/
-	/*min-height : 1186px;*/
-/*}*/
-
-.bg-stage-congrats {
-	height: 100%;
-  margin-top: -1px;
-  width: 100%;
-  min-height: 1185px;
-  min-width: 1675px;
-  position: absolute;
-}
-
 .video {
 	top : 283px;
 }
@@ -142,17 +120,6 @@ html, body {
 	left   : 100px;
 	width  : 162px;
 	height : 127px;
-}
-
-.my-dream-car-congrats {
-	display : block;
-	width   : 800px;
-	top     : 128px;
-	left    : 556px;
-}
-
-.my-dream-car-congrats img {
-	width : 646px;
 }
 
 .car-congrats {

@@ -44,7 +44,7 @@ var methods = (function() {
 						'currentSide' : 1,
 						'raceBG'      : null,
 						'prevCarName' : currentCar.prevCarName,
-						'prevColor'   : prevColor
+						'prevColor'   : currentCar.prevColor
 					};
 					carousel();
                 	break;

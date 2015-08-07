@@ -31,16 +31,11 @@ $( '.btn-race-car' ).on( 'click', function () {
 	if ( currentCar.prevCarName ) {
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
 		document.styleSheets[11].deleteRule( ruleLength );
-		document.styleSheets[11].deleteRule( 2 );
-		document.styleSheets[11].deleteRule( 3 );
-		document.styleSheets[11].deleteRule( 4 );
-		if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
+	if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
 			document.styleSheets[11].deleteRule( 1 );
 		}
 	}
 
-	document.styleSheets[11].addRule( '.print-button', 'display : none', 3 );
-	document.styleSheets[11].addRule( '#congrats-screen', '-webkit-print-color-adjust : exact', 4 );
 	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;', 1 );
 //console.log( document.styleSheets[11] );
 	if ( currentCar.raceBG === 1 ) {

@@ -9,6 +9,13 @@ $(document).ready(function($) {
 						 clearInterval(welcome);
 						 loadingPage();
 				 }, 3000 );
+				// for print
+				//document.styleSheets[11].addRule( '.print-button', 'display : none' );
+				//document.styleSheets[11].addRule( '#congrats-screen', '-webkit-print-color-adjust : exact' );
+				//document.styleSheets[11].addRule( '.pic-holder-congrats', 'top : 8px; left : 10px;' );
+				//document.styleSheets[11].addRule( '.pic-holder-congrats > img', 'width : 255px;' );
+				//document.styleSheets[11].addRule( '.urbano-congrats', 'top : 250px; left : 947px' );
+				//document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;' );
 		 }
 
 		 function loadingPage () {
