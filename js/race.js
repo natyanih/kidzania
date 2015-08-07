@@ -175,7 +175,7 @@ $( '.btn-race-car' ).on( 'click', function () {
     }
 
 
-	$( '.car-congrats-body' ).attr( 'src', 'images/assets/' + currentCar.name + '/slices/color/' + currentCar.color + '/6.png' );
+	$( '.car-congrats-body-' + currentCar.name + '-' + currentCar.color ).removeClass( 'hidden' );
 	if ( currentCar.rims ) {
 		console.log( "ASASDASD" );
 		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );

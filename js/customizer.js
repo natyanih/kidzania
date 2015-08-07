@@ -3,6 +3,8 @@
 $( '.btn-view-car' ).on( 'click', function () {
 	$( '.header-title' ).text( 'SELECT BACKGROUND' );
 	methods.showCustomizer( 'background' );
+	// certificate car display
+	$( '.car-congrats-body-' + currentCar.prevCarName + '-' + currentCar.prevColor ).addClass( 'hidden' );
 } );
 
 // EVENT LISTENERS FOR CUSTOMIZER BUTTONS
