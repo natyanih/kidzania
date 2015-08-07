@@ -66,7 +66,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    if ( currentCar.name === 'crv' ) {
 			$( '.car-congrats' ).css( { 'top': 278, 'left' : 396 } );
 			$( '.car-congrats-body' ).css( { 'width' : 800 } );
-			document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 320px !important;' );
+			document.styleSheets[11].addRule( '.car-congrats', 'top: 250px !important; left: 280px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-V </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA. '

@@ -1,78 +1,78 @@
 
 /* FOR CRV */
 .car-congrats-body-crv {
-	width     : 650px !important;
-	max-width : 650px !important;
+	width     : 700px !important;
+	max-width : 700px !important;
 }
 
 .car-congrats-tint-crv {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 0;
     left      : 1px;
 }
 
 .car-congrats-skirt-crv {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 0;
     left      : 0;
     z-index   : 10;
 }
 
 .car-congrats-spoiler-crv {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : -2px;
     left      : 1px;
 }
 
 .car-congrats-rim-back-crv {
-    width : 75px;
-    top   : 191px;
-    left  : 120px;
+    width : 80px;
+    top   : 208px;
+    left  : 128px;
 }
 
 .car-congrats-rim-front-crv {
-    width : 75px;
-    top   : 190px;
-    left  : 475px;
+    width : 80px;
+    top   : 205px;
+    left  : 511px;
 }
 
 .car-congrats-decal-crv-1 {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 0;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-2 {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 1px;
     left      : -5px;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-3 {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 2px;
     left      : 2px;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-4 {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : 3px;
     left      : -1px;
     z-index   : 1;
 }
 
 .car-congrats-decal-crv-5 {
-    width     : 650px !important;
-    max-width : 650px !important;
+    width     : 700px !important;
+    max-width : 700px !important;
     top       : -1px;
     left      : 1px;
     z-index   : 1;
