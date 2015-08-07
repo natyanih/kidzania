@@ -70,8 +70,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 310px !important; left: 380px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA.'
-		+ '<br />Navigate roads with elegance, safety, and power while feeling comfort and confidence behind the wheel.</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA. '
+		+ 'Navigate roads with elegance, safety, and power while feeling comfort and confidence behind the wheel.</p>' );
 	    }
 
 	    if ( currentCar.name === 'city' ) {
@@ -88,7 +88,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 333px !important; left: 300px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CIVIC </h2> <p>The spirit of racing has been running through Honda’s pipelines and powertrain since the era of its ' +
-	'great grandfathers.<br /> With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
+	'great grandfathers. With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
 	    }
 
 	    if ( currentCar.name === 'jazz' ) {
@@ -98,7 +98,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 405px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road. To add up excitement,'
-		+ '<br/> the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
+		+ ' the All-New Honda Jazz has the ULTR to fit every lifestyle through various seat configurations.</p' );
 	    }
 
 	if ( currentCar.name === 'crz' ) {
@@ -106,7 +106,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 323px !important; left: 354px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
-	' to adjust vehicle<br /> settings based on personal preference and conditions. There are three driving modes: Sport,Normal and Econ.</p>' );
+	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport,Normal and Econ.</p>' );
 	    }
 
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );

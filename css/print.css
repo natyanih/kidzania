@@ -205,16 +205,16 @@ html, body {
 .car-details-congrats {
 	position : absolute;
 	top      : 543px;
-	left     : 322px;
-	width    : 669px;
+	left     : 87px;
+	width    : 985px;
 }
 
 .car-details-congrats p {
-	font-size : 11px
+	font-size : 22px
 }
 
 .car-details-congrats h2 {
-	margin-left : 194px;
+	margin-left : 395px;
 }
 
 .kidzania-logo-congrats {
