@@ -25,7 +25,8 @@ $('.btn-select-car').on('click', function() {
         'spoiler': null,
         'currentSide': 1,
 	'raceBG': null,
-	'prevCarName' : currentCar.prevCarName
+	'prevCarName' : currentCar.prevCarName,
+	'prevColor' : currentCar.prevColor
     };
     // remove selection indicators
     $('.customizer-main').find('.selection-indicator').remove();

@@ -11,7 +11,8 @@ var currentCar = {
     'spoiler'     : null,
     'currentSide' : 1,
     'raceBG'      : null,
-    'prevCarName' : null
+    'prevCarName' : null,
+    'prevColor'   : null
 };
 
 var adjustment = {

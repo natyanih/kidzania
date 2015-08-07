@@ -241,3 +241,7 @@ html, body {
 .print-white > h2, .print-white > p {
 	color : white !important;
 }
+
+.print-modal {
+	display : none;
+}

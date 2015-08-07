@@ -32,11 +32,15 @@ $( '.btn-race-car' ).on( 'click', function () {
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
 		document.styleSheets[11].deleteRule( ruleLength );
 		document.styleSheets[11].deleteRule( 2 );
+		document.styleSheets[11].deleteRule( 3 );
+		document.styleSheets[11].deleteRule( 4 );
 		if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
 			document.styleSheets[11].deleteRule( 1 );
 		}
 	}
 
+	document.styleSheets[11].addRule( '.print-button', 'display : none', 3 );
+	document.styleSheets[11].addRule( '#congrats-screen', '-webkit-print-color-adjust : exact', 4 );
 	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;', 1 );
 //console.log( document.styleSheets[11] );
 	if ( currentCar.raceBG === 1 ) {
@@ -70,7 +74,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 320px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA. '
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-V </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA. '
 		+ 'Navigate roads with elegance, safety, and power while feeling comfort and confidence behind the wheel.</p>' );
 	    }
 
@@ -105,7 +109,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    $( '.car-congrats' ).css( { 'top': 253, 'left' : 381 } );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 243px !important; left: 264px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
 	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
 	    }
 

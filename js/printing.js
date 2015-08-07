@@ -138,6 +138,7 @@ $( '.congrats-back-home' ).on( 'click', function () {
 		$( '#car-name-congrats' ).css( { 'display' : 'inline-block' } );
 		$( '#desinger-name-congrats' ).css( { 'display' : 'inline-block' } );
     currentCar.prevCarName = currentCar.name;
+		currentCar.prevColor = currentCar.color;
     document.getElementById( 'desinger-name-congrats' ).value = '';
     document.getElementById( 'car-name-congrats' ).value = '';
     $( '#retake-picture' ).addClass( 'hidden' );

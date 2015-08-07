@@ -40,6 +40,10 @@
     -webkit-text-shadow: 0 0 2px #fff;
 }
 
+.car-details p {
+	font-style : italic;
+}
+
 .carousel-img {
     position: relative;
     top: 180px;
