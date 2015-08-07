@@ -210,7 +210,8 @@ html, body {
 }
 
 .car-details-congrats p {
-	font-size : 22px
+	text-align : center;
+	font-size  : 22px
 }
 
 .car-details-congrats h2 {

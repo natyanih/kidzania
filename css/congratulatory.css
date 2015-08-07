@@ -189,6 +189,9 @@
 
 }
 
+.car-details-congrats p {
+	text-align : center;
+}
 .car-details-congrats h2 {
 	margin-left : 296px;
 }

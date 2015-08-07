@@ -67,7 +67,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    if ( currentCar.name === 'crv' ) {
 			$( '.car-congrats' ).css( { 'top': 278, 'left' : 396 } );
 			$( '.car-congrats-body' ).css( { 'width' : 800 } );
-			document.styleSheets[11].addRule( '.car-congrats', 'top: 310px !important; left: 380px !important;' );
+			document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 320px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV </h2> <p>When at the helm of the New CR-V, you will immediately experience the driver-oriented engineering and design in the Honda DNA. '
@@ -76,7 +76,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 	    if ( currentCar.name === 'city' ) {
 	$( '.car-congrats' ).css( { 'top': 310, 'left' : 390 } );
-	document.styleSheets[11].addRule( '.car-congrats', 'top: 320px !important; left: 300px !important;' );
+	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>Advanced mobility is in your hands with The All-New Honda City.'
 	+ ' Designed in line with a vision that is ahead of its time. Utilizing cutting-edge driving innovations and delivering outstanding comfort'
@@ -85,7 +85,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 	if ( currentCar.name === 'civic' ) {
 			$( '.car-congrats' ).css( { 'top': 319, 'left' : 357 } );
-			document.styleSheets[11].addRule( '.car-congrats', 'top: 333px !important; left: 300px !important;' );
+			document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 214px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CIVIC </h2> <p>The spirit of racing has been running through Honda’s pipelines and powertrain since the era of its ' +
 	'great grandfathers. With MUGEN, The All-New Civic can relive and bask in its ancestors’ glory of being kings of the road.</p>' );
@@ -94,7 +94,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    if ( currentCar.name === 'jazz' ) {
 		$( '.car-congrats' ).css( { 'top': 243, 'left' : 314 } );
 		$( '.car-congrats-body' ).css( { 'width' : 1000 } );
-		document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 280px !important;' );
+		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 405px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 405px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA JAZZ </h2> <p>Space, performance, and style - the perfect combo for an extremely breathtaking experience on the road. To add up excitement,'
@@ -103,10 +103,10 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 	if ( currentCar.name === 'crz' ) {
 	    $( '.car-congrats' ).css( { 'top': 253, 'left' : 381 } );
-			document.styleSheets[11].addRule( '.car-congrats', 'top: 323px !important; left: 354px !important;' );
+			document.styleSheets[11].addRule( '.car-congrats', 'top: 243px !important; left: 264px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
-	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport,Normal and Econ.</p>' );
+	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
 	    }
 
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
