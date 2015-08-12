@@ -1107,6 +1107,163 @@ var adjustment = {
 				'8' : { 'width' : 663 }
 			}
 		}
+	},
+	'accord' : {
+		'offset' : {
+			'color' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'tint' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'decal' : {
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'rims' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'grill' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'skirt' : {
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			},
+			'spoiler' : {
+				'1' : { 'x' : -30, 'y' : 40 },
+				'2' : { 'x' : -30, 'y' : 40 },
+				'3' : { 'x' : -30, 'y' : 40 },
+				'4' : { 'x' : -30, 'y' : 40 },
+				'5' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -30, 'y' : 40 },
+				'7' : { 'x' : -30, 'y' : 40 },
+				'8' : { 'x' : -30, 'y' : 40 }
+			}
+		},
+		// adjustment to dimensions
+		'dimension' : {
+			'color' : {
+				// one here represent side ID, same adjustments for same side, same type
+				// only need the width, height will be computed : img.height * adjusment / img.width
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'tint' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'decal' : {
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'rims' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'grill' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'skirt' : {
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			},
+			'spoiler' : {
+				'1' : { 'width' : 576 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
+				'4' : { 'width' : 576 },
+				'5' : { 'width' : 576 },
+				'6' : { 'width' : 576 },
+				'7' : { 'width' : 576 },
+				'8' : { 'width' : 576 }
+			}
+		}
 	}
+
 
 };

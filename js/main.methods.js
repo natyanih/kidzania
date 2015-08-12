@@ -77,6 +77,7 @@ var methods = (function() {
                     $('.crz-customizer-holder').hide();
                     $('.brio-customizer-holder').hide();
                     $('.amaze-customizer-holder').hide();
+                    $('.accord-customizer-holder').hide();
 
                     // load html
                     if (currentCar.name === 'jazz') {
@@ -161,6 +162,18 @@ var methods = (function() {
                         $('.amaze-div-car-rims').hide();
                         $('.amaze-div-car-body').hide();
                         $('.amaze-div-car-background').hide();
+                    }
+
+                    if (currentCar.name === 'accord') {
+                        $('.accord-customizer-holder').show();
+                        $('.accord-div-car-color').show();
+
+                        // hide other customizer divs
+                        $('.accord-div-car-tint').hide();
+                        $('.accord-div-car-decal').hide();
+                        $('.accord-div-car-rims').hide();
+                        $('.accord-div-car-body').hide();
+                        $('.accord-div-car-background').hide();
                     }
 
                     // add color to car color button
