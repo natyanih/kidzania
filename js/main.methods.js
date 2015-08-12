@@ -78,6 +78,7 @@ var methods = (function() {
                     $('.brio-customizer-holder').hide();
                     $('.amaze-customizer-holder').hide();
                     $('.accord-customizer-holder').hide();
+                    $('.pilot-customizer-holder').hide();
 
                     // load html
                     if (currentCar.name === 'jazz') {
@@ -174,6 +175,18 @@ var methods = (function() {
                         $('.accord-div-car-rims').hide();
                         $('.accord-div-car-body').hide();
                         $('.accord-div-car-background').hide();
+                    }
+
+                    if (currentCar.name === 'pilot') {
+                        $('.pilot-customizer-holder').show();
+                        $('.pilot-div-car-color').show();
+
+                        // hide other customizer divs
+                        $('.pilot-div-car-tint').hide();
+                        $('.pilot-div-car-decal').hide();
+                        $('.pilot-div-car-rims').hide();
+                        $('.pilot-div-car-body').hide();
+                        $('.pilot-div-car-background').hide();
                     }
 
                     // add color to car color button
