@@ -113,8 +113,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 		$( '.car-congrats-body' ).css( { 'width' : 600 } );
 		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
-	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA BRIO </h2> <p>With its i-VTEC engine, The All-New Honda Brio is easily the most powerful vehicle in its segment. Even on a budget, you can now enjoy the swift throttle response,' +
+	' progressive power delivery, and outstanding fuel economy that Honda engines and transmissions are famous for.</p>' );
 	    }
 
 	if ( currentCar.name === 'amaze' ) {
@@ -122,8 +122,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 		$( '.car-congrats-body' ).css( { 'width' : 600 } );
 		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
-	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA AMAZE </h2> <p>The All-New Brio Amaze\'s powertrain provides superior performance and efficiency. The 1.3L i-VTEC 4-Cylinder engine is standard across the model range,' +
+	' and generates a class-leading 100 ps and 13 kg-m. From low to high revs, it delivers power promptly as needed.</p>' );
 	    }
 
 	    if ( currentCar.name === 'accord' ) {
@@ -131,9 +131,9 @@ $( '.btn-race-car' ).on( 'click', function () {
 	$( '.car-congrats-body' ).css( { 'width' : 600 } );
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>Advanced mobility is in your hands with The All-New Honda City.'
-	+ ' Designed in line with a vision that is ahead of its time. Utilizing cutting-edge driving innovations and delivering outstanding comfort'
-	+ ' features – it is the sedan for drivers who want more.</p>' );
+	$( '.car-details-congrats' ).append( '<h2> HONDA ACCORD </h2> <p>Looking good will never be a problem. With clean, elegant lines, the All-New Accord exudes class from any viewpoint,'
+	+ ' and yet, that innate athleticism that is distinctive to The All-New Accord is still there.'
+	+ ' Distinctive character lines along the hood and on the side profile of the vehicle convey a sense of motion, even at a standstill.</p>' );
 	}
 
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
