@@ -136,6 +136,14 @@ $( '.btn-race-car' ).on( 'click', function () {
 	+ ' Distinctive character lines along the hood and on the side profile of the vehicle convey a sense of motion, even at a standstill.</p>' );
 	}
 
+	    if ( currentCar.name === 'pilot' ) {
+	$( '.car-congrats' ).css( { 'top': 356, 'left' : 511 } );
+	$( '.car-congrats-body' ).css( { 'width' : 600 } );
+	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
+    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	$( '.car-details-congrats' ).append( '<h2> HONDA PILOT </h2> <p>Rugged, yet refined, the Pilot is an SUV with character and style.</p>' );
+	}
+
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
     $( '.car-congrats-spoiler' ).removeClass( 'car-congrats-spoiler-' + currentCar.prevCarName );
     $( '.car-congrats-tint' ).removeClass( 'car-congrats-tint-' + currentCar.prevCarName );

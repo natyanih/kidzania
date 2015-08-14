@@ -845,3 +845,81 @@
 		left      : -8px;
 		z-index   : 1;
 }
+
+/*For pilot*/
+
+.car-congrats-tint-pilot {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+}
+
+.car-congrats-skirt-pilot {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 10;
+}
+
+.car-congrats-spoiler-pilot {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+}
+
+.car-congrats-rim-back-pilot {
+		width : 59px;
+		top   : 187px;
+		left  : 108px;
+}
+
+.car-congrats-rim-front-pilot {
+		width : 59px;
+		top   : 185px;
+		left  : 448px;
+}
+
+.car-congrats-decal-pilot-1 {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+.car-congrats-decal-pilot-2 {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+.car-congrats-decal-pilot-3 {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+
+.car-congrats-decal-pilot-4 {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : -11px;
+		z-index   : 1;
+}
+
+
+.car-congrats-decal-pilot-5 {
+		width     : 600px !important;
+		max-width : 600px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
