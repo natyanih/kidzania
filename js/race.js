@@ -108,6 +108,34 @@ $( '.btn-race-car' ).on( 'click', function () {
 	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
 	    }
 
+	if ( currentCar.name === 'brio' ) {
+		$( '.car-congrats' ).css( { 'top': 365, 'left' : 535 } );
+		$( '.car-congrats-body' ).css( { 'width' : 600 } );
+		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
+	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
+	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
+	    }
+
+	if ( currentCar.name === 'amaze' ) {
+		$( '.car-congrats' ).css( { 'top': 362, 'left' : 506 } );
+		$( '.car-congrats-body' ).css( { 'width' : 600 } );
+		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
+	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>With the 3-mode drive system, the new Honda CR-Z is a versatile machine. It gives the driver the power' +
+	' to adjust vehicle settings based on personal preference and conditions. There are three driving modes: Sport, Normal and Econ.</p>' );
+	    }
+
+	    if ( currentCar.name === 'accord' ) {
+	$( '.car-congrats' ).css( { 'top': 362, 'left' : 531 } );
+	$( '.car-congrats-body' ).css( { 'width' : 600 } );
+	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
+    // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
+	$( '.car-details-congrats' ).append( '<h2> HONDA CITY </h2> <p>Advanced mobility is in your hands with The All-New Honda City.'
+	+ ' Designed in line with a vision that is ahead of its time. Utilizing cutting-edge driving innovations and delivering outstanding comfort'
+	+ ' features – it is the sedan for drivers who want more.</p>' );
+	}
+
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
     $( '.car-congrats-spoiler' ).removeClass( 'car-congrats-spoiler-' + currentCar.prevCarName );
     $( '.car-congrats-tint' ).removeClass( 'car-congrats-tint-' + currentCar.prevCarName );
@@ -189,7 +217,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			} else {
 					$( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
 			}
-	} else { 
+	} else {
 		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', '' );
 	}
 	loadCamera();
