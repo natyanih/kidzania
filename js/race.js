@@ -109,17 +109,17 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    }
 
 	if ( currentCar.name === 'brio' ) {
-		$( '.car-congrats' ).css( { 'top': 365, 'left' : 535 } );
-		$( '.car-congrats-body' ).css( { 'width' : 600 } );
-		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
+		$( '.car-congrats' ).css( { 'top': 324, 'left' : 486 } );
+		$( '.car-congrats-body' ).css( { 'width' : 700 } );
+		document.styleSheets[11].addRule( '.car-congrats', 'top: 300px !important; left: 351px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA BRIO </h2> <p>With its i-VTEC engine, The All-New Honda Brio is easily the most powerful vehicle in its segment. Even on a budget, you can now enjoy the swift throttle response,' +
 	' progressive power delivery, and outstanding fuel economy that Honda engines and transmissions are famous for.</p>' );
 	    }
 
 	if ( currentCar.name === 'amaze' ) {
-		$( '.car-congrats' ).css( { 'top': 362, 'left' : 506 } );
-		$( '.car-congrats-body' ).css( { 'width' : 600 } );
+		$( '.car-congrats' ).css( { 'top': 328, 'left' : 456 } );
+		$( '.car-congrats-body' ).css( { 'width' : 700 } );
 		document.styleSheets[11].addRule( '.car-congrats', 'top: 230px !important; left: 210px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA AMAZE </h2> <p>The All-New Brio Amaze\'s powertrain provides superior performance and efficiency. The 1.3L i-VTEC 4-Cylinder engine is standard across the model range,' +
@@ -127,8 +127,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    }
 
 	    if ( currentCar.name === 'accord' ) {
-	$( '.car-congrats' ).css( { 'top': 362, 'left' : 531 } );
-	$( '.car-congrats-body' ).css( { 'width' : 600 } );
+	$( '.car-congrats' ).css( { 'top': 325, 'left' : 497 } );
+	$( '.car-congrats-body' ).css( { 'width' : 700 } );
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA ACCORD </h2> <p>Looking good will never be a problem. With clean, elegant lines, the All-New Accord exudes class from any viewpoint,'
@@ -137,8 +137,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 	}
 
 	    if ( currentCar.name === 'pilot' ) {
-	$( '.car-congrats' ).css( { 'top': 356, 'left' : 511 } );
-	$( '.car-congrats-body' ).css( { 'width' : 600 } );
+	$( '.car-congrats' ).css( { 'top': 317, 'left' : 468 } );
+	$( '.car-congrats-body' ).css( { 'width' : 700 } );
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA PILOT </h2> <p>Rugged, yet refined, the Pilot is an SUV with character and style.</p>' );
