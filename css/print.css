@@ -178,7 +178,8 @@ html, body {
 
 .car-details-congrats p {
 	text-align : center;
-	font-size  : 18pt;
+	font-size  : 16pt;
+	margin-top : -8px;
 }
 
 .car-details-congrats h2 {

@@ -700,10 +700,10 @@
 }
 
 .car-congrats-skirt-amaze {
-		width     : 700px !important;
-		max-width : 700px !important;
+		width     : 710px !important;
+		max-width : 710px !important;
 		top       : 0;
-		left      : 0;
+		left      : 6px;
 		z-index   : 10;
 }
 
@@ -778,10 +778,10 @@
 }
 
 .car-congrats-skirt-accord {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : 0;
-		left      : 0;
+		width     : 710px !important;
+		max-width : 710px !important;
+		top       : -5px;
+		left      : -6px;
 		z-index   : 10;
 }
 
