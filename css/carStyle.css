@@ -615,10 +615,10 @@
 /*For brio*/
 
 .car-congrats-tint-brio {
-		width     : 361px !important;
-		max-width : 361px !important;
-		top       : 7px;
-		left      : 136px;
+		width     : 318px !important;
+		max-width : 318px !important;
+		top       : 8px;
+		left      : 138px;
 }
 
 .car-congrats-skirt-brio {
@@ -695,8 +695,8 @@
 .car-congrats-tint-amaze {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : 0;
-		left      : 0;
+		top       : -1px;
+		left      : -11px;
 }
 
 .car-congrats-skirt-amaze {
@@ -745,7 +745,7 @@
 .car-congrats-decal-amaze-3 {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : -5px;
+		top       : 0;
 		left      : 0;
 		z-index   : 1;
 }
@@ -755,7 +755,7 @@
 		width     : 700px !important;
 		max-width : 700px !important;
 		top       : 0;
-		left      : -11px;
+		left      : 0;
 		z-index   : 1;
 }
 
@@ -763,8 +763,8 @@
 .car-congrats-decal-amaze-5 {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : -4px;
-		left      : -8px;
+		top       : 0;
+		left      : 0;
 		z-index   : 1;
 }
 
@@ -800,8 +800,8 @@
 
 .car-congrats-rim-front-accord {
 		width : 73px;
-		top   : 203px;
-		left  : 452px;
+		top   : 204px;
+		left  : 541px;
 }
 
 .car-congrats-decal-accord-1 {
