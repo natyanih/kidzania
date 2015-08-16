@@ -170,7 +170,7 @@ html, body {
 }
 
 .car-details-congrats {
-	position : absolute;
+	position : fixed;
 	top      : 543px;
 	left     : 87px;
 	width    : 985px;

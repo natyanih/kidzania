@@ -131,8 +131,10 @@ $( '.congrats-back-home' ).on( 'click', function () {
 		$( '.street-bg' ).addClass( 'hidden' );
 
 		$( '.print-modal' ).addClass( 'hidden' );
-		
+
 		$( '.password-cont' ).removeClass( 'has-error' );
+
+	$( '#print-congrats-done' ).addClass( 'hidden' );
 
 		$('.print-button').addClass('hidden');
 		$( '#car-name-congrats-cont' ).css( { 'display' : 'none' } );
