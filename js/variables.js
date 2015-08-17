@@ -1144,14 +1144,14 @@ var adjustment = {
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'x' : 5, 'y' : 94 },
-				'2' : { 'x' : 5, 'y' : 94 },
-				'3' : { 'x' : 5, 'y' : 94 },
-				'4' : { 'x' : 1, 'y' : 90 },
-				'5' : { 'x' : 6, 'y' : 77 },
-				'6' : { 'x' : 0, 'y' : 90 },
-				'7' : { 'x' : 5, 'y' : 94 },
-				'8' : { 'x' : 5, 'y' : 92 }
+				'1' : { 'x' : -31, 'y' : 84 },
+				'2' : { 'x' : -32, 'y' : 84 },
+				'3' : { 'x' : -32, 'y' : 84 },
+				'4' : { 'x' : -10, 'y' : 94 },
+				'5' : { 'x' : -24, 'y' : 85 },
+				'6' : { 'x' : -37, 'y' : 80 },
+				'7' : { 'x' : -26, 'y' : 84 },
+				'8' : { 'x' : -32, 'y' : 82 }
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
@@ -1221,14 +1221,14 @@ var adjustment = {
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'width' : 576 },
-				'2' : { 'width' : 576 },
-				'3' : { 'width' : 576 },
-				'4' : { 'width' : 584 },
-				'5' : { 'width' : 576 },
-				'6' : { 'width' : 584 },
-				'7' : { 'width' : 576 },
-				'8' : { 'width' : 576 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 617 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 617 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
