@@ -122,7 +122,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 		$( '.car-congrats-body' ).css( { 'width' : 700 } );
 		document.styleSheets[11].addRule( '.car-congrats', 'top: 299px !important; left: 340px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA AMAZE </h2> <p>The All-New Brio Amaze\'s powertrain provides superior performance and efficiency. The 1.3L i-VTEC 4-Cylinder engine is standard across the model range,' +
+	    $( '.car-details-congrats' ).append( '<h2> HONDA BRIO AMAZE </h2> <p>The All-New Brio Amaze\'s powertrain provides superior performance and efficiency. The 1.3L i-VTEC 4-Cylinder engine is standard across the model range,' +
 	' and generates a class-leading 100 ps and 13 kg-m. From low to high revs, it delivers power promptly as needed.</p>' );
 	    }
 
@@ -152,8 +152,16 @@ $( '.btn-race-car' ).on( 'click', function () {
     $( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-3' );
 		$( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-4' );
 		$( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-5' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-1' );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-2' );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-3' );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-4' );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-5' );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-1' );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-2' );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-3' );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-4' );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-5' );
 		$( '.car-congrats-body' ).removeClass( 'car-congrats-body-' + currentCar.prevCarName );
 
 		$( '.car-congrats-body' ).addClass( 'car-congrats-body-' + currentCar.name );
@@ -213,8 +221,11 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 	$( '.car-congrats-body-' + currentCar.name + '-' + currentCar.color ).removeClass( 'hidden' );
 	if ( currentCar.rims ) {
-		console.log( "ASASDASD" );
 		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', 'images/assets/' + currentCar.name + '/buttons/rims/' + currentCar.rims + '.png' );
+		if ( currentCar.name === 'accord' ) {
+			$( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name + '-' + currentCar.color );
+			$( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name + '-' + currentCar.color );
+		} else {
 			if ( !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-city' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-crv' ) && !$( '.car-congrats-rim-back' ).hasClass( 'car-congrats-rim-back-jazz' ) ) {
 			$( '.car-congrats-rim-back' ).addClass( 'car-congrats-rim-back-' + currentCar.name );
 			} else {
@@ -225,6 +236,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			} else {
 					$( '.car-congrats-rim-front' ).addClass( 'car-congrats-rim-front-' + currentCar.name );
 			}
+		}
 	} else {
 		$( '.car-congrats-rim-back, .car-congrats-rim-front' ).attr( 'src', '' );
 	}

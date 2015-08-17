@@ -792,16 +792,65 @@
 		left      : 0;
 }
 
-.car-congrats-rim-back-accord {
-		width : 73px;
-		top   : 202px;
-		left  : 119px;
+.car-congrats-rim-back-accord-1 {
+		width : 78px;
+		top   : 200px;
+		left  : 121px;
 }
 
-.car-congrats-rim-front-accord {
-		width : 73px;
-		top   : 204px;
+.car-congrats-rim-back-accord-2 {
+		width : 79px;
+		top   : 199px;
+		left  : 118px;
+}
+
+
+.car-congrats-rim-back-accord-3 {
+		width : 80px;
+		top   : 199px;
+		left  : 115px;
+}
+
+.car-congrats-rim-back-accord-4 {
+		width : 82px;
+		top   : 198px;
+		left  : 117px;
+}
+
+.car-congrats-rim-back-accord-5 {
+		width : 82px;
+		top   : 198px;
+		left  : 114px;
+}
+
+.car-congrats-rim-front-accord-1 {
+		width : 78px;
+		top   : 202px;
+		left  : 534px;
+}
+
+.car-congrats-rim-front-accord-2 {
+		width : 79px;
+		top   : 201px;
+		left  : 535px;
+}
+
+.car-congrats-rim-front-accord-3 {
+		width : 80px;
+		top   : 201px;
+		left  : 539px;
+}
+
+.car-congrats-rim-front-accord-4 {
+		width : 82px;
+		top   : 200px;
 		left  : 541px;
+}
+
+.car-congrats-rim-front-accord-5 {
+		width : 82px;
+		top   : 200px;
+		left  : 539px;
 }
 
 .car-congrats-decal-accord-1 {
