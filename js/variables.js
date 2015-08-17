@@ -1133,14 +1133,14 @@ var adjustment = {
 				'8' : { 'x' : -31, 'y' : 84 }
 			},
 			'decal' : {
-				'1' : { 'x' : -20, 'y' : 94 },
+				'1' : { 'x' : -60, 'y' : 84 },
 				'2' : { 'x' : -20, 'y' : 94 },
 				'3' : { 'x' : -20, 'y' : 94 },
-				'4' : { 'x' : -76, 'y' : 94 },
-				'5' : { 'x' : -2, 'y' : 91 },
-				'6' : { 'x' : -50, 'y' : 94 },
-				'7' : { 'x' : -48, 'y' : 104 },
-				'8' : { 'x' : 0, 'y' : 104 }
+				'4' : { 'x' : -76, 'y' : 106 },
+				'5' : { 'x' : -30, 'y' : 84 },
+				'6' : { 'x' : 5, 'y' : 114 },
+				'7' : { 'x' : -88, 'y' : 84 },
+				'8' : { 'x' : -46, 'y' : 100 }
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
@@ -1210,14 +1210,14 @@ var adjustment = {
 				'8' : { 'width' : 658 }
 			},
 			'decal' : {
-				'1' : { 'width' : 626 },
-				'2' : { 'width' : 626 },
-				'3' : { 'width' : 626 },
-				'4' : { 'width' : 715 },
-				'5' : { 'width' : 626 },
-				'6' : { 'width' : 715 },
-				'7' : { 'width' : 626 },
-				'8' : { 'width' : 626 }
+				'1' : { 'width' : 715 },
+				'2' : { 'width' : 715 },
+				'3' : { 'width' : 715 },
+				'4' : { 'width' : 671 },
+				'5' : { 'width' : 715 },
+				'6' : { 'width' : 671 },
+				'7' : { 'width' : 715 },
+				'8' : { 'width' : 715 }
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
