@@ -514,14 +514,14 @@
 
 .car-congrats-rim-back-amaze {
     width : 60px;
-    top   : 181px;
-    left  : 123px;
+    top   : 180px !important;
+    left  : 112px;
 }
 
 .car-congrats-rim-front-amaze {
     width : 60px;
-    top   : 182px;
-    left  : 448px;
+    top   : 182px !important;
+    left  : 439px;
 }
 
 .car-congrats-decal-amaze-1 {

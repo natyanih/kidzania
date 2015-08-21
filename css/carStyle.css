@@ -695,15 +695,15 @@
 .car-congrats-tint-amaze {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : -1px;
+		top       : 0;
 		left      : -11px;
 }
 
 .car-congrats-skirt-amaze {
-		width     : 710px !important;
-		max-width : 710px !important;
+		width     : 700px !important;
+		max-width : 700px !important;
 		top       : 0;
-		left      : 6px;
+		left      : 0;
 		z-index   : 10;
 }
 
@@ -715,22 +715,22 @@
 }
 
 .car-congrats-rim-back-amaze {
-		width : 73px;
-		top   : 209px;
-		left  : 142px;
+		width : 68px;
+		top   : 210px;
+		left  : 133px;
 }
 
 .car-congrats-rim-front-amaze {
-		width : 73px;
-		top   : 209px;
-		left  : 522px;
+		width : 68px;
+		top   : 212px;
+		left  : 513px;
 }
 
 .car-congrats-decal-amaze-1 {
 		width     : 700px !important;
 		max-width : 700px !important;
 		top       : 0;
-		left      : 0;
+		left      : -9px;
 		z-index   : 1;
 }
 
