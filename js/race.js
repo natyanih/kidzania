@@ -29,10 +29,17 @@ $( '.btn-race-car' ).on( 'click', function () {
 	var ruleLength = document.styleSheets[11].rules.length - 1;
 
 	if ( currentCar.prevCarName ) {
+			$( '.car-congrats-tint' ).css( { 'top': '', 'left' : '' } );
+			$( '.car-congrats-skirt' ).css( { 'top': '', 'left' : '' } );
+			$( '.car-congrats-spoiler' ).css( { 'top': '', 'left' : '' } );
+			$( '.car-congrats-rim-back' ).css( { 'top': '', 'left' : '' } );
+			$( '.car-congrats-rim-front' ).css( { 'top': '', 'left' : '' } );
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
 		document.styleSheets[11].deleteRule( ruleLength );
-		document.styleSheets[11].deleteRule( 30 );
-		document.styleSheets[11].deleteRule( 31 );
+		if ( document.styleSheets[11].rules[30] || document.styleSheets[11].rules[31] ) {
+			document.styleSheets[11].deleteRule( 30 );
+			document.styleSheets[11].deleteRule( 31 );
+		}
 	if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
 			document.styleSheets[11].deleteRule( 1 );
 		}
@@ -173,16 +180,8 @@ $( '.btn-race-car' ).on( 'click', function () {
     $( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-3' );
 		$( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-4' );
 		$( '.car-congrats-decal' ).removeClass( 'car-congrats-decal-' + currentCar.prevCarName + '-5' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-1' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-2' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-3' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-4' );
-    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName  + '-5' );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-1' );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-2' );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-3' );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-4' );
-    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName + '-5' );
+    $( '.car-congrats-rim-back' ).removeClass( 'car-congrats-rim-back-' + currentCar.prevCarName );
+    $( '.car-congrats-rim-front' ).removeClass( 'car-congrats-rim-front-' + currentCar.prevCarName );
 		$( '.car-congrats-body' ).removeClass( 'car-congrats-body-' + currentCar.prevCarName );
 
 		$( '.car-congrats-body' ).addClass( 'car-congrats-body-' + currentCar.name );
