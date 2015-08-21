@@ -35,8 +35,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			$( '.car-congrats-rim-back' ).css( { 'top': '', 'left' : '' } );
 			$( '.car-congrats-rim-front' ).css( { 'top': '', 'left' : '' } );
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
-		document.styleSheets[11].deleteRule( ruleLength );
-		if ( document.styleSheets[11].rules[30] || document.styleSheets[11].rules[31] ) {
+		if ( document.styleSheets[11].rules[30].selectorText === '.car-congrats-rim-back' || document.styleSheets[11].rules[31] === '.car-congrats-rim-front' ) {
 			document.styleSheets[11].deleteRule( 30 );
 			document.styleSheets[11].deleteRule( 31 );
 		}
@@ -251,11 +250,11 @@ $( '.btn-race-car' ).on( 'click', function () {
 				$( '.car-congrats-decal-amaze-4' ).css( { 'top': 0, 'left' : 11 } );
 				$( '.car-congrats-decal-amaze-5' ).css( { 'top': 0, 'left' : 11 } );
 		} else {
-				$( '.car-congrats-decal-amaze-1' ).css( { 'top': 0, 'left' : -9 } );
-				$( '.car-congrats-decal-amaze-2' ).css( { 'top': 0, 'left' : 0 } );
-				$( '.car-congrats-decal-amaze-3' ).css( { 'top': 0, 'left' : 0 } );
-				$( '.car-congrats-decal-amaze-4' ).css( { 'top': 0, 'left' : 0 } );
-				$( '.car-congrats-decal-amaze-5' ).css( { 'top': 0, 'left' : 0 } );
+				$( '.car-congrats-decal-amaze-1' ).css( { 'top': '', 'left' : '' } );
+				$( '.car-congrats-decal-amaze-2' ).css( { 'top': '', 'left' : '' } );
+				$( '.car-congrats-decal-amaze-3' ).css( { 'top': '', 'left' : '' } );
+				$( '.car-congrats-decal-amaze-4' ).css( { 'top': '', 'left' : '' } );
+				$( '.car-congrats-decal-amaze-5' ).css( { 'top': '', 'left' : '' } );
 		}
 	}else {
 	$( '.car-congrats-decal' ).attr( 'src', '' );
