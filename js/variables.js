@@ -1145,13 +1145,13 @@ var adjustment = {
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -32, 'y' : 84 },
-				'3' : { 'x' : -32, 'y' : 84 },
+				'2' : { 'x' : -35, 'y' : 64 },
+				'3' : { 'x' : -35, 'y' : 64 },
 				'4' : { 'x' : -10, 'y' : 94 },
-				'5' : { 'x' : -22, 'y' : 85 },
-				'6' : { 'x' : -37, 'y' : 80 },
+				'5' : { 'x' : -22, 'y' : 84 },
+				'6' : { 'x' : -7, 'y' : 94 },
 				'7' : { 'x' : -26, 'y' : 84 },
-				'8' : { 'x' : -32, 'y' : 82 }
+				'8' : { 'x' : -31, 'y' : 84 }
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
