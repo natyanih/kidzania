@@ -247,7 +247,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 				$( '.car-congrats-decal-amaze-1' ).css( { 'top': 0, 'left' : 0 } );
 				$( '.car-congrats-decal-amaze-2' ).css( { 'top': 0, 'left' : 11 } );
 				$( '.car-congrats-decal-amaze-3' ).css( { 'top': 0, 'left' : 11 } );
-				$( '.car-congrats-decal-amaze-4' ).css( { 'top': 0, 'left' : 11 } );
+				$( '.car-congrats-decal-amaze-4' ).css( { 'top': -5, 'left' : 5 } );
 				$( '.car-congrats-decal-amaze-5' ).css( { 'top': 0, 'left' : 11 } );
 		} else {
 				$( '.car-congrats-decal-amaze-1' ).css( { 'top': '', 'left' : '' } );

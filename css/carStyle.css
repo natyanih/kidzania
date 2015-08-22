@@ -632,7 +632,7 @@
 .car-congrats-spoiler-brio {
 		width     : 900px !important;
 		max-width : 900px !important;
-		top       : -64px;
+		top       : -65px;
 		left      : -98px;
 }
 
@@ -754,8 +754,8 @@
 .car-congrats-decal-amaze-4 {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : 0;
-		left      : 0;
+		top       : -5px;
+		left      : -1px;
 		z-index   : 1;
 }
 
@@ -862,10 +862,10 @@
 }
 
 .car-congrats-decal-accord-2 {
-		width     : 900px !important;
-		max-width : 900px !important;
-		top       : -15px;
-		left      : -69px;
+		width     : 800px !important;
+		max-width : 800px !important;
+		top       : -28px;
+		left      : -54px;
 		z-index   : 1;
 }
 
@@ -881,7 +881,7 @@
 .car-congrats-decal-accord-4 {
 		width     : 800px !important;
 		max-width : 800px !important;
-		top       : 5px;
+		top       : -27px;
 		left      : -37px;
 		z-index   : 1;
 }
@@ -890,8 +890,8 @@
 .car-congrats-decal-accord-5 {
 		width     : 800px !important;
 		max-width : 800px !important;
-		top       : 0;
-		left      : 0;
+		top       : -33px;
+		left      : -3px;
 		z-index   : 1;
 }
 
