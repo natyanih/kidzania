@@ -811,14 +811,14 @@ var adjustment = {
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'x' : 160, 'y' : 110 },
-				'2' : { 'x' : 190, 'y' : 127 },
-				'3' : { 'x' : 202, 'y' : 107 },
-				'4' : { 'x' : 226, 'y' : 127 },
-				'5' : { 'x' : 91, 'y' : 116 },
-				'6' : { 'x' : 150, 'y' : 126 },
-				'7' : { 'x' : 140, 'y' : 116 },
-				'8' : { 'x' : 133, 'y' : 113 }
+				'1' : { 'x' : 15, 'y' : 80 },
+				'2' : { 'x' : 98, 'y' : 60 },
+				'3' : { 'x' : 98, 'y' : 60 },
+				'4' : { 'x' : 0, 'y' : 90 },
+				'5' : { 'x' : 15, 'y' : 80 },
+				'6' : { 'x' : 0, 'y' : 90 },
+				'7' : { 'x' : 25, 'y' : 80 },
+				'8' : { 'x' : 6, 'y' : 80 }
 			},
 			'decal' : {
 				'1' : { 'x' : 30, 'y' : 100 },
@@ -877,7 +877,7 @@ var adjustment = {
 		'dimension' : {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
-				// only need the width, height will be computed : img.height * adjusment / img.width
+				// only need the width, height will be computed : img.height * adjustment / img.width
 				'1' : { 'width' : 567 },
 				'2' : { 'width' : 405 },
 				'3' : { 'width' : 403 },
@@ -889,7 +889,7 @@ var adjustment = {
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'width' : 320 },
+				'1' : { 'width' : 658 },
 				'2' : { 'width' : 221 },
 				'3' : { 'width' : 216 },
 				'4' : { 'width' : 230 },
