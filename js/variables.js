@@ -800,14 +800,14 @@ var adjustment = {
 		'offset' : {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'x' : 58, 'y' : 100 },
-				'2' : { 'x' : 128, 'y' : 100 },
-				'3' : { 'x' : 141, 'y' : 100 },
-				'4' : { 'x' : 48, 'y' : 120 },
-				'5' : { 'x' : 48, 'y' : 100 },
-				'6' : { 'x' : 48, 'y' : 120 },
-				'7' : { 'x' : 58, 'y' : 100 },
-				'8' : { 'x' : 58, 'y' : 100 }
+				'1' : { 'x' : 15, 'y' : 80 },
+				'2' : { 'x' : 98, 'y' : 60 },
+				'3' : { 'x' : 98, 'y' : 60 },
+				'4' : { 'x' : 0, 'y' : 90 },
+				'5' : { 'x' : 15, 'y' : 80 },
+				'6' : { 'x' : 0, 'y' : 90 },
+				'7' : { 'x' : 25, 'y' : 80 },
+				'8' : { 'x' : 6, 'y' : 80 }
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
@@ -878,14 +878,14 @@ var adjustment = {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
 				// only need the width, height will be computed : img.height * adjusment / img.width
-				'1' : { 'width' : 486 },
-				'2' : { 'width' : 347 },
-				'3' : { 'width' : 345 },
-				'4' : { 'width' : 509 },
-				'5' : { 'width' : 484 },
-				'6' : { 'width' : 509 },
-				'7' : { 'width' : 483 },
-				'8' : { 'width' : 497 }
+				'1' : { 'width' : 567 },
+				'2' : { 'width' : 405 },
+				'3' : { 'width' : 403 },
+				'4' : { 'width' : 601 },
+				'5' : { 'width' : 565 },
+				'6' : { 'width' : 601 },
+				'7' : { 'width' : 564 },
+				'8' : { 'width' : 580 }
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
