@@ -594,107 +594,107 @@
 }
 
 .car-congrats-rim-back-accord {
-    width : 65px;
-    top   : 173px;
+    width : 68px;
+    top   : 164px;
     left  : 102px;
 }
 
 .car-congrats-rim-front-accord {
-    width : 65px;
-    top   : 175px;
-    left  : 462px;
+    width : 68px;
+    top   : 167px;
+    left  : 457px !important;
 }
 
 .car-congrats-rim-back-accord-1 {
-    width : 68px;
-    top   : 171px;
-    left  : 104px;
+    width : 70px;
+    top   : 165px;
+    left  : 102px !important;
 }
 
 .car-congrats-rim-back-accord-2 {
-    width : 69px;
-    top   : 170px;
-    left  : 102px;
+    width : 70px;
+    top   : 165px;
+    left  : 101px !important;
 }
 
 
 .car-congrats-rim-back-accord-3 {
-    width : 69px;
-    top   : 170px;
-    left  : 98px;
+    width : 70px;
+    top   : 165px;
+    left  : 102px !important;
 }
 
 .car-congrats-rim-back-accord-4 {
-    width : 69px;
-    top   : 170px;
-    left  : 101px;
+    width : 70px;
+    top   : 165px;
+    left  : 101px !important;
 }
 
 .car-congrats-rim-back-accord-5 {
-    width : 69px;
-    top   : 170px;
-    left  : 98px;
+    width : 70px;
+    top   : 165px;
+    left  : 101px !important;
 }
 
 .car-congrats-rim-front-accord-1 {
-    width : 68px;
-    top   : 173px;
-    left  : 458px;
+    width : 70px;
+    top   : 166px;
+    left  : 457px !important;
 }
 
 .car-congrats-rim-front-accord-2 {
-    width : 69px;
-    top   : 172px;
-    left  : 458px;
+    width : 70px;
+    top   : 167px;
+    left  : 458px !important;
 }
 
 .car-congrats-rim-front-accord-3 {
-    width : 69px;
-    top   : 171px;
-    left  : 460px;
+    width : 70px;
+    top   : 165px;
+    left  : 456px !important;
 }
 
 .car-congrats-rim-front-accord-4 {
-    width : 69px;
-    top   : 171px;
-    left  : 464px;
+    width : 70px;
+    top   : 167px;
+    left  : 456px !important;
 }
 
 .car-congrats-rim-front-accord-5 {
-    width : 69px;
-    top   : 172px;
-    left  : 460px;
+    width : 70px;
+    top   : 166px;
+    left  : 456px !important;
 }
 
 .car-congrats-decal-accord-1 {
     width     : 600px !important;
     max-width : 600px !important;
-    top       : 33px;
-    left      : 34px;
+    top       : 0;
+    left      : 0;
     z-index   : 1;
 }
 
 .car-congrats-decal-accord-2 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : 34px;
-    left      : 0;
+    width     : 650px !important;
+    max-width : 650px !important;
+    top       : -13px;
+    left      : -29px;
     z-index   : 1;
 }
 
 .car-congrats-decal-accord-3 {
     width     : 600px !important;
     max-width : 600px !important;
-    top       : 42px;
-    left      : 0;
+    top       : 31px;
+    left      : 16px;
     z-index   : 1;
 }
 
 .car-congrats-decal-accord-4 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : 39px;
-    left      : -9px;
+    width     : 700px !important;
+    max-width : 700px !important;
+    top       : -25px;
+    left      : -39px;
     z-index   : 1;
 }
 

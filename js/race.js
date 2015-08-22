@@ -127,21 +127,27 @@ $( '.btn-race-car' ).on( 'click', function () {
 
 	if ( currentCar.name === 'amaze' ) {
 		$( '.car-congrats' ).css( { 'top': 328, 'left' : 456 } );
+
+		if ( currentCar.skirt === 1 ) {
+			$( '.car-congrats-skirt' ).css( { 'top': 0, 'left' : 0 } );
+		} else if ( currentCar.skirt === 2 ) {
+			$( '.car-congrats-skirt' ).css( { 'top': 0, 'left' : 0 } );
+		} else {
+			$( '.car-congrats-skirt' ).css( { 'top': 0, 'left' : -1 } );
+		}
 		if ( currentCar.color !== 1 && currentCar.color !== 2 ) {
 			$( '.car-congrats' ).css( { 'top': 328, 'left' : 444 } );
 			$( '.car-congrats-tint' ).css( { 'top': 0, 'left' : 0 } );
-			$( '.car-congrats-skirt' ).css( { 'top': 0, 'left' : 11 } );
 			$( '.car-congrats-spoiler' ).css( { 'top': 0, 'left' : 11 } );
-			$( '.car-congrats-rim-back' ).css( { 'top': 211, 'left' : 145 } );
-			$( '.car-congrats-rim-front' ).css( { 'top': 212, 'left' : 524 } );
+			$( '.car-congrats-rim-back' ).css( { 'top': 212, 'left' : 135 } );
+			$( '.car-congrats-rim-front' ).css( { 'top': 212, 'left' : 514 } );
 			document.styleSheets[11].addRule( '.car-congrats-rim-back', 'left: 123px !important;', 30 );
 			document.styleSheets[11].addRule( '.car-congrats-rim-front', 'left: 449px !important;', 31 );
 		} else {
 			$( '.car-congrats-tint' ).css( { 'top': 0, 'left' : -11 } );
-			$( '.car-congrats-skirt' ).css( { 'top': 0, 'left' : 0 } );
 			$( '.car-congrats-spoiler' ).css( { 'top': 0, 'left' : 0 } );
-			$( '.car-congrats-rim-back' ).css( { 'top': 210, 'left' : 133 } );
-			$( '.car-congrats-rim-front' ).css( { 'top': 212, 'left' : 513 } );
+			$( '.car-congrats-rim-back' ).css( { 'top': 212, 'left' : 135 } );
+			$( '.car-congrats-rim-front' ).css( { 'top': 212, 'left' : 514 } );
 			document.styleSheets[11].addRule( '.car-congrats-rim-back', 'left: 112px !important;', 30 );
 			document.styleSheets[11].addRule( '.car-congrats-rim-front', 'left: 440px !important;', 31 );
 		}
