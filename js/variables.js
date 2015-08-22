@@ -1014,7 +1014,7 @@ var adjustment = {
 				'3' : { 'x' : -40, 'y' : 40 },
 				'4' : { 'x' : -40, 'y' : 40 },
 				'5' : { 'x' : -40, 'y' : 40 },
-				'6' : { 'x' : -30, 'y' : 40 },
+				'6' : { 'x' : -40, 'y' : 40 },
 				'7' : { 'x' : -40, 'y' : 40 },
 				'8' : { 'x' : -40, 'y' : 40 }
 			},
@@ -1034,77 +1034,77 @@ var adjustment = {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
 				// only need the width, height will be computed : img.height * adjusment / img.width
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'decal' : {
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'skirt' : {
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			},
 			'spoiler' : {
-				'1' : { 'width' : 663 },
-				'2' : { 'width' : 663 },
-				'3' : { 'width' : 663 },
-				'4' : { 'width' : 663 },
-				'5' : { 'width' : 663 },
-				'6' : { 'width' : 663 },
-				'7' : { 'width' : 663 },
-				'8' : { 'width' : 663 }
+				'1' : { 'width' : 658 },
+				'2' : { 'width' : 658 },
+				'3' : { 'width' : 658 },
+				'4' : { 'width' : 658 },
+				'5' : { 'width' : 658 },
+				'6' : { 'width' : 658 },
+				'7' : { 'width' : 658 },
+				'8' : { 'width' : 658 }
 			}
 		}
 	},
