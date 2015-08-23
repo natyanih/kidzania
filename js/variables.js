@@ -800,14 +800,14 @@ var adjustment = {
 		'offset' : {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
-				'1' : { 'x' : 15, 'y' : 80 },
+				'1' : { 'x' : 15, 'y' : 60 },
 				'2' : { 'x' : 98, 'y' : 60 },
 				'3' : { 'x' : 98, 'y' : 60 },
-				'4' : { 'x' : 0, 'y' : 90 },
-				'5' : { 'x' : 15, 'y' : 80 },
-				'6' : { 'x' : 0, 'y' : 90 },
-				'7' : { 'x' : 25, 'y' : 80 },
-				'8' : { 'x' : 6, 'y' : 80 }
+				'4' : { 'x' : 0, 'y' : 70 },
+				'5' : { 'x' : 15, 'y' : 60 },
+				'6' : { 'x' : 0, 'y' : 70 },
+				'7' : { 'x' : 25, 'y' : 60 },
+				'8' : { 'x' : 6, 'y' : 60 }
 			},
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
