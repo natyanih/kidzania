@@ -722,8 +722,8 @@
 
 .car-congrats-rim-front-amaze {
 		width : 68px;
-		top   : 212px;
-		left  : 513px;
+		top   : 214px;
+		left  : 516px;
 }
 
 .car-congrats-decal-amaze-1 {
@@ -872,7 +872,7 @@
 .car-congrats-decal-accord-3 {
 		width     : 700px !important;
 		max-width : 700px !important;
-		top       : 37px;
+		top       : 0;
 		left      : 17px;
 		z-index   : 1;
 }

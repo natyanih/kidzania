@@ -146,16 +146,17 @@
 }
 
 #print-icon img {
-	width : 61px;
+	width : 50px;
 }
 
 .print-button {
-	padding-left  : 22px;
-	padding-right : 22px;
-	cursor        : pointer;
-	position      : relative;
-	top           : 727px;
-	left          : 1267px;
+	padding-left : 22px;
+	cursor       : pointer;
+	position     : absolute;
+	top          : 733px;
+	left         : 1269px;
+	width        : 150px;
+	height       : 58px;
 }
 
 .print-button button {

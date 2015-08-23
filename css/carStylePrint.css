@@ -513,15 +513,15 @@
 }
 
 .car-congrats-rim-back-amaze {
-    width : 60px;
-    top   : 180px !important;
-    left  : 112px;
+    width : 58px;
+    top   : 182px !important;
+    left  : 116px;
 }
 
 .car-congrats-rim-front-amaze {
-    width : 60px;
-    top   : 182px !important;
-    left  : 439px;
+    width : 58px;
+    top   : 183px !important;
+    left  : 442px;
 }
 
 .car-congrats-decal-amaze-1 {
@@ -685,7 +685,7 @@
 .car-congrats-decal-accord-3 {
     width     : 600px !important;
     max-width : 600px !important;
-    top       : 31px;
+    top       : 0;
     left      : 16px;
     z-index   : 1;
 }
