@@ -1113,8 +1113,8 @@ var adjustment = {
 			'color' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
@@ -1124,8 +1124,8 @@ var adjustment = {
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
@@ -1134,8 +1134,8 @@ var adjustment = {
 			},
 			'decal' : {
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
@@ -1145,8 +1145,8 @@ var adjustment = {
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
@@ -1156,8 +1156,8 @@ var adjustment = {
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
@@ -1166,23 +1166,24 @@ var adjustment = {
 			},
 			'skirt' : {
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
 				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
 				'7' : { 'x' : -26, 'y' : 84 },
-				'8' : { 'x' : -31, 'y' : 84}
+				'8' : { 'x' : -31, 'y' : 84 }
 			},
 			'spoiler' : {
 				'1' : { 'x' : -31, 'y' : 84 },
-				'2' : { 'x' : -35, 'y' : 64 },
-				'3' : { 'x' : -35, 'y' : 64 },
+				'2' : { 'x' : 12, 'y' : 84 },
+				'3' : { 'x' : 12, 'y' : 84 },
 				'4' : { 'x' : -10, 'y' : 94 },
-				'5' : { 'x' : -16, 'y' : 84 },
+				'5' : { 'x' : -22, 'y' : 84 },
 				'6' : { 'x' : -7, 'y' : 94 },
 				'7' : { 'x' : -26, 'y' : 84 },
-				'8' : { 'x' : -31, 'y' : 84 }			}
+				'8' : { 'x' : -31, 'y' : 84 }
+			}
 		},
 		// adjustment to dimensions
 		'dimension' : {
@@ -1190,8 +1191,8 @@ var adjustment = {
 				// one here represent side ID, same adjustments for same side, same type
 				// only need the width, height will be computed : img.height * adjusment / img.width
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1201,8 +1202,8 @@ var adjustment = {
 			'tint' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1211,8 +1212,8 @@ var adjustment = {
 			},
 			'decal' : {
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1222,8 +1223,8 @@ var adjustment = {
 			'rims' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1233,8 +1234,8 @@ var adjustment = {
 			'grill' : {
 				// one here represent side ID, same adjustments for same side, same type
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1243,8 +1244,8 @@ var adjustment = {
 			},
 			'skirt' : {
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
@@ -1253,8 +1254,8 @@ var adjustment = {
 			},
 			'spoiler' : {
 				'1' : { 'width' : 658 },
-				'2' : { 'width' : 658 },
-				'3' : { 'width' : 658 },
+				'2' : { 'width' : 576 },
+				'3' : { 'width' : 576 },
 				'4' : { 'width' : 617 },
 				'5' : { 'width' : 658 },
 				'6' : { 'width' : 617 },
