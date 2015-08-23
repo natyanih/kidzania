@@ -120,6 +120,10 @@ var customizer = ( function (){
 
 			img.src = 'images/assets/' + currentCar.name + '/slices/grill/' + currentCar.grill + '/' + side + '.png';
 
+			if ( currentCar.name === 'brio' && currentCar.currentSide === 5 && currentCar.grill === 1 ) {
+				offsetY = offsetY - 46;
+			}
+
 			img.onload = function() {
 				width = img.width > width ? width : img.width;
 				context.drawImage( img, offsetX, offsetY, width, img.height * width / img.width );
