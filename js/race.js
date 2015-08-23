@@ -29,6 +29,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	var ruleLength = document.styleSheets[11].rules.length - 1;
 
 	if ( currentCar.prevCarName ) {
+			document.styleSheets[11].deleteRule( ruleLength );
 			$( '.car-congrats-tint' ).css( { 'top': '', 'left' : '' } );
 			$( '.car-congrats-skirt' ).css( { 'top': '', 'left' : '' } );
 			$( '.car-congrats-spoiler' ).css( { 'top': '', 'left' : '' } );
@@ -37,7 +38,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
 		if ( document.styleSheets[11].rules[30].selectorText === '.car-congrats-rim-back' || document.styleSheets[11].rules[31] === '.car-congrats-rim-front' ) {
 			document.styleSheets[11].deleteRule( 30 );
-			document.styleSheets[11].deleteRule( 31 );
+			document.styleSheets[11].deleteRule( 30 );
 		}
 	if ( document.styleSheets[11].rules[1].selectorText === '#car-name-congrats-cont' ) {
 			document.styleSheets[11].deleteRule( 1 );
@@ -45,7 +46,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	}
 
 	document.styleSheets[11].addRule( '#car-name-congrats-cont', 'color: white !important;', 1 );
-//console.log( document.styleSheets[11] );
+
 	if ( currentCar.raceBG === 1 ) {
 		$( '.forest-bg' ).removeClass( 'hidden' );
 		$( '.forest-bg' ).addClass( 'bg-under-congrats-backup' );
