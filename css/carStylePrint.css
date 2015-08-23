@@ -410,10 +410,10 @@
 }
 
 .car-congrats-tint-brio {
-    width     : 273px !important;
-    max-width : 273px !important;
-    top       : 7px;
-    left      : 119px;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -50px;
+    left      : -80px;
 }
 
 .car-congrats-skirt-brio {
@@ -444,42 +444,42 @@
 }
 
 .car-congrats-decal-brio-1 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : -14px;
-    left      : -6px;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -52px;
+    left      : -81px;
     z-index   : 1;
 }
 
 .car-congrats-decal-brio-2 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : -5px;
-    left      : -5px;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -52px;
+    left      : -81px;
     z-index   : 1;
 }
 
 .car-congrats-decal-brio-3 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : -4px;
-    left      : 0;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -51px;
+    left      : -79px;
     z-index   : 1;
 }
 
 .car-congrats-decal-brio-4 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : 0;
-    left      : 0;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -51px;
+    left      : -81px;
     z-index   : 1;
 }
 
 .car-congrats-decal-brio-5 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : 0;
-    left      : -7px;
+    width     : 760px !important;
+    max-width : 760px !important;
+    top       : -54px;
+    left      : -81px;
     z-index   : 1;
 }
 
@@ -699,10 +699,10 @@
 }
 
 .car-congrats-decal-accord-5 {
-    width     : 600px !important;
-    max-width : 600px !important;
-    top       : 32px;
-    left      : 0;
+    width     : 670px !important;
+    max-width : 670px !important;
+    top       : -24px;
+    left      : 6px;
     z-index   : 1;
 }
 

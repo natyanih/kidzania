@@ -615,10 +615,10 @@
 /*For brio*/
 
 .car-congrats-tint-brio {
-		width     : 318px !important;
-		max-width : 318px !important;
-		top       : 8px;
-		left      : 138px;
+		width     : 885px !important;
+		max-width : 885px !important;
+		top       : -59px;
+		left      : -93px;
 }
 
 .car-congrats-skirt-brio {
@@ -637,56 +637,56 @@
 }
 
 .car-congrats-rim-back-brio {
-		width : 93px;
-		top   : 189px;
-		left  : 50px;
+		width : 88px;
+		top   : 191px;
+		left  : 53px;
 }
 
 .car-congrats-rim-front-brio {
-		width : 93px;
-		top   : 191px;
-		left  : 523px;
+		width : 88px;
+		top   : 195px;
+		left  : 525px;
 }
 
 .car-congrats-decal-brio-1 {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : -16px;
-		left      : -7px;
+		width     : 900px !important;
+		max-width : 900px !important;
+		top       : -64px;
+		left      : -101px;
 		z-index   : 1;
 }
 
 .car-congrats-decal-brio-2 {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : -6px;
-		left      : -7px;
+		width     : 870px !important;
+		max-width : 870px !important;
+		top       : -57px;
+		left      : -85px;
 		z-index   : 1;
 }
 
 .car-congrats-decal-brio-3 {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : -5px;
-		left      : 0;
+		width     : 870px !important;
+		max-width : 870px !important;
+		top       : -54px;
+		left      : -83px;
 		z-index   : 1;
 }
 
 
 .car-congrats-decal-brio-4 {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : 0;
-		left      : -11px;
+		width     : 870px !important;
+		max-width : 870px !important;
+		top       : -55px;
+		left      : -83px;
 		z-index   : 1;
 }
 
 
 .car-congrats-decal-brio-5 {
-		width     : 700px !important;
-		max-width : 700px !important;
-		top       : -4px;
-		left      : -8px;
+		width     : 870px !important;
+		max-width : 870px !important;
+		top       : -56px;
+		left      : -87px;
 		z-index   : 1;
 }
 
