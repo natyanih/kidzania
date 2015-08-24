@@ -173,6 +173,15 @@ var customizer = ( function (){
 			$( parentClass ).find( tintClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 		},
 
+		'selectDefaultRim' : function () {
+			var parentClass = '.' + currentCar.name + '-div-car-rims';
+			var rimClass   = '.' + currentCar.name + '-customizer-rim-6';
+
+			if ( currentCar.name === 'amaze' && currentCar.rims === null ) {
+				$( parentClass ).find( rimClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
+			}
+		},
+
 		'selectDefaultBackground' : function () {
 			var parentClass = '.' + currentCar.name + '-div-car-background';
 			var bgClass   = '.' + currentCar.name + '-customizer-background-3';

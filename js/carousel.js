@@ -34,6 +34,7 @@ $('.btn-select-car').on('click', function() {
     // add default selection indicator for color
     customizer.selectDefaultColor();
     customizer.selectDefaultTint();
+    customizer.selectDefaultRim();
 
     methods.hideDiv('carousel');
 
