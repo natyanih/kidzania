@@ -170,8 +170,8 @@ html, body {
 }
 
 .car-details-congrats {
-	position : fixed;
-	top      : 543px;
+	position : absolute;
+	top      : 534px;
 	left     : 87px;
 	width    : 985px;
 }
@@ -179,7 +179,7 @@ html, body {
 .car-details-congrats p {
 	text-align : center;
 	font-size  : 16pt;
-	margin-top : -8px;
+	margin-top : -11px;
 }
 
 .car-details-congrats h2 {
