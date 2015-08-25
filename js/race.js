@@ -80,7 +80,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV: Be Daring </h2> <p>This Sports Utility Vehicle (SUV) is designed to look good on the road while carrying heavy loads. '
 	    + ' Shaped like a cocoon, passengers will feel like they are protected from the busy world around them.'
-		+ ' And with Daytime Running Lights (DRL), you can be assured that you will have a safe drive as it provides optimum road visibility. <em><strong>Be Daring</strong></em></p>' );
+		+ ' And with Daytime Running Lights (DRL), you can be assured that you will have a safe drive as it provides optimum road visibility. <em><strong>Be Daring!</strong></em></p>' );
 	    }
 
 	    if ( currentCar.name === 'city' ) {
