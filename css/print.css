@@ -206,7 +206,7 @@ html, body {
 	width : 100px;
 }
 
-.print-white > h2, .print-white > p {
+.print-white > h2, .print-white > p, .print-white p > em > strong{
 	color : white !important;
 }
 

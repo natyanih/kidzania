@@ -80,7 +80,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRV: Be Daring </h2> <p>This Sports Utility Vehicle (SUV) is designed to look good on the road while carrying heavy loads. '
 	    + ' Shaped like a cocoon, passengers will feel like they are protected from the busy world around them.'
-		+ 'And with Daytime Running Lights (DRL), you can be assured that you will have a safe drive as it provides optimum road visibility.<em><strong>Be Daring</strong></em></p>' );
+		+ ' And with Daytime Running Lights (DRL), you can be assured that you will have a safe drive as it provides optimum road visibility. <em><strong>Be Daring</strong></em></p>' );
 	    }
 
 	    if ( currentCar.name === 'city' ) {
@@ -88,7 +88,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 263px !important; left: 210px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA CITY: The Future Is Here </h2> <p>This is a car that was innovatively designed to give the driver a comfortable and enjoyable ride.'
-	+ ' With its touch-screen multi-informational panel, you can access songs, movies, your cellphone, and even information about your call in just a single touch.<em><strong>Truly, the car of the future!</strong></em></p>' );
+	+ ' With its touch-screen multi-informational panel, you can access songs, movies, your cellphone, and even information about your call in just a single touch. <em><strong>Truly, the car of the future!</strong></em></p>' );
 	}
 
 	if ( currentCar.name === 'civic' ) {
@@ -96,7 +96,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 270px !important; left: 214px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CIVIC </h2> <p>The spirit of racing is now in your fingertips. Enjoy fast drives knowing that you are protected with the state-of-the-art safety features of this' +
-	'powerful car. Driving this makes you feel like you are the King of the Road.</p>' );
+	' powerful car. Driving this makes you feel like you are the King of the Road.</p>' );
 	    }
 
 	    if ( currentCar.name === 'jazz' ) {
@@ -113,8 +113,8 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    $( '.car-congrats' ).css( { 'top': 253, 'left' : 381 } );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 243px !important; left: 264px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
-	    $( '.car-details-congrats' ).append( '<h2> HONDA CR-Z </h2> <p>Whether you drive it every day to work, go up to the mountains for the weekend, or take it on long trips over the holidays – you cannot go wrong with this vehicle. With its 3 Mode Drive System, you can' +
-	'choose to add extra power during rough drives, maximize your fuel on long ones, or enjoy the city route with a simple press of a button.</p>' );
+	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>Whether you drive it every day to work, go up to the mountains for the weekend, or take it on long trips over the holidays – you cannot go wrong with this vehicle. With its 3 Mode Drive System, you can' +
+	' choose to add extra power during rough drives, maximize your fuel on long ones, or enjoy the city route with a simple press of a button.</p>' );
 	    }
 
 	if ( currentCar.name === 'brio' ) {
