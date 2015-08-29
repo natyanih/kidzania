@@ -177,7 +177,7 @@ var customizer = ( function (){
 			var parentClass = '.' + currentCar.name + '-div-car-rims';
 			var rimClass   = '.' + currentCar.name + '-customizer-rim-6';
 
-			if ( currentCar.name === 'amaze' && currentCar.rims === null ) {
+			if ( currentCar.name === 'amaze' && ( currentCar.rims === null || currentCar.rims === 6 ) ) {
 				$( parentClass ).find( rimClass ).prepend( '<i class="fa fa-check-circle fa-3 selection-indicator"></i>' );
 			}
 		},
