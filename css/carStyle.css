@@ -972,3 +972,142 @@
 		left      : 0;
 		z-index   : 1;
 }
+
+/*For odyssey*/
+
+.car-congrats-tint-odyssey {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+}
+
+.car-congrats-skirt-odyssey {
+		width     : 710px !important;
+		max-width : 710px !important;
+		top       : -5px;
+		left      : -6px;
+		z-index   : 10;
+}
+
+.car-congrats-spoiler-odyssey {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+}
+
+.car-congrats-rim-back-odyssey {
+		width : 78px;
+		top   : 203px;
+		left  : 104px;
+}
+
+.car-congrats-rim-back-odyssey-1 {
+		width : 79px;
+		top   : 192px;
+		left  : 120px;
+}
+
+.car-congrats-rim-back-odyssey-2 {
+		width : 79px;
+		top   : 192px;
+		left  : 118px;
+}
+
+
+.car-congrats-rim-back-odyssey-3 {
+		width : 79px;
+		top   : 192px;
+		left  : 119px;
+}
+
+.car-congrats-rim-back-odyssey-4 {
+		width : 79px;
+		top   : 193px;
+		left  : 119px;
+}
+
+.car-congrats-rim-back-odyssey-5 {
+		width : 80px;
+		top   : 192px;
+		left  : 118px;
+}
+
+.car-congrats-rim-front-odyssey {
+		width : 78px;
+		top   : 204px;
+		left  : 536px;
+}
+
+.car-congrats-rim-front-odyssey-1 {
+		width : 79px;
+		top   : 194px;
+		left  : 535px;
+}
+
+.car-congrats-rim-front-odyssey-2 {
+		width : 79px;
+		top   : 194px;
+		left  : 535px;
+}
+
+.car-congrats-rim-front-odyssey-3 {
+		width : 79px;
+		top   : 194px;
+		left  : 535px;
+}
+
+.car-congrats-rim-front-odyssey-4 {
+		width : 79px;
+		top   : 195px;
+		left  : 535px;
+}
+
+.car-congrats-rim-front-odyssey-5 {
+		width : 80px;
+		top   : 194px;
+		left  : 534px;
+}
+
+.car-congrats-decal-odyssey-1 {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+.car-congrats-decal-odyssey-2 {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+.car-congrats-decal-odyssey-3 {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 17px;
+		z-index   : 1;
+}
+
+
+.car-congrats-decal-odyssey-4 {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
+
+
+.car-congrats-decal-odyssey-5 {
+		width     : 700px !important;
+		max-width : 700px !important;
+		top       : 0;
+		left      : 0;
+		z-index   : 1;
+}
