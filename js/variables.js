@@ -1264,6 +1264,162 @@ var adjustment = {
 			}
 		}
 	},
+	'odyssey' : {
+		'offset' : {
+			'color' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'tint' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'decal' : {
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'rims' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'grill' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'skirt' : {
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			},
+			'spoiler' : {
+				'1' : { 'x' : -60, 'y' : 70 },
+				'2' : { 'x' : -60, 'y' : 70 },
+				'3' : { 'x' : -60, 'y' : 70 },
+				'4' : { 'x' : -60, 'y' : 70 },
+				'5' : { 'x' : -60, 'y' : 70 },
+				'6' : { 'x' : -60, 'y' : 70 },
+				'7' : { 'x' : -60, 'y' : 70 },
+				'8' : { 'x' : -60, 'y' : 70 }
+			}
+		},
+		// adjustment to dimensions
+		'dimension' : {
+			'color' : {
+				// one here represent side ID, same adjustments for same side, same type
+				// only need the width, height will be computed : img.height * adjusment / img.width
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'tint' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'decal' : {
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'rims' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'grill' : {
+				// one here represent side ID, same adjustments for same side, same type
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'skirt' : {
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			},
+			'spoiler' : {
+				'1' : { 'width' : 720 },
+				'2' : { 'width' : 720 },
+				'3' : { 'width' : 720 },
+				'4' : { 'width' : 720 },
+				'5' : { 'width' : 720 },
+				'6' : { 'width' : 720 },
+				'7' : { 'width' : 720 },
+				'8' : { 'width' : 720 }
+			}
+		}
+	},
 	'pilot' : {
 		'offset' : {
 			'color' : {

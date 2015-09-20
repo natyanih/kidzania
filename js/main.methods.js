@@ -78,6 +78,7 @@ var methods = (function() {
                     $('.brio-customizer-holder').hide();
                     $('.amaze-customizer-holder').hide();
                     $('.accord-customizer-holder').hide();
+                    $('.odyssey-customizer-holder').hide();
                     $('.pilot-customizer-holder').hide();
 
                     // load html
@@ -175,6 +176,18 @@ var methods = (function() {
                         $('.accord-div-car-rims').hide();
                         $('.accord-div-car-body').hide();
                         $('.accord-div-car-background').hide();
+                    }
+
+                    if (currentCar.name === 'odyssey') {
+                        $('.odyssey-customizer-holder').show();
+                        $('.odyssey-div-car-color').show();
+
+                        // hide other customizer divs
+                        $('.odyssey-div-car-tint').hide();
+                        $('.odyssey-div-car-decal').hide();
+                        $('.odyssey-div-car-rims').hide();
+                        $('.odyssey-div-car-body').hide();
+                        $('.odyssey-div-car-background').hide();
                     }
 
                     if (currentCar.name === 'pilot') {
