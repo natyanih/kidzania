@@ -41,6 +41,13 @@ $('.odyssey-customizer-color-6').on('click', function() {
     });
 });
 
+$('.odyssey-customizer-color-7').on('click', function() {
+    methods.applyAsset({
+        'type': 'color',
+        'id': 7
+    });
+});
+
 // TINT EVENT HANDLERS
 $('.odyssey-customizer-tint-1').on('click', function() {
     methods.applyAsset({
