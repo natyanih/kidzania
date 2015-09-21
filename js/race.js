@@ -183,7 +183,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 299px !important; left: 344px !important;' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA ODYSSEY</h2> <p>Great for families, this car is the most customizable vehicle in the market. Its flexible seats allow you to easily fold or remove them, climate can be controlled according to seating'
-	+ ' area, and with a powerful engine you can be assured of a comfortable drive. But wait there’s more, your family’s safety is our priority and with Advanced Compatibility Engineering (ACE) <br> you know that you are protected.</p>' );
+	+ ' area, and with a powerful engine you can be assured of a comfortable drive. But wait there’s more, your family’s safety is our priority and with Advanced Compatibility Engineering (ACE) you know that you are protected.</p>' );
 	}
 
     $( '.car-congrats-skirt' ).removeClass( 'car-congrats-skirt-' + currentCar.prevCarName );
