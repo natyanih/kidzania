@@ -213,6 +213,10 @@
 	margin-right : auto;
 }
 
+.odyssey-color-text > p {
+	font-size : 12px;
+}
+
 @media screen and ( max-height : 718px) {
     .customizer-container {
     	top : 60px;
