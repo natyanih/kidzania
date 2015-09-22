@@ -176,6 +176,10 @@ html, body {
 	width    : 985px;
 }
 
+.car-details-congrats-override {
+	top : 526px;
+}
+
 .car-details-congrats p {
 	text-align : center;
 	font-size  : 16pt;

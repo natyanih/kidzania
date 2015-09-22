@@ -36,6 +36,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 			$( '.car-congrats-rim-back' ).css( { 'top': '', 'left' : '' } );
 			$( '.car-congrats-rim-front' ).css( { 'top': '', 'left' : '' } );
 		$( '.car-congrats-body' ).css( { 'width' : '' } );
+			$( '.car-details-congrats' ).removeClass( 'car-details-congrats-override' );
 		if ( document.styleSheets[11].rules[30].selectorText === '.car-congrats-rim-back' || document.styleSheets[11].rules[31] === '.car-congrats-rim-front' ) {
 			document.styleSheets[11].deleteRule( 30 );
 			document.styleSheets[11].deleteRule( 30 );
@@ -75,6 +76,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	    if ( currentCar.name === 'crv' ) {
 			$( '.car-congrats' ).css( { 'top': 278, 'left' : 396 } );
 			$( '.car-congrats-body' ).css( { 'width' : 800 } );
+			$( '.car-details-congrats' ).addClass( 'car-details-congrats-override' );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 250px !important; left: 280px !important;' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 419px !important; } }";
 	//document.styleSheets[11].addRule( '.car-congrats', 'top: 419px !important;' );
@@ -112,6 +114,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	if ( currentCar.name === 'crz' ) {
 	    $( '.car-congrats' ).css( { 'top': 253, 'left' : 381 } );
 			document.styleSheets[11].addRule( '.car-congrats', 'top: 243px !important; left: 264px !important;' );
+			$( '.car-details-congrats' ).addClass( 'car-details-congrats-override' );
 	// document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	    $( '.car-details-congrats' ).append( '<h2> HONDA CRZ </h2> <p>Whether you drive it every day to work, go up to the mountains for the weekend, or take it on long trips over the holidays – you cannot go wrong with this vehicle. With its 3 Mode Drive System, you can' +
 	' choose to add extra power during rough drives, maximize your fuel on long ones, or enjoy the city route with a simple press of a button.</p>' );
@@ -164,6 +167,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	$( '.car-congrats' ).css( { 'top': 325, 'left' : 497 } );
 	$( '.car-congrats-body' ).css( { 'width' : 700 } );
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 299px !important; left: 344px !important;' );
+			$( '.car-details-congrats' ).addClass( 'car-details-congrats-override' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA ACCORD: Lead </h2> <p>Classy and elegant from inside and out, you can make sure that this car will make you feel good both as the driver and as a passenger. From its smooth premium leather interiors to its powerful and fuel efficient engine, what more can you ask for?'
 	+ ' It’s time to <em><strong>Lead</strong></em> others through your confidence in driving on the best quality car.</p>' );
@@ -181,6 +185,7 @@ $( '.btn-race-car' ).on( 'click', function () {
 	$( '.car-congrats' ).css( { 'top': 325, 'left' : 497 } );
 	$( '.car-congrats-body' ).css( { 'width' : 700 } );
 	document.styleSheets[11].addRule( '.car-congrats', 'top: 299px !important; left: 344px !important;' );
+			$( '.car-details-congrats' ).addClass( 'car-details-congrats-override' );
     // document.querySelector( 'style' ).textContent += "@media print{ .car-congrats { top: 446px !important; } }";
 	$( '.car-details-congrats' ).append( '<h2> HONDA ODYSSEY</h2> <p>Great for families, this car is the most customizable vehicle in the market. Its flexible seats allow you to easily fold or remove them, climate can be controlled according to seating'
 	+ ' area, and with a powerful engine you can be assured of a comfortable drive. But wait there’s more, your family’s safety is our priority and with Advanced Compatibility Engineering (ACE) you know that you are protected.</p>' );
